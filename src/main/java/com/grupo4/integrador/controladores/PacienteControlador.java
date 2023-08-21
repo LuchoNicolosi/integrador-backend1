@@ -6,9 +6,7 @@ import com.grupo4.integrador.entidades.Odontologo;
 import com.grupo4.integrador.entidades.Paciente;
 import com.grupo4.integrador.servicios.OdontologoService;
 import com.grupo4.integrador.servicios.PacienteService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,9 +22,14 @@ public class PacienteControlador {
         return pacienteService;
     }
 
+
     @GetMapping
     public List<Paciente> listarPaciente() {
         return getService().listar();
+    }
+    @PostMapping
+    public boolean registarPaciente(@RequestBody Paciente paciente){
+        return getService().registrar(paciente);
     }
 
 }

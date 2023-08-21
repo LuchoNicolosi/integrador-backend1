@@ -5,6 +5,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -12,13 +13,13 @@ import java.time.LocalDate;
 public class Paciente extends Usuario{
     private String domicilio;
     private String dni;
-    private LocalDate fechaAlta;
+    private String fechaAlta;
 
-    public Paciente(int id, String nombre, String apellido, String domicilio, String dni, LocalDate fehcaAlta){
+    public Paciente(int id, String nombre, String apellido, String domicilio, String dni, String fechaAlta){
         super(id,nombre,apellido);
         this.domicilio = domicilio;
         this.dni = dni;
-        this.fechaAlta = fehcaAlta;
+        this.fechaAlta = fechaAlta ;
     }
 
 }

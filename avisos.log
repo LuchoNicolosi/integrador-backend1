@@ -128,3 +128,143 @@
 [2023-08-16 23:12:39] [ INFO ] [OdontologoDAOH2:60] se registro un odontologo!
 [2023-08-16 23:12:44] [ INFO ] [OdontologoDAOH2:29] Conexion exitosa a la db.
 [2023-08-16 23:12:44] [ INFO ] [OdontologoDAOH2:80] [Odontologo(nMatricula=42899873), Odontologo(nMatricula=42899873)]
+[2023-08-21 00:04:13] [ INFO ] [OdontologoDAOH2:29] Conexion exitosa a la db.
+[2023-08-21 00:04:13] [ INFO ] [OdontologoDAOH2:43] Tabla creada con exito!
+[2023-08-21 00:04:14] [ INFO ] [OdontologoDAOH2:29] Conexion exitosa a la db.
+[2023-08-21 00:04:14] [ INFO ] [OdontologoDAOH2:80] []
+[2023-08-21 00:17:15] [ INFO ] [PacienteDAOH2:24] Conexion exitosa a la db.
+[2023-08-21 00:17:15] [ INFO ] [PacienteDAOH2:36] Tabla creada con exito!
+[2023-08-21 00:17:15] [ INFO ] [PacienteDAOH2:24] Conexion exitosa a la db.
+[2023-08-21 00:17:15] [ INFO ] [PacienteDAOH2:36] Tabla creada con exito!
+[2023-08-21 00:17:16] [ INFO ] [PacienteDAOH2:24] Conexion exitosa a la db.
+[2023-08-21 00:17:16] [ INFO ] [PacienteDAOH2:36] Tabla creada con exito!
+[2023-08-21 00:17:16] [ INFO ] [PacienteDAOH2:24] Conexion exitosa a la db.
+[2023-08-21 00:17:16] [ INFO ] [PacienteDAOH2:56] SE REGISTRO UN PACIENTE!
+[2023-08-21 00:17:16] [ INFO ] [PacienteDAOH2:24] Conexion exitosa a la db.
+[2023-08-21 00:19:45] [ INFO ] [PacienteDAOH2:24] Conexion exitosa a la db.
+[2023-08-21 00:19:45] [ INFO ] [PacienteDAOH2:36] Tabla creada con exito!
+[2023-08-21 00:19:45] [ INFO ] [PacienteDAOH2:24] Conexion exitosa a la db.
+[2023-08-21 00:19:45] [ INFO ] [PacienteDAOH2:56] SE REGISTRO UN PACIENTE!
+[2023-08-21 00:19:45] [ INFO ] [PacienteDAOH2:24] Conexion exitosa a la db.
+[2023-08-21 00:23:30] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:23:30] [ INFO ] [PacienteDAOH2:38] Tabla creada con exito!
+[2023-08-21 00:23:30] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:23:30] [ INFO ] [PacienteDAOH2:38] Tabla creada con exito!
+[2023-08-21 00:23:30] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:23:30] [ INFO ] [PacienteDAOH2:38] Tabla creada con exito!
+[2023-08-21 00:23:30] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:23:30] [ INFO ] [PacienteDAOH2:58] SE REGISTRO UN PACIENTE!
+[2023-08-21 00:23:30] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:23:57] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:23:57] [ INFO ] [PacienteDAOH2:38] Tabla creada con exito!
+[2023-08-21 00:23:57] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:23:57] [ INFO ] [PacienteDAOH2:38] Tabla creada con exito!
+[2023-08-21 00:23:57] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:23:58] [ INFO ] [PacienteDAOH2:38] Tabla creada con exito!
+[2023-08-21 00:23:58] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:23:58] [ INFO ] [PacienteDAOH2:58] SE REGISTRO UN PACIENTE!
+[2023-08-21 00:23:58] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:24:36] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:24:36] [ INFO ] [PacienteDAOH2:38] Tabla creada con exito!
+[2023-08-21 00:24:36] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:24:36] [ INFO ] [PacienteDAOH2:58] SE REGISTRO UN PACIENTE!
+[2023-08-21 00:24:36] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:24:42] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:24:42] [ INFO ] [PacienteDAOH2:38] Tabla creada con exito!
+[2023-08-21 00:24:42] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:24:42] [ INFO ] [PacienteDAOH2:58] SE REGISTRO UN PACIENTE!
+[2023-08-21 00:24:42] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:24:51] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:24:51] [ INFO ] [PacienteDAOH2:78] [Paciente(domicilio=savio 3280, dni=39427236, fechaAlta=2023-05-22)]
+[2023-08-21 00:25:02] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:25:02] [ INFO ] [PacienteDAOH2:78] [Paciente(domicilio=savio 3280, dni=39427236, fechaAlta=2023-05-22)]
+[2023-08-21 00:25:33] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:25:33] [ INFO ] [PacienteDAOH2:77] [Paciente(domicilio=savio 3280, dni=39427236, fechaAlta=2023-05-22)]
+[2023-08-21 00:25:50] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:25:50] [ INFO ] [PacienteDAOH2:57] SE REGISTRO UN PACIENTE!
+[2023-08-21 00:25:50] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:25:53] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:25:53] [ INFO ] [PacienteDAOH2:57] SE REGISTRO UN PACIENTE!
+[2023-08-21 00:25:53] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:25:56] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:25:56] [ ERROR] [PacienteDAOH2:64] algo salio mal
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.PACIENTE(ID) ( /* key:4 */ 4, 'SDAS', 'ASDSAD', 'savio 3280', '39427236', DATE '2023-05-22')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PACIENTE(ID) ( /* key:4 */ 4, 'SDAS', 'ASDSAD', 'savio 3280', '39427236', DATE '2023-05-22')"; SQL statement:
+INSERT INTO PACIENTE VALUES(?, ?,?,?,?,?) [23505-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.command.CommandRemote.executeUpdate(CommandRemote.java:227)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:254)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:56)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:13)
+	at com.grupo4.integrador.servicios.PacienteService.registrar(PacienteService.java:21)
+	at com.grupo4.integrador.controladores.PacienteControlador.registarPaciente(PacienteControlador.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+[2023-08-21 00:26:02] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:26:02] [ INFO ] [PacienteDAOH2:57] SE REGISTRO UN PACIENTE!
+[2023-08-21 00:26:02] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:26:08] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
+[2023-08-21 00:26:08] [ INFO ] [PacienteDAOH2:77] [Paciente(domicilio=savio 3280, dni=39427236, fechaAlta=2023-05-22), Paciente(domicilio=savio 3280, dni=39427236, fechaAlta=2023-05-22), Paciente(domicilio=savio 3280, dni=39427236, fechaAlta=2023-05-22), Paciente(domicilio=savio 3280, dni=39427236, fechaAlta=2023-05-22)]
