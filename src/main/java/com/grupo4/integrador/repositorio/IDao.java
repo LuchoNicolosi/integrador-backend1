@@ -1,4 +1,4 @@
-package com.grupo4.integrador.daos;
+package com.grupo4.integrador.repositorio;
 
 import java.util.List;
 

@@ -1,19 +1,21 @@
 package com.grupo4.integrador.servicios;
 
-import com.grupo4.integrador.daos.implementaciones.OdontologoDAOH2;
-import com.grupo4.integrador.daos.IDao;
+import com.grupo4.integrador.repositorio.IDao;
 import com.grupo4.integrador.entidades.Odontologo;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class OdontologoService {
-    IDao<Odontologo> daoOdontologo;
+    private IDao<Odontologo> daoOdontologo;
 
     public IDao<Odontologo> getDaoOdontologo() {
         return daoOdontologo;
     }
 
-    public OdontologoService(IDao daoOdontologo) {
+    public OdontologoService(@Qualifier("odontologoDAO") IDao daoOdontologo) {
         this.daoOdontologo = daoOdontologo;
     }
 

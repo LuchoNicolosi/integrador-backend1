@@ -1,11 +1,13 @@
 package com.grupo4.integrador.servicios;
 
-import com.grupo4.integrador.daos.IDao;
-import com.grupo4.integrador.entidades.Odontologo;
+import com.grupo4.integrador.repositorio.IDao;
 import com.grupo4.integrador.entidades.Paciente;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PacienteService {
     IDao<Paciente> daoPaciente;
 
@@ -13,7 +15,8 @@ public class PacienteService {
         return daoPaciente;
     }
 
-    public PacienteService(IDao daoPaciente) {
+
+    public PacienteService(@Qualifier("pacienteDAOH2") IDao daoPaciente) {
         this.daoPaciente = daoPaciente;
     }
 

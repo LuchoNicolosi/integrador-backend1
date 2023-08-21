@@ -1,12 +1,10 @@
 package com.grupo4.integrador.daos.implementaciones;
 
 import com.grupo4.integrador.entidades.Paciente;
-import com.grupo4.integrador.entidades.Usuario;
+import com.grupo4.integrador.repositorio.implementaciones.PacienteDAOH2;
 import com.grupo4.integrador.servicios.PacienteService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PacienteDAOH2Test {
 

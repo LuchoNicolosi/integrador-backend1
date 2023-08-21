@@ -1,6 +1,6 @@
 package com.grupo4.integrador;
 
-import com.grupo4.integrador.daos.implementaciones.OdontologoDAOH2;
+import com.grupo4.integrador.repositorio.implementaciones.OdontologoDAOH2;
 import com.grupo4.integrador.entidades.Odontologo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

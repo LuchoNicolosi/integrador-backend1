@@ -1,4 +1,4 @@
-package com.grupo4.integrador.daos.implementaciones;
+package com.grupo4.integrador.repositorio.implementaciones;
 
 import org.apache.log4j.Logger;
 

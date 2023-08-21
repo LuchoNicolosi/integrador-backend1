@@ -1,11 +1,13 @@
 package com.grupo4.integrador.servicios;
 
-import com.grupo4.integrador.daos.IDao;
-import com.grupo4.integrador.entidades.Odontologo;
+import com.grupo4.integrador.repositorio.IDao;
 import com.grupo4.integrador.entidades.Turno;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class TurnoService {
     IDao<Turno> daoTurno;
 
@@ -13,7 +15,7 @@ public class TurnoService {
         return daoTurno;
     }
 
-    public TurnoService(IDao daoTurno) {
+    public TurnoService(@Qualifier("turnoDAOH2") IDao daoTurno) {
         this.daoTurno = daoTurno;
     }
 
