@@ -1,25 +1,24 @@
 package com.grupo4.integrador.entidades;
 
-
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
-import java.time.LocalDateTime;
 
 @Getter
 @Setter
 @ToString
 public class Turno {
     private int id;
-    private Usuario paciente;
-    private Usuario odontologo;
-    private LocalDateTime fechaHora;
+    private int pacienteId;
+    private int odontologoId;
+    private String fechaHora;
 
-    public Turno(int id, Usuario paciente, Usuario odontologo, LocalDateTime fechaHora){
+    public Turno(int id, int pacienteId, int odontologoId, String fechaHora) {
         this.id = id;
-        this.paciente = paciente;
-        this.odontologo = odontologo;
+        this.pacienteId = pacienteId;
+        this.odontologoId = odontologoId;
         this.fechaHora = fechaHora;
     }
+
+
 }

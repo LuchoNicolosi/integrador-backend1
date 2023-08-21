@@ -3,9 +3,7 @@ package com.grupo4.integrador.controladores;
 import com.grupo4.integrador.daos.implementaciones.TurnoDAOH2;
 import com.grupo4.integrador.entidades.Turno;
 import com.grupo4.integrador.servicios.TurnoService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -14,11 +12,16 @@ import java.util.List;
 public class TurnoControlador {
     private static TurnoService turnoService = null;
 
-    private TurnoService getTurnoService(){
-        return turnoService == null ? turnoService = new TurnoService(new TurnoDAOH2()) : turnoService;
+    private TurnoService getTurnoService() {
+        if (turnoService == null){
+            TurnoDAOH2.crearTablaTurno();
+            turnoService = new TurnoService(new TurnoDAOH2());
+        }
+        return turnoService;
     }
-    @GetMapping
-    public List<Turno> listarTurno(){
-        return turnoService.listar();
+
+    @PostMapping
+    public Turno crearTurno(@RequestBody Turno turno) {
+        return getTurnoService().registrar(turno);
     }
 }

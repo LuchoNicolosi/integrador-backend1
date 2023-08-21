@@ -17,6 +17,7 @@ public class PacienteControlador {
 
     private PacienteService getService() {
         if (pacienteService == null) {
+            PacienteDAOH2.crearTablaPaciente();
             pacienteService = new PacienteService(new PacienteDAOH2());
         }
         return pacienteService;
@@ -27,8 +28,9 @@ public class PacienteControlador {
     public List<Paciente> listarPaciente() {
         return getService().listar();
     }
+
     @PostMapping
-    public boolean registarPaciente(@RequestBody Paciente paciente){
+    public Paciente registarPaciente(@RequestBody Paciente paciente) {
         return getService().registrar(paciente);
     }
 

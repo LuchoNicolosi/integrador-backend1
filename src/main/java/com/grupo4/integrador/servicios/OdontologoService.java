@@ -17,7 +17,7 @@ public class OdontologoService {
         this.daoOdontologo = daoOdontologo;
     }
 
-    public boolean registrar(Odontologo o) {
+    public Odontologo registrar(Odontologo o) {
         return daoOdontologo.registrar(o);
     }
 

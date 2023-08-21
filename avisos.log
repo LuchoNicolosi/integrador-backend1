@@ -268,3 +268,568 @@ INSERT INTO PACIENTE VALUES(?, ?,?,?,?,?) [23505-220]
 [2023-08-21 00:26:02] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
 [2023-08-21 00:26:08] [ INFO ] [PacienteDAOH2:26] Conexion exitosa a la db.
 [2023-08-21 00:26:08] [ INFO ] [PacienteDAOH2:77] [Paciente(domicilio=savio 3280, dni=39427236, fechaAlta=2023-05-22), Paciente(domicilio=savio 3280, dni=39427236, fechaAlta=2023-05-22), Paciente(domicilio=savio 3280, dni=39427236, fechaAlta=2023-05-22), Paciente(domicilio=savio 3280, dni=39427236, fechaAlta=2023-05-22)]
+[2023-08-21 02:16:52] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:16:52] [ INFO ] [db:23] Tabla creada con exito!
+[2023-08-21 02:16:52] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:16:52] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 02:17:11] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:17:11] [ ERROR] [PacienteDAOH2:41] algo salio mal
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PACIENTE" no encontrada
+Table "PACIENTE" not found; SQL statement:
+INSERT INTO PACIENTE VALUES(?, ?,?,?,?,?) [42102-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8561)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8532)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8521)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8487)
+	at org.h2.command.Parser.parseInsert(Parser.java:1663)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:288)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.command.CommandRemote.prepare(CommandRemote.java:78)
+	at org.h2.command.CommandRemote.<init>(CommandRemote.java:50)
+	at org.h2.engine.SessionRemote.prepareCommand(SessionRemote.java:480)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:30)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:15)
+	at com.grupo4.integrador.servicios.PacienteService.registrar(PacienteService.java:21)
+	at com.grupo4.integrador.controladores.PacienteControlador.registarPaciente(PacienteControlador.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+[2023-08-21 02:20:06] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:20:06] [ INFO ] [db:23] Tabla creada con exito!
+[2023-08-21 02:20:06] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:20:06] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 02:20:15] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:20:15] [ INFO ] [PacienteDAOH2:21] Tabla creada con exito!
+[2023-08-21 02:20:15] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:20:15] [ ERROR] [PacienteDAOH2:41] algo salio mal
+org.h2.jdbc.JdbcSQLDataException: Imposible interpretar la constante "DATE" "20-12-2023"
+Cannot parse "DATE" constant "20-12-2023"; SQL statement:
+INSERT INTO PACIENTE VALUES(?, ?,?,?,?,?) [22007-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:518)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueDate.parse(ValueDate.java:53)
+	at org.h2.value.Value.convertToDate(Value.java:1875)
+	at org.h2.value.Value.convertTo(Value.java:1168)
+	at org.h2.value.Value.convertForAssignTo(Value.java:1113)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:369)
+	at org.h2.table.Table.convertInsertRow(Table.java:936)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.lang.IllegalArgumentException: 20-12-2023
+	at org.h2.util.DateTimeUtils.parseDateValue(DateTimeUtils.java:194)
+	at org.h2.value.ValueDate.parse(ValueDate.java:51)
+	... 13 more
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:506)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.command.CommandRemote.executeUpdate(CommandRemote.java:227)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:254)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:37)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:15)
+	at com.grupo4.integrador.servicios.PacienteService.registrar(PacienteService.java:21)
+	at com.grupo4.integrador.controladores.PacienteControlador.registarPaciente(PacienteControlador.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+[2023-08-21 02:23:41] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:23:41] [ INFO ] [db:23] Tabla creada con exito!
+[2023-08-21 02:23:41] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:23:41] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 02:23:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:23:43] [ INFO ] [PacienteDAOH2:21] Tabla creada con exito!
+[2023-08-21 02:23:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:23:43] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 02:24:46] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:24:46] [ ERROR] [db:41] Error al registrar el usuario!
+[2023-08-21 02:25:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:25:21] [ INFO ] [db:23] Tabla creada con exito!
+[2023-08-21 02:25:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:25:22] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 02:25:32] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:25:32] [ INFO ] [PacienteDAOH2:21] Tabla creada con exito!
+[2023-08-21 02:25:32] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:25:32] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 02:26:16] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:26:16] [ ERROR] [PacienteDAOH2:41] algo salio mal
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.PACIENTE(ID) ( /* key:1 */ 1, 'carlos', 'lopez', 'ohiggins259', '123456789', '20-12-2023')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PACIENTE(ID) ( /* key:1 */ 1, 'carlos', 'lopez', 'ohiggins259', '123456789', '20-12-2023')"; SQL statement:
+INSERT INTO PACIENTE VALUES(?,?,?,?,?,?) [23505-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.command.CommandRemote.executeUpdate(CommandRemote.java:227)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:254)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:37)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:15)
+	at com.grupo4.integrador.servicios.PacienteService.registrar(PacienteService.java:21)
+	at com.grupo4.integrador.controladores.PacienteControlador.registarPaciente(PacienteControlador.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+[2023-08-21 02:27:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:27:22] [ INFO ] [db:23] Tabla creada con exito!
+[2023-08-21 02:27:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:27:22] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 02:27:25] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:27:25] [ INFO ] [PacienteDAOH2:21] Tabla creada con exito!
+[2023-08-21 02:27:25] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:27:25] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 02:27:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:27:56] [ INFO ] [PacienteDAOH2:21] Tabla creada con exito!
+[2023-08-21 02:27:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:27:56] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 02:27:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:27:59] [ INFO ] [db:23] Tabla creada con exito!
+[2023-08-21 02:27:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:27:59] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 02:33:30] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:33:30] [ INFO ] [db:23] Tabla creada con exito!
+[2023-08-21 02:33:30] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:33:30] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 02:33:36] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:33:36] [ INFO ] [PacienteDAOH2:21] Tabla creada con exito!
+[2023-08-21 02:33:36] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:33:36] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 02:33:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:33:43] [ INFO ] [TurnoDAOH2:21] Tabla creada con exito!
+[2023-08-21 02:33:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 02:33:43] [ ERROR] [TurnoDAOH2:40] Error al registrar el turno!
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "TURNO" no encontrada
+Table "TURNO" not found; SQL statement:
+INSERT INTO TURNO VALUES(?,?,?,?); [42102-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8561)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8532)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8521)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8487)
+	at org.h2.command.Parser.parseInsert(Parser.java:1663)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:288)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+[2023-08-21 03:02:32] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:02:32] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 03:02:32] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:02:32] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 03:02:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:02:37] [ INFO ] [PacienteDAOH2:21] Tabla paciente creada con exito!
+[2023-08-21 03:02:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:02:37] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 03:02:40] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:02:40] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 03:02:40] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:02:40] [ ERROR] [TurnoDAOH2:40] Error al registrar el turno!
+java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Usuario.getId()" because the return value of "com.grupo4.integrador.entidades.Turno.getPaciente()" is null
+[2023-08-21 03:04:54] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:04:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:04:56] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 03:04:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:04:56] [ ERROR] [TurnoDAOH2:40] Error al registrar el turno!
+java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because the return value of "com.grupo4.integrador.entidades.Turno.getPaciente()" is null
+[2023-08-21 03:05:24] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:05:31] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:06:25] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:07:32] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:07:51] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:11:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:11:37] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 03:11:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:11:37] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 03:11:42] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:11:42] [ INFO ] [PacienteDAOH2:21] Tabla paciente creada con exito!
+[2023-08-21 03:11:42] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:11:42] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 03:11:50] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:11:50] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 03:11:50] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:11:50] [ ERROR] [TurnoDAOH2:40] Error al registrar el turno!
+java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because the return value of "com.grupo4.integrador.entidades.Turno.getPaciente()" is null
+[2023-08-21 03:49:19] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:49:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:50:11] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:50:11] [ INFO ] [PacienteDAOH2:21] Tabla paciente creada con exito!
+[2023-08-21 03:50:11] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:50:11] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 03:50:14] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:50:14] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 03:50:14] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:50:14] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 03:50:17] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:50:17] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 03:50:17] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:50:17] [ ERROR] [TurnoDAOH2:40] Error al registrar el turno!
+java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because the return value of "com.grupo4.integrador.entidades.Turno.getPaciente()" is null
+[2023-08-21 03:53:44] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:53:44] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 03:53:44] [ DEBUG] [TurnoDAOH2:30] com.grupo4.integrador.entidades.Turno@52cc9568
+[2023-08-21 03:53:44] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:53:44] [ ERROR] [TurnoDAOH2:41] Error al registrar el turno!
+java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because the return value of "com.grupo4.integrador.entidades.Turno.getPaciente()" is null
+[2023-08-21 03:54:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:54:26] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 03:58:51] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:58:51] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 03:58:51] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 03:58:51] [ ERROR] [TurnoDAOH2:40] Error al registrar el turno!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"
+Referential integrity constraint violation: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"; SQL statement:
+INSERT INTO TURNO VALUES(?,?,?,?) [23506-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+[2023-08-21 04:00:12] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:00:12] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 04:00:12] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:00:12] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 04:00:15] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:00:15] [ INFO ] [PacienteDAOH2:21] Tabla paciente creada con exito!
+[2023-08-21 04:00:15] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:00:15] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 04:00:19] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:00:19] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 04:00:19] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:00:19] [ ERROR] [TurnoDAOH2:40] Error al registrar el turno!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"
+Referential integrity constraint violation: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"; SQL statement:
+INSERT INTO TURNO VALUES(?,?,?,?) [23506-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+[2023-08-21 04:08:09] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:08:09] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 04:08:09] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:08:09] [ ERROR] [TurnoDAOH2:40] Error al registrar el turno!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"
+Referential integrity constraint violation: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"; SQL statement:
+INSERT INTO TURNO VALUES(?,?,?,?) [23506-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+[2023-08-21 04:08:24] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:09:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:09:26] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 04:09:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:09:26] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 04:09:29] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:09:29] [ INFO ] [PacienteDAOH2:21] Tabla paciente creada con exito!
+[2023-08-21 04:09:29] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:09:29] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 04:09:32] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:15:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:15:23] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 04:15:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:15:23] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 04:15:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:15:26] [ INFO ] [PacienteDAOH2:21] Tabla paciente creada con exito!
+[2023-08-21 04:15:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:15:26] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 04:15:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:15:28] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 04:15:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:15:28] [ ERROR] [TurnoDAOH2:40] Error al registrar el turno!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTEID) REFERENCES PUBLIC.PACIENTE(ID) (0)"
+Referential integrity constraint violation: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTEID) REFERENCES PUBLIC.PACIENTE(ID) (0)"; SQL statement:
+INSERT INTO TURNO VALUES(?,?,?,?) [23506-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+[2023-08-21 04:27:33] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:28:01] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:28:01] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 04:28:01] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:28:01] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 04:28:03] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:28:03] [ INFO ] [PacienteDAOH2:21] Tabla paciente creada con exito!
+[2023-08-21 04:28:03] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:28:03] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 04:28:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:28:10] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 04:28:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:28:10] [ ERROR] [TurnoDAOH2:40] Error al registrar el turno!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTEID) REFERENCES PUBLIC.PACIENTE(ID) (0)"
+Referential integrity constraint violation: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTEID) REFERENCES PUBLIC.PACIENTE(ID) (0)"; SQL statement:
+INSERT INTO TURNO VALUES(?,?,?,?) [23506-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+[2023-08-21 04:30:06] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:30:06] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 04:30:06] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:30:06] [ ERROR] [TurnoDAOH2:43] Error al registrar el turno!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTEID) REFERENCES PUBLIC.PACIENTE(ID) (0)"
+Referential integrity constraint violation: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTEID) REFERENCES PUBLIC.PACIENTE(ID) (0)"; SQL statement:
+INSERT INTO TURNO VALUES(?,?,?,?) [23506-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+[2023-08-21 04:31:38] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:31:38] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
+[2023-08-21 04:31:38] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 04:31:38] [ INFO ] [TurnoDAOH2:40] se registro un turno!

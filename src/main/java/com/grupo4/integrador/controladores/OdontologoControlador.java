@@ -26,7 +26,7 @@ public class OdontologoControlador {
     }
 
     @PostMapping
-    public boolean registrarOdontologo(@RequestBody Odontologo o) {
+    public Odontologo registrarOdontologo(@RequestBody Odontologo o) {
         System.out.println(o);
         return getService().registrar(o);
     }

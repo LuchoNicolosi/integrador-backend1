@@ -17,7 +17,7 @@ public class TurnoService {
         this.daoTurno = daoTurno;
     }
 
-    public boolean registrar(Turno turno) {
+    public Turno registrar(Turno turno) {
         return daoTurno.registrar(turno);
     }
 

@@ -17,7 +17,7 @@ public class PacienteService {
         this.daoPaciente = daoPaciente;
     }
 
-    public boolean registrar(Paciente p) {
+    public Paciente registrar(Paciente p) {
         return daoPaciente.registrar(p);
     }
 

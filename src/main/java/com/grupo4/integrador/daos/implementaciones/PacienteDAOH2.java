@@ -10,60 +10,37 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.grupo4.integrador.daos.implementaciones.db.getConnection;
+
 public class PacienteDAOH2 implements IDao<Paciente> {
-    private final static String JDBC_DRIVER = "org.h2.Driver";
-    private final static String DB_URL = "jdbc:h2:tcp://localhost/~/test";
-    private final static String DB_USER = "sa";
-    private final static String DB_PASS = "";
     private final static Logger LOGGER = Logger.getLogger(PacienteDAOH2.class);
 
-    private static Connection connection;
-
-    private static Connection getConnection() {
-        try {
-            Class.forName(JDBC_DRIVER);
-            connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS);
-            LOGGER.info("Conexion exitosa a la db.");
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        return connection;
-    }
     public static void crearTablaPaciente() {
-        try {
-            Statement stm = getConnection().createStatement();
+        try (Statement stm = getConnection().createStatement();) {
             stm.execute(Query.CREATE_TABLE_PACIENTE);
-            LOGGER.info("Tabla creada con exito!");
-            stm.close();
-            connection.close();
+            LOGGER.info("Tabla paciente creada con exito!");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
     @Override
-    public boolean registrar(Paciente paciente) {
-        boolean flag =  false;
-        try(PreparedStatement pst = getConnection().prepareStatement(Query.INSERT_VALUE_PACIENTE)){
+    public Paciente registrar(Paciente paciente) {
+        Paciente pac = null;
+        try (PreparedStatement pst = getConnection().prepareStatement(Query.INSERT_VALUE_PACIENTE)) {
             pst.setInt(1, paciente.getId());
             pst.setString(2, paciente.getNombre());
-            pst.setString(3,paciente.getApellido());
-            pst.setString(4,paciente.getDomicilio());
-            pst.setString(5,paciente.getDni());
-            pst.setString(6,paciente.getFechaAlta());
+            pst.setString(3, paciente.getApellido());
+            pst.setString(4, paciente.getDomicilio());
+            pst.setString(5, paciente.getDni());
+            pst.setString(6, paciente.getFechaAlta());
             pst.execute();
             LOGGER.info("SE REGISTRO UN PACIENTE!");
-            pst.close();
-            getConnection().close();
-            flag = true;
-
-
-        }catch(Exception e){
+            pac = paciente;
+        } catch (Exception e) {
             LOGGER.error("algo salio mal", e);
         }
-        return flag;
+        return pac;
     }
 
     @Override
@@ -72,7 +49,7 @@ public class PacienteDAOH2 implements IDao<Paciente> {
         try (PreparedStatement pst = getConnection().prepareStatement("SELECT * FROM PACIENTE")) {
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
-                pacientes.add(new Paciente(rs.getInt("ID"), rs.getString("NOMBRE"), rs.getString("APELLIDO"), rs.getString("DOMICILIO"), rs.getString("DNI"),rs.getString("FECHA_ALTA")));
+                pacientes.add(new Paciente(rs.getInt("ID"), rs.getString("NOMBRE"), rs.getString("APELLIDO"), rs.getString("DOMICILIO"), rs.getString("DNI"), rs.getString("FECHA_ALTA")));
             }
             LOGGER.info(pacientes);
         } catch (Exception e) {
