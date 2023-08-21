@@ -833,3 +833,31 @@ INSERT INTO TURNO VALUES(?,?,?,?) [23506-220]
 [2023-08-21 04:31:38] [ INFO ] [TurnoDAOH2:21] Tabla turno creada con exito!
 [2023-08-21 04:31:38] [ INFO ] [db:23] Conexion exitosa a la db.
 [2023-08-21 04:31:38] [ INFO ] [TurnoDAOH2:40] se registro un turno!
+[2023-08-21 13:27:55] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 13:27:55] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 13:27:55] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 13:27:55] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 13:28:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 13:28:56] [ INFO ] [TurnoDAOH2:24] Tabla turno creada con exito!
+[2023-08-21 13:28:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 13:28:56] [ INFO ] [TurnoDAOH2:41] se registro un turno!
+[2023-08-21 13:29:11] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 13:29:11] [ ERROR] [TurnoDAOH2:44] Error al registrar el turno!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.TURNO(TURNOID) ( /* key:10 */ 10, 2, 2, '2023-05-10')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.TURNO(TURNOID) ( /* key:10 */ 10, 2, 2, '2023-05-10')"; SQL statement:
+INSERT INTO TURNO VALUES(?,?,?,?) [23505-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+

@@ -1,13 +1,16 @@
 package com.grupo4.integrador.daos.implementaciones;
 
 import com.grupo4.integrador.daos.IDao;
+import com.grupo4.integrador.entidades.Paciente;
 import com.grupo4.integrador.entidades.Turno;
 import com.grupo4.integrador.utilidades.Query;
 import org.apache.log4j.Logger;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 import static com.grupo4.integrador.daos.implementaciones.db.getConnection;
@@ -45,6 +48,19 @@ public class TurnoDAOH2 implements IDao<Turno> {
 
     @Override
     public List<Turno> listar() {
-        return null;
+        List<Turno> turnos = new ArrayList<>();
+        try (PreparedStatement pst = getConnection().prepareStatement("SELECT * FROM PACIENTE")) {
+            ResultSet rs = pst.executeQuery();
+            while (rs.next()) {
+                turnos.add(new Turno(rs.getInt("ID"), rs.getInt(2), rs.getInt(3), rs.getString(4)));
+            }
+            LOGGER.info(turnos);
+        } catch (Exception e) {
+            LOGGER.error("error al listar los odontologos");
+            return new ArrayList<>();
+        }
+        return turnos;
     }
-}
+
+    }
+
