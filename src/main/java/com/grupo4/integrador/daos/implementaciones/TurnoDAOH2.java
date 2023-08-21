@@ -17,6 +17,7 @@ import static com.grupo4.integrador.daos.implementaciones.db.getConnection;
 
 public class TurnoDAOH2 implements IDao<Turno> {
     private final static Logger LOGGER = Logger.getLogger(TurnoDAOH2.class);
+    private Integer autoIncrementId = 0;
 
     public static void crearTablaTurno() {
         try (Statement stm = getConnection().createStatement();) {
@@ -32,12 +33,12 @@ public class TurnoDAOH2 implements IDao<Turno> {
         Turno tur = null;
         //TODO arreglar el tema del DATE, por que lo almacene como STRING
         try (PreparedStatement pst = getConnection().prepareStatement(Query.INSERT_VALUE_TURNO)) {
-            pst.setInt(1, turno.getId());
-            pst.setInt(2, turno.getPacienteId());
-            pst.setInt(3, turno.getOdontologoId());
-            pst.setString(4, turno.getFechaHora());
+            pst.setInt(1, turno.getPacienteId());
+            pst.setInt(2, turno.getOdontologoId());
+            pst.setString(3, turno.getFechaHora());
             pst.execute();
             tur = turno;
+            tur.setId(autoIncrementId += 1);
             LOGGER.info("se registro un turno!");
 
         } catch (Exception e) {
@@ -62,5 +63,5 @@ public class TurnoDAOH2 implements IDao<Turno> {
         return turnos;
     }
 
-    }
+}
 

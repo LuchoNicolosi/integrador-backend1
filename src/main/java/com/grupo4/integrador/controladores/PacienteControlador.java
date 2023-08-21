@@ -22,8 +22,6 @@ public class PacienteControlador {
         }
         return pacienteService;
     }
-
-
     @GetMapping
     public List<Paciente> listarPaciente() {
         return getService().listar();

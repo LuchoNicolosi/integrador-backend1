@@ -861,3 +861,413 @@ INSERT INTO TURNO VALUES(?,?,?,?) [23505-220]
 	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
+[2023-08-21 16:27:14] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:27:14] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 16:27:14] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:27:14] [ ERROR] [db:40] Error al registrar el usuario!
+[2023-08-21 16:28:46] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:28:46] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 16:28:46] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:28:46] [ ERROR] [db:40] Error al registrar el odontologo!
+[2023-08-21 16:32:34] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:34:45] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:34:45] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 16:34:45] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:34:45] [ INFO ] [db:36] se registro un odontologo!
+[2023-08-21 16:34:55] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:34:55] [ INFO ] [db:36] se registro un odontologo!
+[2023-08-21 16:34:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:34:57] [ INFO ] [db:36] se registro un odontologo!
+[2023-08-21 16:41:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:41:18] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 16:41:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:41:18] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 16:41:20] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:41:20] [ INFO ] [db:37] se registro un odontologo!
+[2023-08-21 16:43:25] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:43:25] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 16:43:25] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:43:25] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:43:27] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:43:27] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:43:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:43:28] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:44:51] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:44:51] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 16:44:51] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:44:51] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:44:53] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:44:53] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:44:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:44:57] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:45:17] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:45:17] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 16:45:17] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:45:17] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:45:19] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:45:19] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:45:19] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:45:19] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:45:20] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:45:20] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:45:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:45:22] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:47:47] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:47:47] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 16:47:47] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:47:47] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:48:07] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:48:07] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:48:34] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:48:34] [ INFO ] [PacienteDAOH2:22] Tabla paciente creada con exito!
+[2023-08-21 16:48:34] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:48:34] [ ERROR] [PacienteDAOH2:42] algo salio mal
+org.h2.jdbc.JdbcSQLSyntaxErrorException: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO PACIENTE VALUES(?,?,?,?,?) [21002-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.command.dml.Insert.doPrepare(Insert.java:295)
+	at org.h2.command.dml.DataChangeStatement.prepare(DataChangeStatement.java:37)
+	at org.h2.command.Parser.prepareCommand(Parser.java:583)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:288)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.command.CommandRemote.prepare(CommandRemote.java:78)
+	at org.h2.command.CommandRemote.<init>(CommandRemote.java:50)
+	at org.h2.engine.SessionRemote.prepareCommand(SessionRemote.java:480)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:31)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:15)
+	at com.grupo4.integrador.servicios.PacienteService.registrar(PacienteService.java:21)
+	at com.grupo4.integrador.controladores.PacienteControlador.registarPaciente(PacienteControlador.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+[2023-08-21 16:52:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:52:10] [ INFO ] [PacienteDAOH2:22] Tabla paciente creada con exito!
+[2023-08-21 16:52:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:52:10] [ ERROR] [PacienteDAOH2:42] algo salio mal
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "FECHA_ALTA" no encontrada
+Column "FECHA_ALTA" not found; SQL statement:
+INSERT INTO PACIENTE(nombre,apellido,domicilio,dni,fecha_alta) VALUES(?,?,?,?,?) [42122-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1300)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1285)
+	at org.h2.command.Parser.parseInsert(Parser.java:1672)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:288)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.command.CommandRemote.prepare(CommandRemote.java:78)
+	at org.h2.command.CommandRemote.<init>(CommandRemote.java:50)
+	at org.h2.engine.SessionRemote.prepareCommand(SessionRemote.java:480)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:31)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:15)
+	at com.grupo4.integrador.servicios.PacienteService.registrar(PacienteService.java:21)
+	at com.grupo4.integrador.controladores.PacienteControlador.registarPaciente(PacienteControlador.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+[2023-08-21 16:52:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:52:28] [ INFO ] [PacienteDAOH2:22] Tabla paciente creada con exito!
+[2023-08-21 16:52:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:52:28] [ ERROR] [PacienteDAOH2:42] algo salio mal
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "FECHA_ALTA" no encontrada
+Column "FECHA_ALTA" not found; SQL statement:
+INSERT INTO PACIENTE(nombre,apellido,domicilio,dni,fecha_alta) VALUES(?,?,?,?,?) [42122-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1300)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1285)
+	at org.h2.command.Parser.parseInsert(Parser.java:1672)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:288)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.command.CommandRemote.prepare(CommandRemote.java:78)
+	at org.h2.command.CommandRemote.<init>(CommandRemote.java:50)
+	at org.h2.engine.SessionRemote.prepareCommand(SessionRemote.java:480)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:31)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:15)
+	at com.grupo4.integrador.servicios.PacienteService.registrar(PacienteService.java:21)
+	at com.grupo4.integrador.controladores.PacienteControlador.registarPaciente(PacienteControlador.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+[2023-08-21 16:52:33] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:52:33] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 16:52:33] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:52:33] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:58:44] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:58:44] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 16:58:44] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:58:44] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:59:11] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:59:11] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 16:59:17] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:59:17] [ INFO ] [PacienteDAOH2:22] Tabla paciente creada con exito!
+[2023-08-21 16:59:17] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 16:59:17] [ ERROR] [PacienteDAOH2:42] algo salio mal
+org.h2.jdbc.JdbcSQLDataException: Valor Invalido "6" para el parametro "parameterIndex"
+Invalid value "6" for parameter "parameterIndex" [90008-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1395)
+	at org.h2.jdbc.JdbcPreparedStatement.setString(JdbcPreparedStatement.java:378)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:36)
+	at com.grupo4.integrador.daos.implementaciones.PacienteDAOH2.registrar(PacienteDAOH2.java:15)
+	at com.grupo4.integrador.servicios.PacienteService.registrar(PacienteService.java:21)
+	at com.grupo4.integrador.controladores.PacienteControlador.registarPaciente(PacienteControlador.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+[2023-08-21 17:00:19] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:00:19] [ INFO ] [db:23] Tabla Odontologo creada con exito!
+[2023-08-21 17:00:19] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:00:19] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 17:00:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:00:23] [ INFO ] [PacienteDAOH2:22] Tabla paciente creada con exito!
+[2023-08-21 17:00:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:00:23] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 17:00:42] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:00:42] [ INFO ] [PacienteDAOH2:38] SE REGISTRO UN PACIENTE!
+[2023-08-21 17:01:15] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:01:15] [ INFO ] [db:38] se registro un odontologo!
+[2023-08-21 17:01:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:01:26] [ INFO ] [TurnoDAOH2:25] Tabla turno creada con exito!
+[2023-08-21 17:01:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:01:26] [ INFO ] [TurnoDAOH2:42] se registro un turno!
+[2023-08-21 17:01:33] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:01:33] [ INFO ] [TurnoDAOH2:42] se registro un turno!
+[2023-08-21 17:01:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:01:37] [ INFO ] [TurnoDAOH2:42] se registro un turno!
+[2023-08-21 17:01:42] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:01:42] [ INFO ] [TurnoDAOH2:42] se registro un turno!
+[2023-08-21 17:02:08] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:02:08] [ INFO ] [TurnoDAOH2:42] se registro un turno!
+[2023-08-21 17:02:17] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:02:17] [ INFO ] [TurnoDAOH2:42] se registro un turno!
+[2023-08-21 17:02:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 17:02:21] [ INFO ] [TurnoDAOH2:42] se registro un turno!

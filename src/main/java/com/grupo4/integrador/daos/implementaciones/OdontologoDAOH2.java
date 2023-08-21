@@ -15,7 +15,7 @@ import static com.grupo4.integrador.daos.implementaciones.db.getConnection;
 
 public class OdontologoDAOH2 implements IDao<Odontologo> {
     private final static Logger LOGGER = Logger.getLogger(db.class);
-
+    private Integer autoIncrementId = 0;
     //Usar si la tabla no existe
     public static void crearTablaOdontologo() {
         try (Statement stm = getConnection().createStatement();) {
@@ -25,20 +25,23 @@ public class OdontologoDAOH2 implements IDao<Odontologo> {
             throw new RuntimeException(e);
         }
     }
+
     @Override
     public Odontologo registrar(Odontologo odontologo) {
         Odontologo odon = null;
+
         try (PreparedStatement pst = getConnection().prepareStatement(Query.INSERT_VALUE_ODONTOLOGO)) {
-            pst.setInt(1, odontologo.getId());
-            pst.setString(2, odontologo.getNMatricula());
-            pst.setString(3, odontologo.getNombre());
-            pst.setString(4, odontologo.getApellido());
+            pst.setString(1, odontologo.getNMatricula());
+            pst.setString(2, odontologo.getNombre());
+            pst.setString(3, odontologo.getApellido());
             pst.execute();
             LOGGER.info("se registro un odontologo!");
+
             odon = odontologo;
+            odon.setId(autoIncrementId+=1);
 
         } catch (Exception e) {
-            LOGGER.error("Error al registrar el usuario!");
+            LOGGER.error("Error al registrar el odontologo!");
         }
         return odon;
     }

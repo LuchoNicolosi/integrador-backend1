@@ -14,6 +14,7 @@ import static com.grupo4.integrador.daos.implementaciones.db.getConnection;
 
 public class PacienteDAOH2 implements IDao<Paciente> {
     private final static Logger LOGGER = Logger.getLogger(PacienteDAOH2.class);
+    private Integer autoIncrementId = 0;
 
     public static void crearTablaPaciente() {
         try (Statement stm = getConnection().createStatement();) {
@@ -28,15 +29,15 @@ public class PacienteDAOH2 implements IDao<Paciente> {
     public Paciente registrar(Paciente paciente) {
         Paciente pac = null;
         try (PreparedStatement pst = getConnection().prepareStatement(Query.INSERT_VALUE_PACIENTE)) {
-            pst.setInt(1, paciente.getId());
-            pst.setString(2, paciente.getNombre());
-            pst.setString(3, paciente.getApellido());
-            pst.setString(4, paciente.getDomicilio());
-            pst.setString(5, paciente.getDni());
-            pst.setString(6, paciente.getFechaAlta());
+            pst.setString(1, paciente.getNombre());
+            pst.setString(2, paciente.getApellido());
+            pst.setString(3, paciente.getDomicilio());
+            pst.setString(4, paciente.getDni());
+            pst.setString(5, paciente.getFechaAlta());
             pst.execute();
             LOGGER.info("SE REGISTRO UN PACIENTE!");
             pac = paciente;
+            pac.setId(autoIncrementId += 1);
         } catch (Exception e) {
             LOGGER.error("algo salio mal", e);
         }
