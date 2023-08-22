@@ -11,9 +11,11 @@ import java.util.List;
 @Service
 public class OdontologoService {
     private IDao<Odontologo> daoOdontologo;
+
     public IDao<Odontologo> getDaoOdontologo() {
         return daoOdontologo;
     }
+
     public OdontologoService(IDao<Odontologo> daoOdontologo) {
         this.daoOdontologo = daoOdontologo;
     }

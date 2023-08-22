@@ -16,7 +16,7 @@ public class PacienteService {
     }
 
 
-    public PacienteService(IDao<Paciente> daoPaciente) {
+    public PacienteService( IDao<Paciente> daoPaciente) {
         this.daoPaciente = daoPaciente;
     }
 
