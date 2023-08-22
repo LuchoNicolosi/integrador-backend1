@@ -14,7 +14,6 @@ public class OdontologoControlador {
     private OdontologoService odontologoService;
     @Autowired
     public OdontologoControlador(OdontologoService odontologoService) {
-        OdontologoDAOH2.crearTablaOdontologo();
         this.odontologoService = odontologoService;
     }
     @GetMapping

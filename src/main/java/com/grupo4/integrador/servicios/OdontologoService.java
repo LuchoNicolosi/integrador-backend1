@@ -2,6 +2,7 @@ package com.grupo4.integrador.servicios;
 
 import com.grupo4.integrador.repositorio.IDao;
 import com.grupo4.integrador.entidades.Odontologo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,8 @@ public class OdontologoService {
         return daoOdontologo;
     }
 
-    public OdontologoService(@Qualifier("odontologoDAO") IDao daoOdontologo) {
+    @Autowired
+    public OdontologoService(IDao<Odontologo> daoOdontologo) {
         this.daoOdontologo = daoOdontologo;
     }
 

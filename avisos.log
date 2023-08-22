@@ -1271,3 +1271,10 @@ Invalid value "6" for parameter "parameterIndex" [90008-214]
 [2023-08-21 17:02:17] [ INFO ] [TurnoDAOH2:42] se registro un turno!
 [2023-08-21 17:02:21] [ INFO ] [db:23] Conexion exitosa a la db.
 [2023-08-21 17:02:21] [ INFO ] [TurnoDAOH2:42] se registro un turno!
+[2023-08-21 20:33:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 21:24:00] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 21:24:00] [ INFO ] [db:43] se registro un odontologo!
+[2023-08-21 21:24:03] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 21:24:03] [ INFO ] [PacienteDAOH2:37] SE REGISTRO UN PACIENTE!
+[2023-08-21 21:24:11] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 21:24:11] [ INFO ] [TurnoDAOH2:43] se registro un turno!

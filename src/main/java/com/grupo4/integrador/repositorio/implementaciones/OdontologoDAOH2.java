@@ -5,6 +5,7 @@ import com.grupo4.integrador.repositorio.IDao;
 
 import com.grupo4.integrador.utilidades.Query;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 
@@ -15,6 +16,7 @@ import java.util.List;
 import static com.grupo4.integrador.repositorio.implementaciones.db.getConnection;
 
 @Repository
+@Qualifier("odontologoDAO")
 public class OdontologoDAOH2 implements IDao<Odontologo> {
     private final static Logger LOGGER = Logger.getLogger(db.class);
     private Integer autoIncrementId = 0;

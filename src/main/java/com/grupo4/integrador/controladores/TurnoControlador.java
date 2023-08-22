@@ -13,7 +13,6 @@ public class TurnoControlador {
 
     @Autowired
     public TurnoControlador(TurnoService turnoService) {
-        TurnoDAOH2.crearTablaTurno();
         this.turnoService = turnoService;
     }
 

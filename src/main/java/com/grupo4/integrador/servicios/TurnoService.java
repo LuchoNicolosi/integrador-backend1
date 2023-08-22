@@ -15,7 +15,7 @@ public class TurnoService {
         return daoTurno;
     }
 
-    public TurnoService(@Qualifier("turnoDAOH2") IDao daoTurno) {
+    public TurnoService(IDao<Turno> daoTurno) {
         this.daoTurno = daoTurno;
     }
 

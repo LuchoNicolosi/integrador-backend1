@@ -16,7 +16,7 @@ public class PacienteService {
     }
 
 
-    public PacienteService(@Qualifier("pacienteDAOH2") IDao daoPaciente) {
+    public PacienteService(IDao<Paciente> daoPaciente) {
         this.daoPaciente = daoPaciente;
     }
 

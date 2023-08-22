@@ -15,7 +15,7 @@ public class PacienteControlador {
 
     @Autowired
     public PacienteControlador(PacienteService pacienteService) {
-        PacienteDAOH2.crearTablaPaciente();
+
         this.pacienteService = pacienteService;
     }
 
