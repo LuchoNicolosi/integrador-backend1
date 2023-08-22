@@ -29,9 +29,4 @@ public class db {
         return connection;
     }
 
-    public static void RunTables() {
-        OdontologoDAOH2.crearTablaOdontologo();
-        PacienteDAOH2.crearTablaPaciente();
-        TurnoDAOH2.crearTablaTurno();
-    }
 }

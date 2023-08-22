@@ -2,7 +2,7 @@ package com.grupo4.integrador;
 
 import com.grupo4.integrador.repositorio.implementaciones.OdontologoDAOH2;
 import com.grupo4.integrador.entidades.Odontologo;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import com.grupo4.integrador.servicios.OdontologoService;
 
@@ -16,14 +16,10 @@ public class OdontologoDAOH2Test {
     Odontologo od4 = new Odontologo(4, "abc-1234567", "Pepa", "as");
     OdontologoService os = new OdontologoService(new OdontologoDAOH2());
 
-    @BeforeEach
-    public void crearTablas() {
-        OdontologoDAOH2.crearTablaOdontologo();
-    }
 
     @Test
     public void registrar() {
-        assertEquals(true, os.registrar(od));
+        Assertions.assertNotNull(os.registrar(od));
     }
 
     @Test
@@ -32,6 +28,6 @@ public class OdontologoDAOH2Test {
         os.registrar(od2);
         os.registrar(od3);
         os.registrar(od4);
-        assertEquals(4, os.listar().size());
+        Assertions.assertEquals(4, os.listar().size());
     }
 }

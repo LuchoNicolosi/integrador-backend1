@@ -19,16 +19,6 @@ import static com.grupo4.integrador.repositorio.implementaciones.db.getConnectio
 public class TurnoDAOH2 implements IDao<Turno> {
     private final static Logger LOGGER = Logger.getLogger(TurnoDAOH2.class);
     private Integer autoIncrementId = 0;
-
-    public static void crearTablaTurno() {
-        try (Statement stm = getConnection().createStatement();) {
-            stm.execute(Query.CREATE_TABLE_TURNO);
-            LOGGER.info("Tabla turno creada con exito!");
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
     @Override
     public Turno registrar(Turno turno) {
         Turno tur = null;

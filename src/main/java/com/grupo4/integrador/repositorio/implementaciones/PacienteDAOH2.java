@@ -14,16 +14,6 @@ import java.util.List;
 public class PacienteDAOH2 implements IDao<Paciente> {
     private final static Logger LOGGER = Logger.getLogger(PacienteDAOH2.class);
     private Integer autoIncrementId = 0;
-
-    public static void crearTablaPaciente() {
-        try (Statement stm = db.getConnection().createStatement();) {
-            stm.execute(Query.CREATE_TABLE_PACIENTE);
-            LOGGER.info("Tabla paciente creada con exito!");
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
     @Override
     public Paciente registrar(Paciente paciente) {
         Paciente pac = null;

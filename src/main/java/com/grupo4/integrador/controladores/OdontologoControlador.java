@@ -1,6 +1,5 @@
 package com.grupo4.integrador.controladores;
 
-import com.grupo4.integrador.repositorio.implementaciones.OdontologoDAOH2;
 import com.grupo4.integrador.entidades.Odontologo;
 import com.grupo4.integrador.servicios.OdontologoService;
 import org.springframework.beans.factory.annotation.Autowired;
