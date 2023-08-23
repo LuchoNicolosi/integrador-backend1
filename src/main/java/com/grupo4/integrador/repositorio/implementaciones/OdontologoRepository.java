@@ -1,12 +1,10 @@
 package com.grupo4.integrador.repositorio.implementaciones;
 
 import com.grupo4.integrador.entidades.Odontologo;
-import com.grupo4.integrador.repositorio.IDao;
+import com.grupo4.integrador.repositorio.IRepository;
 
 import com.grupo4.integrador.utilidades.Query;
 import org.apache.log4j.Logger;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
 
 
@@ -17,7 +15,7 @@ import java.util.List;
 import static com.grupo4.integrador.repositorio.implementaciones.db.getConnection;
 
 @Repository
-public class OdontologoDAOH2 implements IDao<Odontologo> {
+public class OdontologoRepository implements IRepository<Odontologo> {
     private final static Logger LOGGER = Logger.getLogger(db.class);
     private Integer autoIncrementId = 0;
 

@@ -1,19 +1,16 @@
-package com.grupo4.integrador.servicios;
+package com.grupo4.integrador.entidades.servicios;
 
-import com.grupo4.integrador.entidades.Odontologo;
-import com.grupo4.integrador.repositorio.IDao;
+import com.grupo4.integrador.repositorio.IRepository;
 import com.grupo4.integrador.entidades.Paciente;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class PacienteService {
-    IDao<Paciente> daoPaciente;
+    IRepository<Paciente> daoPaciente;
 
-    public PacienteService(IDao<Paciente> daoPaciente) {
+    public PacienteService(IRepository<Paciente> daoPaciente) {
         this.daoPaciente = daoPaciente;
     }
 

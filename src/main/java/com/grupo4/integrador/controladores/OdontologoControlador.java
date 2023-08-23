@@ -1,8 +1,7 @@
 package com.grupo4.integrador.controladores;
 
 import com.grupo4.integrador.entidades.Odontologo;
-import com.grupo4.integrador.entidades.Paciente;
-import com.grupo4.integrador.servicios.OdontologoService;
+import com.grupo4.integrador.entidades.servicios.OdontologoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

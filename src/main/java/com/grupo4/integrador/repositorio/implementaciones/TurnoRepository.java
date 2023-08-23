@@ -1,24 +1,21 @@
 package com.grupo4.integrador.repositorio.implementaciones;
 
-import com.grupo4.integrador.repositorio.IDao;
+import com.grupo4.integrador.repositorio.IRepository;
 import com.grupo4.integrador.entidades.Turno;
 import com.grupo4.integrador.utilidades.Query;
 import org.apache.log4j.Logger;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 import static com.grupo4.integrador.repositorio.implementaciones.db.getConnection;
 
 @Repository
-public class TurnoDAOH2 implements IDao<Turno> {
-    private final static Logger LOGGER = Logger.getLogger(TurnoDAOH2.class);
+public class TurnoRepository implements IRepository<Turno> {
+    private final static Logger LOGGER = Logger.getLogger(TurnoRepository.class);
     private Integer autoIncrementId = 0;
 
     @Override

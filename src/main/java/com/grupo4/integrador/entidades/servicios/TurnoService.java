@@ -1,6 +1,6 @@
-package com.grupo4.integrador.servicios;
+package com.grupo4.integrador.entidades.servicios;
 
-import com.grupo4.integrador.repositorio.IDao;
+import com.grupo4.integrador.repositorio.IRepository;
 import com.grupo4.integrador.entidades.Turno;
 import org.springframework.stereotype.Service;
 
@@ -8,9 +8,9 @@ import java.util.List;
 
 @Service
 public class TurnoService {
-    IDao<Turno> daoTurno;
+    IRepository<Turno> daoTurno;
 
-    public TurnoService(IDao<Turno> daoTurno) {
+    public TurnoService(IRepository<Turno> daoTurno) {
         this.daoTurno = daoTurno;
     }
 

@@ -1,10 +1,8 @@
 package com.grupo4.integrador.repositorio;
 
-import org.springframework.context.annotation.Bean;
-
 import java.util.List;
 
-public interface IDao<T> {
+public interface IRepository<T> {
     T registrar(T t);
 
     List<T> listar();

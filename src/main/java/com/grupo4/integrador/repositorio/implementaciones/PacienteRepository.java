@@ -1,7 +1,7 @@
 package com.grupo4.integrador.repositorio.implementaciones;
 
 
-import com.grupo4.integrador.repositorio.IDao;
+import com.grupo4.integrador.repositorio.IRepository;
 import com.grupo4.integrador.entidades.Paciente;
 import com.grupo4.integrador.utilidades.Query;
 import org.apache.log4j.Logger;
@@ -15,8 +15,8 @@ import java.util.List;
 import static com.grupo4.integrador.repositorio.implementaciones.db.getConnection;
 
 @Repository
-public class PacienteDAOH2 implements IDao<Paciente> {
-    private final static Logger LOGGER = Logger.getLogger(PacienteDAOH2.class);
+public class PacienteRepository implements IRepository<Paciente> {
+    private final static Logger LOGGER = Logger.getLogger(PacienteRepository.class);
     private Integer autoIncrementId = 0;
 
     @Override
