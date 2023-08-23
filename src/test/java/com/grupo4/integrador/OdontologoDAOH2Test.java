@@ -6,8 +6,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import com.grupo4.integrador.servicios.OdontologoService;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 public class OdontologoDAOH2Test {
 
     Odontologo od = new Odontologo(1, "abc-1234", "Leonardo", "Spadavecchia");

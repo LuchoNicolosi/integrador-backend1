@@ -1,5 +1,6 @@
 package com.grupo4.integrador.repositorio.implementaciones;
 
+
 import com.grupo4.integrador.repositorio.IDao;
 import com.grupo4.integrador.entidades.Paciente;
 import com.grupo4.integrador.utilidades.Query;
@@ -10,10 +11,14 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
+import static com.grupo4.integrador.repositorio.implementaciones.db.getConnection;
+
 @Repository
 public class PacienteDAOH2 implements IDao<Paciente> {
     private final static Logger LOGGER = Logger.getLogger(PacienteDAOH2.class);
     private Integer autoIncrementId = 0;
+
     @Override
     public Paciente registrar(Paciente paciente) {
         Paciente pac = null;
@@ -36,16 +41,46 @@ public class PacienteDAOH2 implements IDao<Paciente> {
     @Override
     public List<Paciente> listar() {
         List<Paciente> pacientes = new ArrayList<>();
-        try (PreparedStatement pst = db.getConnection().prepareStatement("SELECT * FROM PACIENTE")) {
+        try (PreparedStatement pst = db.getConnection().prepareStatement(Query.LISTAR_PACIENTES)) {
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
                 pacientes.add(new Paciente(rs.getInt("ID"), rs.getString("NOMBRE"), rs.getString("APELLIDO"), rs.getString("DOMICILIO"), rs.getString("DNI"), rs.getString("FECHA_ALTA")));
             }
             LOGGER.info(pacientes);
         } catch (Exception e) {
-            LOGGER.error("error al listar los odontologos");
+            LOGGER.error("error al listar los pacientes");
             return new ArrayList<>();
         }
         return pacientes;
+    }
+
+    @Override
+    public Paciente buscar(int id) {
+        Paciente paciente = null;
+        try (PreparedStatement pst = getConnection().prepareStatement(Query.BUSCAR_PACIENTE)) {
+            pst.setInt(1, id);
+            ResultSet rs = pst.executeQuery();
+            if (rs.next()) {
+                paciente = new Paciente(rs.getInt("ID"), rs.getString("NOMBRE"), rs.getString("APELLIDO"), rs.getString("DOMICILIO"), rs.getString("DNI"), rs.getString("FECHA_ALTA"));
+            }
+            LOGGER.info("PacienteId: " + paciente.getId());
+        } catch (Exception e) {
+            LOGGER.error("Paciente no encontrado." + e);
+        }
+        return paciente;
+    }
+
+
+    @Override
+    public void eliminar(int id) {
+        if (buscar(id) != null) {
+            try (PreparedStatement pst = getConnection().prepareStatement(Query.DELETE_PACIENTE)) {
+                pst.setInt(1, id);
+                pst.execute();
+                LOGGER.info("Paciente eliminado - ID >" + id);
+            } catch (Exception e) {
+                LOGGER.error("Error eliminando el Paciente.");
+            }
+        }
     }
 }

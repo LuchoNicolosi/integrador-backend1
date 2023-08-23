@@ -4,6 +4,7 @@ import com.grupo4.integrador.repositorio.IDao;
 import com.grupo4.integrador.entidades.Turno;
 import com.grupo4.integrador.utilidades.Query;
 import org.apache.log4j.Logger;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
@@ -19,6 +20,7 @@ import static com.grupo4.integrador.repositorio.implementaciones.db.getConnectio
 public class TurnoDAOH2 implements IDao<Turno> {
     private final static Logger LOGGER = Logger.getLogger(TurnoDAOH2.class);
     private Integer autoIncrementId = 0;
+
     @Override
     public Turno registrar(Turno turno) {
         Turno tur = null;
@@ -52,6 +54,16 @@ public class TurnoDAOH2 implements IDao<Turno> {
             return new ArrayList<>();
         }
         return turnos;
+    }
+
+    @Override
+    public Turno buscar(int id) {
+        return null;
+    }
+
+    @Override
+    public void eliminar(int id) {
+
     }
 
 }

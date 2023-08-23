@@ -1284,3 +1284,235 @@ Invalid value "6" for parameter "parameterIndex" [90008-214]
 [2023-08-21 21:35:43] [ INFO ] [PacienteDAOH2:37] SE REGISTRO UN PACIENTE!
 [2023-08-21 21:35:46] [ INFO ] [db:23] Conexion exitosa a la db.
 [2023-08-21 21:35:46] [ INFO ] [TurnoDAOH2:43] se registro un turno!
+[2023-08-21 21:50:04] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 21:50:04] [ INFO ] [db:30] se registro un odontologo!
+[2023-08-21 21:50:07] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 21:50:07] [ INFO ] [PacienteDAOH2:27] SE REGISTRO UN PACIENTE!
+[2023-08-21 21:50:09] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-21 21:50:09] [ INFO ] [TurnoDAOH2:33] se registro un turno!
+[2023-08-22 16:03:44] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:03:44] [ INFO ] [db:49] []
+[2023-08-22 16:04:02] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:04:02] [ INFO ] [db:30] se registro un odontologo!
+[2023-08-22 16:04:05] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:04:05] [ INFO ] [db:49] [Odontologo(nMatricula=lopez)]
+[2023-08-22 16:04:14] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:04:14] [ INFO ] [db:30] se registro un odontologo!
+[2023-08-22 16:04:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:04:23] [ INFO ] [db:30] se registro un odontologo!
+[2023-08-22 16:04:32] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:04:32] [ INFO ] [db:49] [Odontologo(nMatricula=lopez), Odontologo(nMatricula=lopez), Odontologo(nMatricula=ramirez)]
+[2023-08-22 16:48:34] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:48:34] [ INFO ] [db:50] []
+[2023-08-22 16:48:38] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:48:38] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 16:48:41] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:48:41] [ INFO ] [db:50] [Odontologo(nMatricula=ramirez)]
+[2023-08-22 16:52:32] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:52:32] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 16:52:36] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:52:36] [ INFO ] [db:50] [Odontologo(nMatricula=ramirez)]
+[2023-08-22 16:56:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:56:59] [ INFO ] [PacienteDAOH2:27] SE REGISTRO UN PACIENTE!
+[2023-08-22 16:57:08] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:57:08] [ INFO ] [PacienteDAOH2:44] [Paciente(domicilio=ohiggins 90, dni=20459965, fechaAlta=20-12-2023)]
+[2023-08-22 16:59:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:59:22] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 16:59:30] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 16:59:30] [ INFO ] [db:50] [Odontologo(nMatricula=lopez)]
+[2023-08-22 17:09:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 17:09:18] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 17:09:20] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 17:09:20] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 17:09:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 17:09:22] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 17:09:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 17:09:23] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 17:17:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 17:17:18] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 17:17:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 17:17:49] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 17:17:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 17:17:57] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 18:25:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:25:49] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 18:26:04] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:26:04] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 18:26:08] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:26:08] [ INFO ] [db:66] OdontologoId: 1
+[2023-08-22 18:26:14] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:26:14] [ INFO ] [db:66] OdontologoId: 2
+[2023-08-22 18:26:52] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:26:52] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 18:26:58] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:26:58] [ INFO ] [db:66] OdontologoId: 3
+[2023-08-22 18:27:02] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:27:12] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:27:55] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:27:55] [ ERROR] [db:69] Usuario no encontrado.
+java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Odontologo.getId()" because "odontologo" is null
+[2023-08-22 18:28:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:28:37] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 18:28:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:28:43] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-22 18:28:52] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:28:52] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-22 18:29:01] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:29:01] [ ERROR] [db:69] Usuario no encontrado.
+java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Odontologo.getId()" because "odontologo" is null
+[2023-08-22 18:39:58] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:39:58] [ INFO ] [PacienteDAOH2:31] SE REGISTRO UN PACIENTE!
+[2023-08-22 18:40:07] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:40:07] [ INFO ] [PacienteDAOH2:31] SE REGISTRO UN PACIENTE!
+[2023-08-22 18:40:11] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:40:11] [ INFO ] [PacienteDAOH2:48] [Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023), Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-22 18:40:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:40:18] [ INFO ] [PacienteDAOH2:65] PacienteId > 1
+[2023-08-22 18:40:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:40:22] [ INFO ] [PacienteDAOH2:65] PacienteId > 2
+[2023-08-22 18:40:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:40:26] [ ERROR] [PacienteDAOH2:67] Paciente no encontrado. java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because "paciente" is null
+[2023-08-22 18:47:47] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:47:47] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 18:47:52] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:47:52] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 18:47:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:47:57] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 18:48:04] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:48:04] [ INFO ] [db:67] OdontologoId: 2
+[2023-08-22 18:48:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:48:23] [ INFO ] [db:67] OdontologoId: 2
+[2023-08-22 18:48:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:48:23] [ INFO ] [db:80] Odontologo eliminado - ID >
+[2023-08-22 18:49:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:49:26] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-22 18:49:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:49:26] [ INFO ] [db:80] Odontologo eliminado - ID >
+[2023-08-22 18:53:12] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:53:12] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 18:53:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:53:22] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-22 18:53:25] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:53:25] [ INFO ] [db:50] [Odontologo(nMatricula=abc-10-a), Odontologo(nMatricula=abc-10-a)]
+[2023-08-22 18:53:33] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:53:33] [ INFO ] [db:67] OdontologoId: 2
+[2023-08-22 18:53:39] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:53:39] [ INFO ] [db:67] OdontologoId: 2
+[2023-08-22 18:53:39] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:53:39] [ INFO ] [db:80] Odontologo eliminado - ID >2
+[2023-08-22 18:53:41] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:53:41] [ INFO ] [db:50] [Odontologo(nMatricula=abc-10-a)]
+[2023-08-22 18:54:00] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:54:00] [ INFO ] [PacienteDAOH2:31] SE REGISTRO UN PACIENTE!
+[2023-08-22 18:54:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:54:10] [ INFO ] [PacienteDAOH2:31] SE REGISTRO UN PACIENTE!
+[2023-08-22 18:54:13] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:54:13] [ INFO ] [PacienteDAOH2:48] [Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023), Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-22 18:54:20] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:54:20] [ INFO ] [PacienteDAOH2:65] PacienteId: 2
+[2023-08-22 18:54:24] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:54:24] [ ERROR] [PacienteDAOH2:67] Paciente no encontrado. java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because "paciente" is null
+[2023-08-22 18:54:33] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:54:33] [ INFO ] [PacienteDAOH2:65] PacienteId: 1
+[2023-08-22 18:54:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:54:37] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-22 18:54:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:54:37] [ INFO ] [db:80] Odontologo eliminado - ID >1
+[2023-08-22 18:54:41] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:54:41] [ INFO ] [PacienteDAOH2:48] [Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023), Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-22 18:54:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:54:43] [ INFO ] [PacienteDAOH2:48] [Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023), Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-22 18:54:47] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:54:47] [ ERROR] [db:69] Odontologo no encontrado. java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Odontologo.getId()" because "odontologo" is null
+[2023-08-22 18:54:47] [ ERROR] [db:85] Odontologo no encontrado.
+[2023-08-22 18:54:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:54:50] [ INFO ] [PacienteDAOH2:48] [Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023), Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-22 18:55:05] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:55:05] [ INFO ] [PacienteDAOH2:65] PacienteId: 1
+[2023-08-22 18:55:19] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:55:19] [ ERROR] [db:69] Odontologo no encontrado. java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Odontologo.getId()" because "odontologo" is null
+[2023-08-22 18:55:19] [ ERROR] [db:85] Odontologo no encontrado.
+[2023-08-22 18:56:15] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:56:15] [ INFO ] [PacienteDAOH2:31] SE REGISTRO UN PACIENTE!
+[2023-08-22 18:56:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:56:21] [ INFO ] [PacienteDAOH2:31] SE REGISTRO UN PACIENTE!
+[2023-08-22 18:56:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:56:23] [ INFO ] [PacienteDAOH2:48] [Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023), Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-22 18:56:30] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:56:30] [ INFO ] [PacienteDAOH2:65] PacienteId: 1
+[2023-08-22 18:56:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:56:35] [ INFO ] [PacienteDAOH2:65] PacienteId: 2
+[2023-08-22 18:56:41] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:56:41] [ INFO ] [PacienteDAOH2:48] [Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023), Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-22 18:56:55] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:56:55] [ INFO ] [PacienteDAOH2:65] PacienteId: 1
+[2023-08-22 18:57:03] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:57:03] [ INFO ] [PacienteDAOH2:48] [Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023), Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-22 18:57:08] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:57:08] [ INFO ] [PacienteDAOH2:65] PacienteId: 1
+[2023-08-22 18:57:08] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:57:08] [ INFO ] [PacienteDAOH2:79] Paciente eliminado - ID >1
+[2023-08-22 18:57:14] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 18:57:14] [ INFO ] [PacienteDAOH2:48] [Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-22 21:10:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:10:43] [ INFO ] [db:33] se registro un odontologo!
+[2023-08-22 21:10:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:10:43] [ INFO ] [db:33] se registro un odontologo!
+[2023-08-22 21:10:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:10:49] [ INFO ] [db:33] se registro un odontologo!
+[2023-08-22 21:10:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:10:49] [ INFO ] [db:33] se registro un odontologo!
+[2023-08-22 21:10:53] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:10:53] [ INFO ] [db:33] se registro un odontologo!
+[2023-08-22 21:10:53] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:10:53] [ INFO ] [db:33] se registro un odontologo!
+[2023-08-22 21:52:09] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:52:09] [ INFO ] [db:33] se registro un odontologo!
+[2023-08-22 21:52:17] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:52:17] [ INFO ] [db:33] se registro un odontologo!
+[2023-08-22 21:52:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:52:22] [ INFO ] [db:52] [Odontologo(nMatricula=abc-10-a), Odontologo(nMatricula=abc-10-a)]
+[2023-08-22 21:52:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:52:28] [ INFO ] [db:69] OdontologoId: 2
+[2023-08-22 21:52:33] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:52:33] [ ERROR] [db:71] Odontologo no encontrado. java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Odontologo.getId()" because "odontologo" is null
+[2023-08-22 21:52:54] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:52:54] [ INFO ] [db:69] OdontologoId: 2
+[2023-08-22 21:52:54] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:52:54] [ INFO ] [db:69] OdontologoId: 2
+[2023-08-22 21:52:54] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:52:54] [ INFO ] [db:82] Odontologo eliminado - ID >2
+[2023-08-22 21:52:58] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:52:58] [ INFO ] [db:52] [Odontologo(nMatricula=abc-10-a)]
+[2023-08-22 21:53:02] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:02] [ ERROR] [db:71] Odontologo no encontrado. java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Odontologo.getId()" because "odontologo" is null
+[2023-08-22 21:53:07] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:07] [ INFO ] [db:69] OdontologoId: 1
+[2023-08-22 21:53:07] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:07] [ INFO ] [db:69] OdontologoId: 1
+[2023-08-22 21:53:07] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:07] [ INFO ] [db:82] Odontologo eliminado - ID >1
+[2023-08-22 21:53:11] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:11] [ INFO ] [db:52] []
+[2023-08-22 21:53:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:18] [ INFO ] [PacienteDAOH2:32] SE REGISTRO UN PACIENTE!
+[2023-08-22 21:53:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:23] [ INFO ] [PacienteDAOH2:32] SE REGISTRO UN PACIENTE!
+[2023-08-22 21:53:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:26] [ INFO ] [PacienteDAOH2:49] [Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023), Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-22 21:53:30] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:30] [ INFO ] [PacienteDAOH2:66] PacienteId: 1
+[2023-08-22 21:53:34] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:34] [ INFO ] [PacienteDAOH2:66] PacienteId: 2
+[2023-08-22 21:53:39] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:39] [ ERROR] [PacienteDAOH2:68] Paciente no encontrado.java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because "paciente" is null
+[2023-08-22 21:53:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:43] [ INFO ] [PacienteDAOH2:66] PacienteId: 1
+[2023-08-22 21:53:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:43] [ INFO ] [PacienteDAOH2:66] PacienteId: 1
+[2023-08-22 21:53:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:43] [ INFO ] [PacienteDAOH2:80] Paciente eliminado - ID >1
+[2023-08-22 21:53:48] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:48] [ ERROR] [PacienteDAOH2:68] Paciente no encontrado.java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because "paciente" is null
+[2023-08-22 21:53:50] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-22 21:53:50] [ INFO ] [PacienteDAOH2:49] [Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023)]

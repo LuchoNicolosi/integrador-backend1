@@ -9,4 +9,7 @@ public interface IDao<T> {
 
     List<T> listar();
 
+    T buscar(int id);
+
+    void eliminar(int id);
 }

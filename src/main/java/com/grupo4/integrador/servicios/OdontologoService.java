@@ -1,9 +1,9 @@
 package com.grupo4.integrador.servicios;
 
+import com.grupo4.integrador.entidades.Paciente;
 import com.grupo4.integrador.repositorio.IDao;
 import com.grupo4.integrador.entidades.Odontologo;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,10 +11,6 @@ import java.util.List;
 @Service
 public class OdontologoService {
     private IDao<Odontologo> daoOdontologo;
-
-    public IDao<Odontologo> getDaoOdontologo() {
-        return daoOdontologo;
-    }
 
     public OdontologoService(IDao<Odontologo> daoOdontologo) {
         this.daoOdontologo = daoOdontologo;
@@ -26,6 +22,14 @@ public class OdontologoService {
 
     public List<Odontologo> listar() {
         return daoOdontologo.listar();
+    }
+
+    public Odontologo buscar(int id) {
+        return daoOdontologo.buscar(id);
+    }
+
+    public void eliminar(int id) {
+        daoOdontologo.eliminar(id);
     }
 
 }
