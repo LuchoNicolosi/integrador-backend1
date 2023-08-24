@@ -12,6 +12,9 @@ public abstract class Usuario {
     private String nombre;
     private String apellido;
 
+    public Usuario(){
+
+    }
     public Usuario(int id, String nombre, String apellido) {
         this.id = id;
         this.nombre = nombre;

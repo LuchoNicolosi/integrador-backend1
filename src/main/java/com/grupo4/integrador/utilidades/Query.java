@@ -17,6 +17,9 @@ public class Query {
     public final static String DELETE_PACIENTE = "DELETE FROM PACIENTE WHERE id=?;";
 
     //TURNOS
+    public final static String LISTAR_TURNOS = "SELECT * FROM TURNO;";
     public final static String INSERT_VALUE_TURNO = "INSERT INTO TURNO(paciente_id,odontologo_id,fecha_hora) VALUES(?,?,?);";
-
+    public final static String BUSCAR_TURNO = "SELECT * FROM TURNO WHERE ID=?;";
+    public final static String ACTUALIZAR_TURNO = "UPDATE TURNO SET odontologo_id=? fecha_hora=?  WHERE id=?;";
+    public final static String DELETE_TURNO = "DELETE FROM TURNO WHERE id=?;";
 }

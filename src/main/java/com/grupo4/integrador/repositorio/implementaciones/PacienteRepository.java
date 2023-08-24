@@ -83,4 +83,9 @@ public class PacienteRepository implements IRepository<Paciente> {
             }
         }
     }
+
+    @Override
+    public Paciente modificar(Paciente paciente) {
+        return null;
+    }
 }

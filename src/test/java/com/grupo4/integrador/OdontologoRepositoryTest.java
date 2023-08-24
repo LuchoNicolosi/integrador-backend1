@@ -4,7 +4,7 @@ import com.grupo4.integrador.repositorio.implementaciones.OdontologoRepository;
 import com.grupo4.integrador.entidades.Odontologo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import com.grupo4.integrador.entidades.servicios.OdontologoService;
+import com.grupo4.integrador.servicios.OdontologoService;
 
 public class OdontologoRepositoryTest {
 

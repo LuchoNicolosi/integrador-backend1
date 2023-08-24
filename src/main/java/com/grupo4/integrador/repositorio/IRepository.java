@@ -10,4 +10,6 @@ public interface IRepository<T> {
     T buscar(int id);
 
     void eliminar(int id);
+
+    T modificar(T t);
 }

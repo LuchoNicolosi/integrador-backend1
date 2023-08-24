@@ -20,14 +20,13 @@ public class TurnoRepository implements IRepository<Turno> {
 
     @Override
     public Turno registrar(Turno turno) {
-        Turno tur = null;
+        Turno tur = turno;
         //TODO arreglar el tema del DATE, por que lo almacene como STRING
         try (PreparedStatement pst = getConnection().prepareStatement(Query.INSERT_VALUE_TURNO)) {
-            pst.setInt(1, turno.getPacienteId());
-            pst.setInt(2, turno.getOdontologoId());
-            pst.setString(3, turno.getFechaHora());
+            pst.setInt(1, turno.getPaciente().getId());
+            pst.setInt(2, turno.getOdontologo().getId());
+            pst.setString(3, turno.getFecha());
             pst.execute();
-            tur = turno;
             tur.setId(autoIncrementId += 1);
             LOGGER.info("se registro un turno!");
 
@@ -39,18 +38,7 @@ public class TurnoRepository implements IRepository<Turno> {
 
     @Override
     public List<Turno> listar() {
-        List<Turno> turnos = new ArrayList<>();
-        try (PreparedStatement pst = getConnection().prepareStatement("SELECT * FROM PACIENTE")) {
-            ResultSet rs = pst.executeQuery();
-            while (rs.next()) {
-                turnos.add(new Turno(rs.getInt("ID"), rs.getInt(2), rs.getInt(3), rs.getString(4)));
-            }
-            LOGGER.info(turnos);
-        } catch (Exception e) {
-            LOGGER.error("error al listar los odontologos");
-            return new ArrayList<>();
-        }
-        return turnos;
+        return null;
     }
 
     @Override
@@ -60,8 +48,13 @@ public class TurnoRepository implements IRepository<Turno> {
 
     @Override
     public void eliminar(int id) {
-
     }
+
+    @Override
+    public Turno modificar(Turno turno) {
+        return null;
+    }
+
 
 }
 

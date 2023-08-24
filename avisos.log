@@ -1516,3 +1516,226 @@ java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.O
 [2023-08-22 21:53:48] [ ERROR] [PacienteDAOH2:68] Paciente no encontrado.java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because "paciente" is null
 [2023-08-22 21:53:50] [ INFO ] [db:23] Conexion exitosa a la db.
 [2023-08-22 21:53:50] [ INFO ] [PacienteDAOH2:49] [Paciente(domicilio=ohiggins259, dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-23 20:56:50] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 20:56:50] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-23 20:56:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 20:56:56] [ INFO ] [PacienteRepository:32] SE REGISTRO UN PACIENTE!
+[2023-08-23 21:00:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:00:18] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 21:00:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:00:18] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 21:00:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:00:18] [ INFO ] [TurnoRepository:32] se registro un turno!
+[2023-08-23 21:01:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:01:35] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-23 21:01:38] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:01:38] [ INFO ] [PacienteRepository:32] SE REGISTRO UN PACIENTE!
+[2023-08-23 21:01:40] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:01:40] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 21:01:40] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:01:40] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 21:01:40] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:01:40] [ INFO ] [TurnoRepository:32] se registro un turno!
+[2023-08-23 21:02:00] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:02:00] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 21:02:00] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:02:00] [ ERROR] [db:69] Odontologo no encontrado. java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Odontologo.getId()" because "odontologo" is null
+[2023-08-23 21:25:24] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:25:24] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-23 21:25:27] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:25:27] [ INFO ] [PacienteRepository:32] SE REGISTRO UN PACIENTE!
+[2023-08-23 21:25:33] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:25:33] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 21:25:33] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:25:33] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 21:25:33] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:25:33] [ ERROR] [TurnoRepository:35] Error al registrar el turno!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"
+Referential integrity constraint violation: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"; SQL statement:
+INSERT INTO TURNO(paciente_id,odontologo_id,fecha_hora) VALUES(?,?,?) [23506-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+[2023-08-23 21:26:00] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:26:00] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 21:26:00] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:26:00] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 21:26:00] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:26:00] [ ERROR] [TurnoRepository:35] Error al registrar el turno!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"
+Referential integrity constraint violation: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"; SQL statement:
+INSERT INTO TURNO(paciente_id,odontologo_id,fecha_hora) VALUES(?,?,?) [23506-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+[2023-08-23 21:27:17] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:27:18] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 21:27:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:27:18] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 21:27:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:27:18] [ ERROR] [TurnoRepository:35] Error al registrar el turno!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"
+Referential integrity constraint violation: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"; SQL statement:
+INSERT INTO TURNO(paciente_id,odontologo_id,fecha_hora) VALUES(?,?,?) [23506-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+[2023-08-23 21:28:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:28:57] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 21:28:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:28:57] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 21:28:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:28:57] [ ERROR] [TurnoRepository:35] Error al registrar el turno!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"
+Referential integrity constraint violation: "CONSTRAINT_4C: PUBLIC.TURNO FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTE(ID) (0)"; SQL statement:
+INSERT INTO TURNO(paciente_id,odontologo_id,fecha_hora) VALUES(?,?,?) [23506-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+[2023-08-23 21:32:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:32:10] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-23 21:32:19] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:32:19] [ INFO ] [PacienteRepository:32] SE REGISTRO UN PACIENTE!
+[2023-08-23 21:32:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:32:28] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 21:32:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:32:28] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 21:32:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:32:28] [ INFO ] [TurnoRepository:32] se registro un turno!
+[2023-08-23 21:42:31] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:42:31] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-23 21:42:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:42:35] [ INFO ] [PacienteRepository:32] SE REGISTRO UN PACIENTE!
+[2023-08-23 21:42:39] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:42:39] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 21:42:39] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:42:39] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 21:42:39] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:42:39] [ INFO ] [TurnoRepository:31] se registro un turno!
+[2023-08-23 21:42:47] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:42:47] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 21:42:47] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:42:47] [ ERROR] [db:69] Odontologo no encontrado. java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Odontologo.getId()" because "odontologo" is null
+[2023-08-23 21:43:36] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:43:36] [ ERROR] [PacienteRepository:68] Paciente no encontrado.java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because "paciente" is null
+[2023-08-23 21:43:36] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 21:43:36] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 22:38:29] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:38:29] [ ERROR] [PacienteRepository:68] Paciente no encontrado.java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because "paciente" is null
+[2023-08-23 22:38:29] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:38:29] [ ERROR] [db:69] Odontologo no encontrado. java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Odontologo.getId()" because "odontologo" is null
+[2023-08-23 22:38:32] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:38:32] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-23 22:38:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:38:37] [ INFO ] [PacienteRepository:32] SE REGISTRO UN PACIENTE!
+[2023-08-23 22:38:41] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:38:41] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 22:38:41] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:38:41] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 22:38:41] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:38:41] [ INFO ] [TurnoRepository:31] se registro un turno!
+[2023-08-23 22:39:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:39:21] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 22:39:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:39:21] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 22:39:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:39:21] [ INFO ] [TurnoRepository:31] se registro un turno!
+[2023-08-23 22:41:50] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:41:50] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-23 22:41:53] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:41:53] [ INFO ] [PacienteRepository:32] SE REGISTRO UN PACIENTE!
+[2023-08-23 22:41:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:41:56] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 22:41:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:41:56] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 22:41:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:41:56] [ INFO ] [TurnoRepository:31] se registro un turno!
+[2023-08-23 22:48:01] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:48:01] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-23 22:48:04] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:48:04] [ INFO ] [PacienteRepository:32] SE REGISTRO UN PACIENTE!
+[2023-08-23 22:48:07] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:48:07] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 22:48:07] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:48:07] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 22:48:07] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:48:07] [ INFO ] [TurnoRepository:31] se registro un turno!
+[2023-08-23 22:48:07] [ INFO ] [TurnoControlador:36] Se pudo crear el turno
+[2023-08-23 22:49:16] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:49:16] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-23 22:49:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:49:18] [ INFO ] [PacienteRepository:32] SE REGISTRO UN PACIENTE!
+[2023-08-23 22:49:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:49:23] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 22:49:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:49:23] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 22:49:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:49:23] [ INFO ] [TurnoRepository:31] se registro un turno!
+[2023-08-23 22:49:23] [ INFO ] [TurnoControlador:36] Se pudo crear el turno
+[2023-08-23 22:52:52] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:52:52] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-23 22:52:55] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:52:55] [ INFO ] [PacienteRepository:32] SE REGISTRO UN PACIENTE!
+[2023-08-23 22:52:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:52:59] [ INFO ] [PacienteRepository:66] PacienteId: 1
+[2023-08-23 22:52:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:52:59] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-23 22:52:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-23 22:52:59] [ INFO ] [TurnoRepository:31] se registro un turno!
+[2023-08-23 22:52:59] [ INFO ] [TurnoControlador:36] Se pudo crear el turno

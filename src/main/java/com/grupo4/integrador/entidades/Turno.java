@@ -9,16 +9,17 @@ import lombok.ToString;
 @ToString
 public class Turno {
     private int id;
-    private int pacienteId;
-    private int odontologoId;
-    private String fechaHora;
+    private Odontologo odontologo;
+    private Paciente paciente;
+    private String fecha;
 
-    public Turno(int id, int pacienteId, int odontologoId, String fechaHora) {
-        this.id = id;
-        this.pacienteId = pacienteId;
-        this.odontologoId = odontologoId;
-        this.fechaHora = fechaHora;
+    public Turno(){
+
     }
-
-
+    public Turno(int id, Odontologo odontologo, Paciente paciente, String fecha) {
+        this.id = id;
+        this.odontologo = odontologo;
+        this.paciente = paciente;
+        this.fecha = fecha;
+    }
 }

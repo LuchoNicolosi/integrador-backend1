@@ -10,16 +10,20 @@ import java.util.Date;
 @Getter
 @Setter
 @ToString
-public class Paciente extends Usuario{
+public class Paciente extends Usuario {
     private String domicilio;
     private String dni;
     private String fechaAlta;
 
-    public Paciente(int id, String nombre, String apellido, String domicilio, String dni, String fechaAlta){
-        super(id,nombre,apellido);
+    public Paciente() {
+        super();
+    }
+
+    public Paciente(int id, String nombre, String apellido, String domicilio, String dni, String fechaAlta) {
+        super(id, nombre, apellido);
         this.domicilio = domicilio;
         this.dni = dni;
-        this.fechaAlta = fechaAlta ;
+        this.fechaAlta = fechaAlta;
     }
 
 }

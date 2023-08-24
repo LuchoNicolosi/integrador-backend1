@@ -2,7 +2,7 @@ package com.grupo4.integrador.daos.implementaciones;
 
 import com.grupo4.integrador.entidades.Paciente;
 import com.grupo4.integrador.repositorio.implementaciones.PacienteRepository;
-import com.grupo4.integrador.entidades.servicios.PacienteService;
+import com.grupo4.integrador.servicios.PacienteService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

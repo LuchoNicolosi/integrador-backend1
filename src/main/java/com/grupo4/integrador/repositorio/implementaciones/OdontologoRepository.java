@@ -84,5 +84,10 @@ public class OdontologoRepository implements IRepository<Odontologo> {
         }
     }
 
+    @Override
+    public Odontologo modificar(Odontologo odontologo) {
+        return null;
+    }
+
 
 }
