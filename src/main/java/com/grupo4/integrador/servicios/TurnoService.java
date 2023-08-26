@@ -1,6 +1,6 @@
 package com.grupo4.integrador.servicios;
 
-import com.grupo4.integrador.dto.CrearTurnoDTO;
+import com.grupo4.integrador.dto.TurnoDto.CrearTurnoDto;
 import com.grupo4.integrador.entidades.Odontologo;
 import com.grupo4.integrador.entidades.Paciente;
 import com.grupo4.integrador.repositorio.IRepository;
@@ -21,7 +21,7 @@ public class TurnoService {
         this.odontologoIRepository = odontologoIRepository;
     }
 
-    public Turno registrar(CrearTurnoDTO turno) throws Exception {
+    public Turno registrar(CrearTurnoDto turno) throws Exception {
         Turno nuevoTurno = new Turno();
         Paciente paciente = pacienteIRepository.buscar(turno.getPacienteId());
         Odontologo odontologo = odontologoIRepository.buscar(turno.getOdontologoId());

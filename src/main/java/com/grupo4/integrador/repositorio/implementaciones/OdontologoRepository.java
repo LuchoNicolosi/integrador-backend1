@@ -26,7 +26,7 @@ public class OdontologoRepository implements IRepository<Odontologo> {
         try (PreparedStatement pst = getConnection().prepareStatement(Query.INSERT_VALUE_ODONTOLOGO)) {
             pst.setString(1, odontologo.getNombre());
             pst.setString(2, odontologo.getApellido());
-            pst.setString(3, odontologo.getNMatricula());
+            pst.setString(3, odontologo.getMatricula());
             pst.execute();
             LOGGER.info("se registro un odontologo!");
 

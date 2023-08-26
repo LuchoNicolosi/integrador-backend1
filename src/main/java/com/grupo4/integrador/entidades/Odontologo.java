@@ -1,6 +1,5 @@
 package com.grupo4.integrador.entidades;
 
-import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -10,15 +9,15 @@ import lombok.ToString;
 @ToString
 public class Odontologo extends Usuario {
 
-    private String nMatricula;
+    private String matricula;
 
     public Odontologo() {
         super();
     }
 
-    public Odontologo(int id, String nombre, String apellido, String nMatricula) {
+    public Odontologo(int id, String nombre, String apellido, String matricula) {
         super(id, nombre, apellido);
-        this.nMatricula = nMatricula;
+        this.matricula = matricula;
     }
 
 }

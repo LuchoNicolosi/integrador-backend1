@@ -1,4 +1,4 @@
-package com.grupo4.integrador.dto;
+package com.grupo4.integrador.dto.TurnoDto;
 
 import com.grupo4.integrador.entidades.Odontologo;
 import com.grupo4.integrador.entidades.Paciente;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class TurnoDTO {
+public class TurnoDto {
     private int id;
     private Odontologo odontologo;
     private Paciente paciente;

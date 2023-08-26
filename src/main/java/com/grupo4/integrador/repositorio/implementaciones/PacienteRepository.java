@@ -25,9 +25,8 @@ public class PacienteRepository implements IRepository<Paciente> {
         try (PreparedStatement pst = db.getConnection().prepareStatement(Query.INSERT_VALUE_PACIENTE)) {
             pst.setString(1, paciente.getNombre());
             pst.setString(2, paciente.getApellido());
-            pst.setString(3, paciente.getDomicilio());
-            pst.setString(4, paciente.getDni());
-            pst.setString(5, paciente.getFechaAlta());
+            pst.setString(3, paciente.getDni());
+            pst.setString(4, paciente.getFechaAlta());
             pst.execute();
             LOGGER.info("SE REGISTRO UN PACIENTE!");
             pac = paciente;
@@ -44,7 +43,7 @@ public class PacienteRepository implements IRepository<Paciente> {
         try (PreparedStatement pst = db.getConnection().prepareStatement(Query.LISTAR_PACIENTES)) {
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
-                pacientes.add(new Paciente(rs.getInt("ID"), rs.getString("NOMBRE"), rs.getString("APELLIDO"), rs.getString("DOMICILIO"), rs.getString("DNI"), rs.getString("FECHA_ALTA")));
+                pacientes.add(new Paciente(rs.getInt("ID"), rs.getString("NOMBRE"), rs.getString("APELLIDO"), rs.getString("DNI"), rs.getString("FECHA_ALTA")));
             }
             LOGGER.info(pacientes);
         } catch (Exception e) {
@@ -61,7 +60,7 @@ public class PacienteRepository implements IRepository<Paciente> {
             pst.setInt(1, id);
             ResultSet rs = pst.executeQuery();
             if (rs.next()) {
-                paciente = new Paciente(rs.getInt("ID"), rs.getString("NOMBRE"), rs.getString("APELLIDO"), rs.getString("DOMICILIO"), rs.getString("DNI"), rs.getString("FECHA_ALTA"));
+                paciente = new Paciente(rs.getInt("ID"), rs.getString("NOMBRE"), rs.getString("APELLIDO"), rs.getString("DNI"), rs.getString("FECHA_ALTA"));
             }
             LOGGER.info("PacienteId: " + paciente.getId());
         } catch (Exception e) {

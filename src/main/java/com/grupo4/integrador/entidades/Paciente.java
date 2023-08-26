@@ -11,7 +11,6 @@ import java.util.Date;
 @Setter
 @ToString
 public class Paciente extends Usuario {
-    private String domicilio;
     private String dni;
     private String fechaAlta;
 
@@ -19,9 +18,8 @@ public class Paciente extends Usuario {
         super();
     }
 
-    public Paciente(int id, String nombre, String apellido, String domicilio, String dni, String fechaAlta) {
+    public Paciente(int id, String nombre, String apellido, String dni, String fechaAlta) {
         super(id, nombre, apellido);
-        this.domicilio = domicilio;
         this.dni = dni;
         this.fechaAlta = fechaAlta;
     }
