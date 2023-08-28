@@ -45,7 +45,7 @@ public class PacienteControlador {
         ObjectMapper mapper = new ObjectMapper();
         List<PacienteDto> listPacientes;
         try {
-            listPacientes = mapper.convertValue(pacienteService.listar(), new TypeReference<List<PacienteDto>>() {
+            listPacientes = mapper.convertValue(pacienteService.listar(), new TypeReference<>() {
             });
         } catch (Exception e) {
             LOGGER.error("Error listando pacientes. " + e);

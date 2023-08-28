@@ -1,5 +1,7 @@
 package com.grupo4.integrador.repositorio.implementaciones;
 
+import com.grupo4.integrador.entidades.Odontologo;
+import com.grupo4.integrador.entidades.Paciente;
 import com.grupo4.integrador.repositorio.IRepository;
 import com.grupo4.integrador.entidades.Turno;
 import com.grupo4.integrador.utilidades.Query;
