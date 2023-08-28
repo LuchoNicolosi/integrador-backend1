@@ -50,6 +50,16 @@ public class TurnoRepository implements IRepository<Turno> {
 
     @Override
     public void eliminar(int id) {
+        //FALTA IMPLEMENTAR METODO BUSCAR
+        if (buscar(id) != null) {
+            try (PreparedStatement pst = getConnection().prepareStatement(Query.DELETE_TURNO)) {
+                pst.setInt(1, id);
+                pst.execute();
+                LOGGER.info("TURNO eliminado - ID >" + id);
+            } catch (Exception e) {
+                LOGGER.error("Error eliminando el TURNO.");
+            }
+        }
     }
 
     @Override
