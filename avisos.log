@@ -2281,3 +2281,358 @@ Feature not supported: "converting to class com.grupo4.integrador.entidades.Odon
 [2023-08-27 23:46:18] [ INFO ] [db:31] se registro un odontologo!
 [2023-08-27 23:46:18] [ INFO ] [OdontologoControlador:39] Odontologo creado.
 >>>>>>> 65aba3cbf42f73679cb1d39d00ba0365b258aad2
+[2023-08-28 13:39:45] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 13:39:45] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-28 13:39:45] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-28 13:39:52] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 13:39:52] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-28 13:39:52] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-28 13:40:01] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 13:40:01] [ ERROR] [PacienteRepository:66] Paciente no encontrado.java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because "paciente" is null
+[2023-08-28 13:40:01] [ ERROR] [PacienteControlador:37] Error al crear el domicilio
+[2023-08-28 13:40:08] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 13:40:08] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 13:40:08] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 13:40:08] [ INFO ] [DomicilioRepository:36] SE REGISTRO UN DOMICILIO!
+[2023-08-28 13:40:08] [ INFO ] [PacienteControlador:40] Domicilio creado!
+[2023-08-28 13:40:31] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 13:40:31] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 13:40:31] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 13:40:31] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-28 13:40:31] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 13:40:31] [ INFO ] [TurnoRepository:38] se registro un turno!
+[2023-08-28 13:40:31] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-28 13:40:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 13:40:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 13:40:35] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-28 13:40:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 13:40:35] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 13:40:35] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: [Turno(id=1, odontologo=Odontologo(matricula=null), paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-28 13:40:35] [ INFO ] [TurnoControlador:52] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(matricula=null), paciente=PacienteDto(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-28 13:41:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 13:41:22] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-28 13:41:22] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-28 14:09:19] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:09:19] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-28 14:09:19] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-28 14:09:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:09:59] [ INFO ] [db:50] [Odontologo(matricula=abc-10-a)]
+[2023-08-28 14:09:59] [ ERROR] [OdontologoControlador:52] Error en convertir odontologos
+[2023-08-28 14:13:55] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:13:55] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-28 14:13:55] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-28 14:17:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:17:23] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-28 14:17:23] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-28 14:17:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:17:43] [ INFO ] [db:50] [Odontologo(matricula=abc-10-a)]
+[2023-08-28 14:17:43] [ INFO ] [OdontologoControlador:55] Listado de odontologos
+[2023-08-28 14:19:24] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:19:24] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-28 14:19:24] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-28 14:19:30] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:19:30] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-28 14:19:30] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-28 14:19:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:19:37] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:19:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:19:37] [ INFO ] [DomicilioRepository:36] SE REGISTRO UN DOMICILIO!
+[2023-08-28 14:19:37] [ INFO ] [PacienteControlador:40] Domicilio creado!
+[2023-08-28 14:19:46] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:19:46] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:19:46] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:19:46] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-28 14:19:46] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:19:46] [ INFO ] [TurnoRepository:38] se registro un turno!
+[2023-08-28 14:19:46] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-28 14:21:55] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:21:55] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-28 14:21:55] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-28 14:22:00] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:22:00] [ INFO ] [db:50] [Odontologo(matricula=abc-10-a)]
+[2023-08-28 14:22:00] [ INFO ] [OdontologoControlador:55] Listado de odontologos
+[2023-08-28 14:22:04] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:22:04] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-28 14:22:04] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-28 14:22:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:22:10] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:22:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:22:10] [ INFO ] [DomicilioRepository:36] SE REGISTRO UN DOMICILIO!
+[2023-08-28 14:22:10] [ INFO ] [PacienteControlador:40] Domicilio creado!
+[2023-08-28 14:22:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:22:26] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:22:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:22:26] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-28 14:22:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:22:26] [ INFO ] [TurnoRepository:38] se registro un turno!
+[2023-08-28 14:22:26] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-28 14:22:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:22:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:22:28] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-28 14:22:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:22:28] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:22:28] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: [Turno(id=1, odontologo=Odontologo(matricula=abc-10-a), paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-28 14:22:29] [ INFO ] [TurnoControlador:52] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(), paciente=PacienteDto(fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-28 14:31:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:10] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-28 14:31:10] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-28 14:31:14] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:14] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-28 14:31:14] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-28 14:31:19] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:19] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:31:19] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:19] [ INFO ] [DomicilioRepository:36] SE REGISTRO UN DOMICILIO!
+[2023-08-28 14:31:19] [ INFO ] [PacienteControlador:40] Domicilio creado!
+[2023-08-28 14:31:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:23] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:31:23] [ INFO ] [DomicilioRepository:57] Lista de domicilios :[Domicilio(id=1, paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires)]
+[2023-08-28 14:31:34] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:34] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-28 14:31:34] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-28 14:31:40] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:40] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:31:40] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:40] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-28 14:31:40] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:40] [ INFO ] [TurnoRepository:38] se registro un turno!
+[2023-08-28 14:31:40] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-28 14:31:45] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:45] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:31:45] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:45] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-28 14:31:45] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:45] [ INFO ] [TurnoRepository:38] se registro un turno!
+[2023-08-28 14:31:45] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-28 14:31:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:49] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-28 14:31:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:49] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:31:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:49] [ ERROR] [db:69] Odontologo no encontrado. java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Odontologo.getId()" because "odontologo" is null
+[2023-08-28 14:31:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:49] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:31:49] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: [Turno(id=1, odontologo=Odontologo(matricula=abc-10-a), paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50), Turno(id=2, odontologo=null, paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-28 14:31:49] [ INFO ] [TurnoControlador:52] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(), paciente=PacienteDto(fechaAlta=20-12-2023), fecha=30-09-2023/16:50), TurnoDto(id=2, odontologo=null, paciente=PacienteDto(fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-28 14:31:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:31:59] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:31:59] [ INFO ] [DomicilioRepository:57] Lista de domicilios :[Domicilio(id=1, paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires)]
+[2023-08-28 14:32:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:32:10] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:32:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:32:10] [ INFO ] [DomicilioRepository:36] SE REGISTRO UN DOMICILIO!
+[2023-08-28 14:32:10] [ INFO ] [PacienteControlador:40] Domicilio creado!
+[2023-08-28 14:32:15] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:32:15] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:32:15] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:32:15] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:32:15] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:32:15] [ INFO ] [DomicilioRepository:57] Lista de domicilios :[Domicilio(id=1, paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires), Domicilio(id=2, paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), calle=av san martin, numero=180, localidad=ramos mejia, provincia=buenos aires)]
+[2023-08-28 14:33:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:33:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:33:49] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:33:49] [ INFO ] [DomicilioRepository:70] DomicilioId: 1
+[2023-08-28 14:33:55] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:33:55] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:33:55] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:33:55] [ INFO ] [DomicilioRepository:70] DomicilioId: 2
+[2023-08-28 14:34:03] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:03] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:03] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:34:03] [ INFO ] [DomicilioRepository:70] DomicilioId: 1
+[2023-08-28 14:34:09] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:09] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:09] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:34:09] [ INFO ] [DomicilioRepository:70] DomicilioId: 1
+[2023-08-28 14:34:09] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:09] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:09] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:34:09] [ INFO ] [DomicilioRepository:70] DomicilioId: 1
+[2023-08-28 14:34:09] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:09] [ INFO ] [DomicilioRepository:84] Domicilio eliminado - paciente_id = 1
+[2023-08-28 14:34:13] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:13] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:13] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:34:13] [ INFO ] [DomicilioRepository:57] Lista de domicilios :[Domicilio(id=2, paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), calle=av san martin, numero=180, localidad=ramos mejia, provincia=buenos aires)]
+[2023-08-28 14:34:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:23] [ INFO ] [PacienteRepository:48] [Paciente(dni=123456789, fechaAlta=20-12-2023), Paciente(dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-28 14:34:30] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:30] [ ERROR] [db:69] Odontologo no encontrado. java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Odontologo.getId()" because "odontologo" is null
+[2023-08-28 14:34:52] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:52] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:34:52] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:52] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:34:52] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:52] [ ERROR] [PacienteRepository:80] Error eliminando el Paciente.
+[2023-08-28 14:34:55] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:55] [ INFO ] [PacienteRepository:48] [Paciente(dni=123456789, fechaAlta=20-12-2023), Paciente(dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-28 14:34:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:34:59] [ INFO ] [PacienteRepository:48] [Paciente(dni=123456789, fechaAlta=20-12-2023), Paciente(dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-28 14:35:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:35:22] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:35:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:35:22] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:35:22] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:35:22] [ ERROR] [PacienteRepository:80] Error eliminando el Paciente.
+[2023-08-28 14:36:06] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:36:06] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:37:42] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:37:42] [ ERROR] [PacienteRepository:66] Paciente no encontrado.java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because "paciente" is null
+[2023-08-28 14:37:53] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:37:53] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-28 14:37:53] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-28 14:37:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:37:59] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:38:03] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:03] [ INFO ] [PacienteRepository:48] [Paciente(dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-28 14:38:08] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:08] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:38:08] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:08] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:38:08] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:08] [ INFO ] [PacienteRepository:78] Paciente eliminado - ID >1
+[2023-08-28 14:38:08] [ INFO ] [PacienteControlador:80] El paciente fue elimninado
+[2023-08-28 14:38:17] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:17] [ INFO ] [PacienteRepository:48] []
+[2023-08-28 14:38:20] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:20] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-28 14:38:20] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-28 14:38:23] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:23] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-28 14:38:23] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-28 14:38:28] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:28] [ INFO ] [PacienteRepository:48] [Paciente(dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-28 14:38:34] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:34] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:38:34] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:34] [ INFO ] [DomicilioRepository:36] SE REGISTRO UN DOMICILIO!
+[2023-08-28 14:38:34] [ INFO ] [PacienteControlador:40] Domicilio creado!
+[2023-08-28 14:38:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:37] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:38:37] [ INFO ] [DomicilioRepository:57] Lista de domicilios :[Domicilio(id=1, paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), calle=av san martin, numero=180, localidad=ramos mejia, provincia=buenos aires)]
+[2023-08-28 14:38:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:43] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:38:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:43] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-28 14:38:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:43] [ INFO ] [TurnoRepository:38] se registro un turno!
+[2023-08-28 14:38:43] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-28 14:38:48] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:48] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:48] [ ERROR] [db:69] Odontologo no encontrado. java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Odontologo.getId()" because "odontologo" is null
+[2023-08-28 14:38:48] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:38:48] [ ERROR] [PacienteRepository:66] Paciente no encontrado.java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because "paciente" is null
+[2023-08-28 14:38:48] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: [Turno(id=1, odontologo=null, paciente=null, fecha=30-09-2023/16:50)]
+[2023-08-28 14:38:48] [ INFO ] [TurnoControlador:52] listando turnos[TurnoDto(id=1, odontologo=null, paciente=null, fecha=30-09-2023/16:50)]
+[2023-08-28 14:39:44] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:39:44] [ ERROR] [DomicilioRepository:72] Paciente no encontrado.java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Domicilio.getId()" because "domicilio" is null
+[2023-08-28 14:39:50] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:39:50] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:39:50] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:39:50] [ INFO ] [DomicilioRepository:70] DomicilioId: 1
+[2023-08-28 14:39:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:39:59] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:39:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:39:59] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:39:59] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:39:59] [ ERROR] [PacienteRepository:80] Error eliminando el Paciente.
+[2023-08-28 14:39:59] [ INFO ] [PacienteControlador:80] El paciente fue elimninado
+[2023-08-28 14:40:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:21] [ INFO ] [PacienteRepository:48] [Paciente(dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-28 14:40:32] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:32] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:32] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:40:32] [ INFO ] [DomicilioRepository:57] Lista de domicilios :[Domicilio(id=1, paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), calle=av san martin, numero=180, localidad=ramos mejia, provincia=buenos aires)]
+[2023-08-28 14:40:38] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:38] [ ERROR] [DomicilioRepository:72] Paciente no encontrado.java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Domicilio.getId()" because "domicilio" is null
+[2023-08-28 14:40:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:43] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:40:43] [ INFO ] [DomicilioRepository:70] DomicilioId: 1
+[2023-08-28 14:40:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:43] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:40:43] [ INFO ] [DomicilioRepository:70] DomicilioId: 1
+[2023-08-28 14:40:43] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:43] [ INFO ] [DomicilioRepository:84] Domicilio eliminado - paciente_id = 2
+[2023-08-28 14:40:50] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:50] [ INFO ] [PacienteRepository:48] [Paciente(dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-28 14:40:53] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:53] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:40:53] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:53] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:40:53] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:40:53] [ ERROR] [PacienteRepository:80] Error eliminando el Paciente.
+[2023-08-28 14:40:53] [ INFO ] [PacienteControlador:80] El paciente fue elimninado
+[2023-08-28 14:41:26] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:41:26] [ INFO ] [PacienteRepository:48] [Paciente(dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-28 14:42:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:42:56] [ INFO ] [DomicilioRepository:57] Lista de domicilios :[]
+[2023-08-28 14:45:33] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:45:33] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-28 14:45:33] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-28 14:45:37] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:45:37] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-28 14:45:37] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-28 14:45:40] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:45:40] [ ERROR] [PacienteRepository:66] Paciente no encontrado.java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because "paciente" is null
+[2023-08-28 14:45:40] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:45:40] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-28 14:45:40] [ ERROR] [TurnoControlador:35] No se pudo crear el turno
+[2023-08-28 14:45:46] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:45:46] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:45:46] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:45:46] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-28 14:45:46] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:45:46] [ INFO ] [TurnoRepository:38] se registro un turno!
+[2023-08-28 14:45:46] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-28 14:45:51] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:45:51] [ ERROR] [PacienteRepository:66] Paciente no encontrado.java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.entidades.Paciente.getId()" because "paciente" is null
+[2023-08-28 14:45:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:45:57] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:45:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:45:57] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-28 14:45:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:45:57] [ INFO ] [PacienteRepository:78] Paciente eliminado - ID >1
+[2023-08-28 14:45:57] [ INFO ] [PacienteControlador:80] El paciente fue elimninado
+[2023-08-28 14:46:02] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:46:02] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: []
+[2023-08-28 14:46:02] [ INFO ] [TurnoControlador:52] listando turnos[]
+[2023-08-28 14:49:09] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:09] [ INFO ] [db:50] [Odontologo(matricula=abc-10-a)]
+[2023-08-28 14:49:09] [ INFO ] [OdontologoControlador:55] Listado de odontologos
+[2023-08-28 14:49:12] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:12] [ INFO ] [PacienteRepository:48] []
+[2023-08-28 14:49:17] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:17] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-28 14:49:17] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-28 14:49:20] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:20] [ INFO ] [PacienteRepository:48] [Paciente(dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-28 14:49:24] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:24] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:49:24] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:24] [ INFO ] [DomicilioRepository:36] SE REGISTRO UN DOMICILIO!
+[2023-08-28 14:49:24] [ INFO ] [PacienteControlador:40] Domicilio creado!
+[2023-08-28 14:49:29] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:29] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:49:29] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:29] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-28 14:49:29] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:29] [ INFO ] [TurnoRepository:38] se registro un turno!
+[2023-08-28 14:49:29] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-28 14:49:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:35] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:49:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:35] [ INFO ] [PacienteRepository:64] PacienteId: 2
+[2023-08-28 14:49:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:35] [ INFO ] [PacienteRepository:78] Paciente eliminado - ID >2
+[2023-08-28 14:49:35] [ INFO ] [PacienteControlador:80] El paciente fue elimninado
+[2023-08-28 14:49:40] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:40] [ INFO ] [DomicilioRepository:57] Lista de domicilios :[]
+[2023-08-28 14:49:50] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-28 14:49:50] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: []
+[2023-08-28 14:49:50] [ INFO ] [TurnoControlador:52] listando turnos[]

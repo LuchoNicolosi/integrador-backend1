@@ -1,5 +1,6 @@
 package com.grupo4.integrador.dto.DomicilioDto;
 
+import com.grupo4.integrador.dto.PacienteDto.PacienteDto;
 import com.grupo4.integrador.entidades.Paciente;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class DomicilioDto {
     private Integer id;
-    private Paciente paciente;
+    private PacienteDto paciente;
     private String calle;
     private String numero;
     private String localidad;

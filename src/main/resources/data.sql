@@ -22,8 +22,8 @@ CREATE TABLE TURNO
     paciente_id   int,
     odontologo_id int,
     fecha_hora    VARCHAR(255),
-    FOREIGN KEY (paciente_id) REFERENCES PACIENTE (id),
-    FOREIGN KEY (odontologo_id) REFERENCES ODONTOLOGO (id)
+    FOREIGN KEY (paciente_id) REFERENCES PACIENTE (id) ON DELETE CASCADE,
+    FOREIGN KEY (odontologo_id) REFERENCES ODONTOLOGO (id) ON DELETE CASCADE
 );
 
 CREATE TABLE DOMICILIO

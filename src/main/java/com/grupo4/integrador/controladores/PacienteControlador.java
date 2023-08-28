@@ -68,10 +68,16 @@ public class PacienteControlador {
 
     @DeleteMapping("/eliminar/{id}")
     public ResponseEntity eliminarPaciente(@PathVariable int id) {
-        if (pacienteService.buscar(id) == null) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        try {
+            if (pacienteService.buscar(id) == null) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+            pacienteService.eliminar(id);
+        } catch (Exception e) {
+            LOGGER.error("Error al eliminar el paciente " + e);
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
-        pacienteService.eliminar(id);
+        LOGGER.info("El paciente fue elimninado");
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

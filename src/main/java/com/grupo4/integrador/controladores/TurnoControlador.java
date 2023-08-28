@@ -52,6 +52,4 @@ public class TurnoControlador {
         LOGGER.info("listando turnos" + turnoDtoList);
         return new ResponseEntity<>(turnoDtoList,HttpStatus.OK);
     }
-
-
 }
