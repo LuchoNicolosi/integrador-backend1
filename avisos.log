@@ -2027,6 +2027,7 @@ INSERT INTO PACIENTE(nombre,apellido,domicilio,dni,fecha_alta) VALUES(?,?,?,?,?)
 [2023-08-25 21:47:04] [ INFO ] [db:23] Conexion exitosa a la db.
 [2023-08-25 21:47:04] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
 [2023-08-25 21:47:04] [ INFO ] [PacienteControlador:38] Paciente creado!
+<<<<<<< HEAD
 [2023-08-25 21:47:44] [ INFO ] [db:23] Conexion exitosa a la db.
 [2023-08-25 21:47:44] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
 [2023-08-25 21:47:44] [ INFO ] [PacienteControlador:38] Paciente creado!
@@ -2056,3 +2057,227 @@ INSERT INTO PACIENTE(nombre,apellido,domicilio,dni,fecha_alta) VALUES(?,?,?,?,?)
 [2023-08-25 21:52:44] [ INFO ] [db:23] Conexion exitosa a la db.
 [2023-08-25 21:52:44] [ INFO ] [DomicilioRepository:36] SE REGISTRO UN DOMICILIO!
 [2023-08-25 21:52:44] [ INFO ] [PacienteControlador:40] Domicilio creado!
+=======
+[2023-08-27 22:08:47] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 22:08:47] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-27 22:08:47] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-27 22:08:55] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 22:08:55] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-27 22:08:55] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-27 22:09:05] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 22:09:05] [ INFO ] [PacienteRepository:65] PacienteId: 1
+[2023-08-27 22:09:05] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 22:09:05] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-27 22:09:05] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 22:09:05] [ INFO ] [TurnoRepository:33] se registro un turno!
+[2023-08-27 22:09:05] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-27 22:09:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 22:09:36] [ ERROR] [TurnoRepository:51] error al listar los pacientes
+org.h2.jdbc.JdbcSQLFeatureNotSupportedException: Caracteristica no soportada: "converting to class com.grupo4.integrador.entidades.Odontologo"
+Feature not supported: "converting to class com.grupo4.integrador.entidades.Odontologo" [50100-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:556)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.getUnsupportedException(DbException.java:287)
+	at org.h2.value.ValueToObjectConverter.valueToOther(ValueToObjectConverter.java:385)
+	at org.h2.value.ValueToObjectConverter.valueToObject(ValueToObjectConverter.java:339)
+	at org.h2.jdbc.JdbcResultSet.getObject(JdbcResultSet.java:4196)
+	at com.grupo4.integrador.repositorio.implementaciones.TurnoRepository.listar(TurnoRepository.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.grupo4.integrador.repositorio.implementaciones.TurnoRepository$$SpringCGLIB$$0.listar(<generated>)
+	at com.grupo4.integrador.servicios.TurnoService.listar(TurnoService.java:40)
+	at com.grupo4.integrador.controladores.TurnoControlador.listarTurnos(TurnoControlador.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+[2023-08-27 22:10:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 22:10:35] [ INFO ] [PacienteRepository:48] [Paciente(dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-27 22:11:13] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 22:11:13] [ ERROR] [TurnoRepository:51] error al listar los pacientes
+org.h2.jdbc.JdbcSQLFeatureNotSupportedException: Caracteristica no soportada: "converting to class com.grupo4.integrador.entidades.Odontologo"
+Feature not supported: "converting to class com.grupo4.integrador.entidades.Odontologo" [50100-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:556)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.getUnsupportedException(DbException.java:287)
+	at org.h2.value.ValueToObjectConverter.valueToOther(ValueToObjectConverter.java:385)
+	at org.h2.value.ValueToObjectConverter.valueToObject(ValueToObjectConverter.java:339)
+	at org.h2.jdbc.JdbcResultSet.getObject(JdbcResultSet.java:4196)
+	at com.grupo4.integrador.repositorio.implementaciones.TurnoRepository.listar(TurnoRepository.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.grupo4.integrador.repositorio.implementaciones.TurnoRepository$$SpringCGLIB$$0.listar(<generated>)
+	at com.grupo4.integrador.servicios.TurnoService.listar(TurnoService.java:40)
+	at com.grupo4.integrador.controladores.TurnoControlador.listarTurnos(TurnoControlador.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+[2023-08-27 23:33:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:33:10] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-27 23:33:10] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-27 23:34:05] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:34:05] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-27 23:34:05] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-27 23:34:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:34:18] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-27 23:34:18] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-27 23:34:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:34:35] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: []
+[2023-08-27 23:34:35] [ INFO ] [TurnoControlador:52] listando turnos[]
+[2023-08-27 23:35:06] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:06] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-27 23:35:06] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-27 23:35:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:21] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-27 23:35:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:21] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-27 23:35:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:21] [ INFO ] [TurnoRepository:38] se registro un turno!
+[2023-08-27 23:35:21] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-27 23:35:31] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:31] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:31] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-27 23:35:31] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:31] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-27 23:35:31] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: [Turno(id=1, odontologo=Odontologo(matricula=null), paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-27 23:35:31] [ INFO ] [TurnoControlador:52] listando turnos[TurnoDto(id=1, odontologo=Odontologo(matricula=null), paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-27 23:42:36] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:42:36] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-27 23:42:36] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-27 23:42:46] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:42:46] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-27 23:42:46] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-27 23:42:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:42:57] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-27 23:42:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:42:57] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-27 23:42:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:42:57] [ INFO ] [TurnoRepository:38] se registro un turno!
+[2023-08-27 23:42:57] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-27 23:43:04] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:43:04] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:43:04] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-27 23:43:04] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:43:04] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-27 23:43:04] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: [Turno(id=1, odontologo=Odontologo(matricula=null), paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-27 23:43:04] [ INFO ] [TurnoControlador:52] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(matricula=null), paciente=PacienteDto(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-27 23:43:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:43:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:43:18] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-27 23:43:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:43:18] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-27 23:43:18] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: [Turno(id=1, odontologo=Odontologo(matricula=null), paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-27 23:43:18] [ INFO ] [TurnoControlador:52] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(matricula=null), paciente=PacienteDto(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-27 23:46:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:46:18] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-27 23:46:18] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+>>>>>>> 65aba3cbf42f73679cb1d39d00ba0365b258aad2

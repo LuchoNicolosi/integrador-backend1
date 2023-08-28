@@ -1,5 +1,6 @@
 package com.grupo4.integrador.controladores;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.grupo4.integrador.dto.TurnoDto.CrearTurnoDto;
 import com.grupo4.integrador.dto.TurnoDto.TurnoDto;
@@ -10,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("turno")
@@ -35,4 +38,20 @@ public class TurnoControlador {
         LOGGER.info("Se pudo crear el turno");
         return new ResponseEntity<>(mapper.convertValue(nuevoTurno, TurnoDto.class), HttpStatus.OK);
     }
+    @GetMapping
+    public ResponseEntity<List<TurnoDto>> listarTurnos(){
+        ObjectMapper mapper = new ObjectMapper();
+        List<TurnoDto> turnoDtoList;
+        try{
+            turnoDtoList = mapper.convertValue(turnoService.listar(), new TypeReference<>() {});
+        }catch(Exception e){
+            LOGGER.error("error al listar los turnos", e);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+
+        }
+        LOGGER.info("listando turnos" + turnoDtoList);
+        return new ResponseEntity<>(turnoDtoList,HttpStatus.OK);
+    }
+
+
 }
