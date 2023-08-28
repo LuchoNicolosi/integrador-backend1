@@ -38,6 +38,20 @@ public class TurnoControlador {
         LOGGER.info("Se pudo crear el turno");
         return new ResponseEntity<>(mapper.convertValue(nuevoTurno, TurnoDto.class), HttpStatus.OK);
     }
+    @GetMapping
+    public ResponseEntity<List<TurnoDto>> listarTurnos(){
+        ObjectMapper mapper = new ObjectMapper();
+        List<TurnoDto> turnoDtoList;
+        try{
+            turnoDtoList = mapper.convertValue(turnoService.listar(), new TypeReference<>() {});
+        }catch(Exception e){
+            LOGGER.error("error al listar los turnos", e);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+
+        }
+        LOGGER.info("listando turnos" + turnoDtoList);
+        return new ResponseEntity<>(turnoDtoList,HttpStatus.OK);
+    }
 
 
 }

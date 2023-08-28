@@ -40,7 +40,7 @@ public class PacienteRepository implements IRepository<Paciente> {
     @Override
     public List<Paciente> listar() {
         List<Paciente> pacientes = new ArrayList<>();
-        try (PreparedStatement pst = db.getConnection().prepareStatement(Query.LISTAR_PACIENTES)) {
+        try (PreparedStatement pst = getConnection().prepareStatement(Query.LISTAR_PACIENTES)) {
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
                 pacientes.add(new Paciente(rs.getInt("ID"), rs.getString("NOMBRE"), rs.getString("APELLIDO"), rs.getString("DNI"), rs.getString("FECHA_ALTA")));
@@ -48,7 +48,6 @@ public class PacienteRepository implements IRepository<Paciente> {
             LOGGER.info(pacientes);
         } catch (Exception e) {
             LOGGER.error("error al listar los pacientes");
-            return new ArrayList<>();
         }
         return pacientes;
     }

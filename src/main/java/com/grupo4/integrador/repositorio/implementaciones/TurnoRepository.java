@@ -6,6 +6,7 @@ import com.grupo4.integrador.repositorio.IRepository;
 import com.grupo4.integrador.entidades.Turno;
 import com.grupo4.integrador.utilidades.Query;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
@@ -18,6 +19,10 @@ import static com.grupo4.integrador.repositorio.implementaciones.db.getConnectio
 @Repository
 public class TurnoRepository implements IRepository<Turno> {
     private final static Logger LOGGER = Logger.getLogger(TurnoRepository.class);
+    @Autowired
+    private IRepository<Odontologo> odontologoIRepository;
+    @Autowired
+    private IRepository<Paciente> pacienteIRepository;
     private Integer autoIncrementId = 0;
 
     @Override
@@ -40,7 +45,17 @@ public class TurnoRepository implements IRepository<Turno> {
 
     @Override
     public List<Turno> listar() {
-        return null;
+        List<Turno> turnoList = new ArrayList<>();
+        try(PreparedStatement pst = db.getConnection().prepareStatement(Query.LISTAR_TURNOS)){
+            ResultSet rs = pst.executeQuery();
+            while(rs.next()){
+                turnoList.add(new Turno(rs.getInt(1),odontologoIRepository.buscar(rs.getInt(2)),pacienteIRepository.buscar(rs.getInt(3)),rs.getString(4)));
+            }
+            LOGGER.info("se encontrarons los siguientes turnos: " + turnoList);
+        }catch(Exception e){
+            LOGGER.error("error al listar los turnos", e);
+        }
+        return turnoList;
     }
 
     @Override

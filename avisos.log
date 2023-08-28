@@ -2190,3 +2190,62 @@ Feature not supported: "converting to class com.grupo4.integrador.entidades.Odon
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
+[2023-08-27 23:33:10] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:33:10] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-27 23:33:10] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-27 23:34:05] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:34:05] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-27 23:34:05] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-27 23:34:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:34:18] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-27 23:34:18] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-27 23:34:35] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:34:35] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: []
+[2023-08-27 23:34:35] [ INFO ] [TurnoControlador:52] listando turnos[]
+[2023-08-27 23:35:06] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:06] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-27 23:35:06] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-27 23:35:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:21] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-27 23:35:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:21] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-27 23:35:21] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:21] [ INFO ] [TurnoRepository:38] se registro un turno!
+[2023-08-27 23:35:21] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-27 23:35:31] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:31] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:31] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-27 23:35:31] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:35:31] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-27 23:35:31] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: [Turno(id=1, odontologo=Odontologo(matricula=null), paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-27 23:35:31] [ INFO ] [TurnoControlador:52] listando turnos[TurnoDto(id=1, odontologo=Odontologo(matricula=null), paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-27 23:42:36] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:42:36] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-27 23:42:36] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-27 23:42:46] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:42:46] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-27 23:42:46] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-27 23:42:56] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:42:57] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-27 23:42:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:42:57] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-27 23:42:57] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:42:57] [ INFO ] [TurnoRepository:38] se registro un turno!
+[2023-08-27 23:42:57] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-27 23:43:04] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:43:04] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:43:04] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-27 23:43:04] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:43:04] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-27 23:43:04] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: [Turno(id=1, odontologo=Odontologo(matricula=null), paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-27 23:43:04] [ INFO ] [TurnoControlador:52] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(matricula=null), paciente=PacienteDto(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-27 23:43:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:43:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:43:18] [ INFO ] [db:67] OdontologoId: 1
+[2023-08-27 23:43:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:43:18] [ INFO ] [PacienteRepository:64] PacienteId: 1
+[2023-08-27 23:43:18] [ INFO ] [TurnoRepository:54] se encontrarons los siguientes turnos: [Turno(id=1, odontologo=Odontologo(matricula=null), paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-27 23:43:18] [ INFO ] [TurnoControlador:52] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(matricula=null), paciente=PacienteDto(dni=123456789, fechaAlta=20-12-2023), fecha=30-09-2023/16:50)]
+[2023-08-27 23:46:18] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-27 23:46:18] [ INFO ] [db:31] se registro un odontologo!
+[2023-08-27 23:46:18] [ INFO ] [OdontologoControlador:39] Odontologo creado.
