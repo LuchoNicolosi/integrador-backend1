@@ -60,12 +60,22 @@ public class TurnoRepository implements IRepository<Turno> {
 
     @Override
     public Turno buscar(int id) {
-        return null;
+        Turno turno = null;
+        try(PreparedStatement pst = getConnection().prepareStatement(Query.BUSCAR_TURNO)){
+            pst.setInt(1, id);
+            ResultSet rs = pst.executeQuery();
+            while(rs.next()){
+                turno = new Turno(rs.getInt(1), odontologoIRepository.buscar(id), pacienteIRepository.buscar(id),rs.getString(4));
+                     }
+            LOGGER.info("se encontro el siguiente turno: " + turno);
+        }catch(Exception e){
+            LOGGER.error("no se encontro el turno con id " + id);
+        }
+        return turno;
     }
 
     @Override
     public void eliminar(int id) {
-        //FALTA IMPLEMENTAR METODO BUSCAR
         if (buscar(id) != null) {
             try (PreparedStatement pst = getConnection().prepareStatement(Query.DELETE_TURNO)) {
                 pst.setInt(1, id);
