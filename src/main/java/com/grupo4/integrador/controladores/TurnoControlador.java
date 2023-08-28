@@ -52,6 +52,27 @@ public class TurnoControlador {
         LOGGER.info("listando turnos" + turnoDtoList);
         return new ResponseEntity<>(turnoDtoList,HttpStatus.OK);
     }
+    @GetMapping("/buscar/{id}")
+    public ResponseEntity<TurnoDto> buscarTurno(@PathVariable int id){
+        ObjectMapper mapper = new ObjectMapper();
+        Turno turno = turnoService.buscarTurno(id);
+        if(turno == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        LOGGER.info("se encontro el siguiente turno:" + turno);
+        return new ResponseEntity<>(mapper.convertValue(turno, TurnoDto.class),HttpStatus.OK);
+    }
+    @DeleteMapping("/eliminar/{id}")
+    public ResponseEntity eliminarTurno(@PathVariable int id){
+        ResponseEntity res;
+        if(turnoService.buscarTurno(id) == null){
+            res = new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }else{
+            turnoService.eliminarTurno(id);
+            res = new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return res;
+    }
 
 
 }

@@ -26,7 +26,7 @@ public class DomicilioRepository implements IRepository<Domicilio> {
 
     public Domicilio registrar(Domicilio domicilio) {
         Domicilio dom = null;
-        try (PreparedStatement pst = db.getConnection().prepareStatement(Query.INSERT_VALUE_DOMICILIO)) {
+        try (PreparedStatement pst = getConnection().prepareStatement(Query.INSERT_VALUE_DOMICILIO)) {
             pst.setInt(1, domicilio.getPaciente().getId());
             pst.setString(2, domicilio.getCalle());
             pst.setString(3, domicilio.getNumero());
@@ -45,7 +45,7 @@ public class DomicilioRepository implements IRepository<Domicilio> {
     @Override
     public List<Domicilio> listar() {
         List<Domicilio> domicilios = new ArrayList<>();
-        try (PreparedStatement pst = db.getConnection().prepareStatement(Query.LISTAR_DOMICILIO)) {
+        try (PreparedStatement pst = getConnection().prepareStatement(Query.LISTAR_DOMICILIO)) {
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
                 domicilios.add(new Domicilio(rs.getInt("ID"), pacienteRepository.buscar(rs.getInt("PACIENTE_ID")), rs.getString("CALLE"), rs.getString("NUMERO"), rs.getString("LOCALIDAD"), rs.getString("PROVINCIA")));

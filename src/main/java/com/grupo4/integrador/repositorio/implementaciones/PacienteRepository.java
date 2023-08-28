@@ -22,7 +22,7 @@ public class PacienteRepository implements IRepository<Paciente> {
     @Override
     public Paciente registrar(Paciente paciente) {
         Paciente pac = null;
-        try (PreparedStatement pst = db.getConnection().prepareStatement(Query.INSERT_VALUE_PACIENTE)) {
+        try (PreparedStatement pst = getConnection().prepareStatement(Query.INSERT_VALUE_PACIENTE)) {
             pst.setString(1, paciente.getNombre());
             pst.setString(2, paciente.getApellido());
             pst.setString(3, paciente.getDni());

@@ -7,6 +7,7 @@ import com.grupo4.integrador.repositorio.IRepository;
 import com.grupo4.integrador.entidades.Turno;
 import org.springframework.stereotype.Service;
 
+import java.sql.PreparedStatement;
 import java.util.List;
 
 @Service
@@ -38,6 +39,12 @@ public class TurnoService {
 
     public List<Turno> listar() {
         return turnoRepository.listar();
+    }
+    public void eliminarTurno(int id){
+        turnoRepository.eliminar(id);
+    }
+    public Turno buscarTurno(int id){
+        return turnoRepository.buscar(id);
     }
 
     public Turno modificar(Turno turno) {
