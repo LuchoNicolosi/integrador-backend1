@@ -2027,6 +2027,37 @@ INSERT INTO PACIENTE(nombre,apellido,domicilio,dni,fecha_alta) VALUES(?,?,?,?,?)
 [2023-08-25 21:47:04] [ INFO ] [db:23] Conexion exitosa a la db.
 [2023-08-25 21:47:04] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
 [2023-08-25 21:47:04] [ INFO ] [PacienteControlador:38] Paciente creado!
+<<<<<<< HEAD
+[2023-08-25 21:47:44] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-25 21:47:44] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-25 21:47:44] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-25 21:47:49] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-25 21:47:49] [ INFO ] [PacienteRepository:48] [Paciente(dni=123456789, fechaAlta=20-12-2023)]
+[2023-08-25 21:47:53] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-25 21:47:53] [ INFO ] [PacienteRepository:65] PacienteId: 1
+[2023-08-25 21:48:00] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-25 21:48:00] [ INFO ] [PacienteRepository:65] PacienteId: 1
+[2023-08-25 21:48:00] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-25 21:48:00] [ INFO ] [DomicilioRepository:36] SE REGISTRO UN DOMICILIO!
+[2023-08-25 21:48:00] [ INFO ] [PacienteControlador:40] Domicilio creado!
+[2023-08-25 21:48:14] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-25 21:48:14] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-25 21:48:14] [ INFO ] [PacienteRepository:65] PacienteId: 1
+[2023-08-25 21:48:14] [ INFO ] [DomicilioRepository:57] Lista de domicilios :[Domicilio(id=1, paciente=Paciente(dni=123456789, fechaAlta=20-12-2023), calle=o'higgins, numero=286, localidad=ramos mejia, provincia=buenos aires)]
+[2023-08-25 21:51:47] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-25 21:51:47] [ INFO ] [PacienteRepository:65] PacienteId: 1
+[2023-08-25 21:51:47] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-25 21:51:47] [ INFO ] [DomicilioRepository:36] SE REGISTRO UN DOMICILIO!
+[2023-08-25 21:51:47] [ INFO ] [PacienteControlador:40] Domicilio creado!
+[2023-08-25 21:52:34] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-25 21:52:34] [ INFO ] [PacienteRepository:31] SE REGISTRO UN PACIENTE!
+[2023-08-25 21:52:34] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-25 21:52:44] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-25 21:52:44] [ INFO ] [PacienteRepository:65] PacienteId: 2
+[2023-08-25 21:52:44] [ INFO ] [db:23] Conexion exitosa a la db.
+[2023-08-25 21:52:44] [ INFO ] [DomicilioRepository:36] SE REGISTRO UN DOMICILIO!
+[2023-08-25 21:52:44] [ INFO ] [PacienteControlador:40] Domicilio creado!
+=======
 [2023-08-27 22:08:47] [ INFO ] [db:23] Conexion exitosa a la db.
 [2023-08-27 22:08:47] [ INFO ] [db:31] se registro un odontologo!
 [2023-08-27 22:08:47] [ INFO ] [OdontologoControlador:39] Odontologo creado.
@@ -2249,3 +2280,4 @@ Feature not supported: "converting to class com.grupo4.integrador.entidades.Odon
 [2023-08-27 23:46:18] [ INFO ] [db:23] Conexion exitosa a la db.
 [2023-08-27 23:46:18] [ INFO ] [db:31] se registro un odontologo!
 [2023-08-27 23:46:18] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+>>>>>>> 65aba3cbf42f73679cb1d39d00ba0365b258aad2
