@@ -1,26 +1,30 @@
 package com.grupo4.integrador.entidades;
 
+import jakarta.persistence.*;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
-@Setter
-@ToString
+@Entity
+@Data
 public class Domicilio {
-    private Integer id;
-    private Paciente paciente;
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long id;
     private String calle;
     private String numero;
     private String localidad;
     private String provincia;
 
+    @OneToOne(mappedBy = "domicilio")
+    private Paciente paciente;
+
     public Domicilio() {
 
     }
 
-    public Domicilio(Integer id, Paciente paciente, String calle, String numero, String localidad, String provincia) {
-        this.id = id;
+    public Domicilio(Paciente paciente, String calle, String numero, String localidad, String provincia) {
         this.paciente = paciente;
         this.calle = calle;
         this.numero = numero;

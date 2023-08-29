@@ -1,23 +1,25 @@
 package com.grupo4.integrador.entidades;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import jakarta.persistence.*;
 
-@Getter
-@Setter
-@ToString
+@Entity
 public class Turno {
-    private int id;
-    private Odontologo odontologo;
-    private Paciente paciente;
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long id;
     private String fecha;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "odontologo_id")
+    private Odontologo odontologo;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "paciente_id")
+    private Paciente paciente;
 
-    public Turno(){
+    public Turno() {
 
     }
-    public Turno(int id, Odontologo odontologo, Paciente paciente, String fecha) {
-        this.id = id;
+
+    public Turno(Odontologo odontologo, Paciente paciente, String fecha) {
         this.odontologo = odontologo;
         this.paciente = paciente;
         this.fecha = fecha;

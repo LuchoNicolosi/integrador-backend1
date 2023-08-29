@@ -1,11 +1,12 @@
 package com.grupo4.integrador.dto.OdontologoDto;
 
-import com.grupo4.integrador.entidades.Usuario;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
-@EqualsAndHashCode(callSuper = true)
+
 @Getter
-public class CrearOdontologoDto extends Usuario {
+public class CrearOdontologoDto  {
+    private int id;
+    private String nombre;
+    private String apellido;
     private String matricula;
 }
