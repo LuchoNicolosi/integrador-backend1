@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class TurnoDto {
-    private int id;
+    private Long id;
     private OdontologoDto odontologo;
     private PacienteDto paciente;
     private String fecha;

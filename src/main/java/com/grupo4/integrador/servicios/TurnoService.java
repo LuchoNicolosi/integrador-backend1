@@ -1,6 +1,8 @@
 package com.grupo4.integrador.servicios;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.grupo4.integrador.dto.TurnoDto.CrearTurnoDto;
+import com.grupo4.integrador.dto.TurnoDto.TurnoDto;
 import com.grupo4.integrador.entidades.Odontologo;
 import com.grupo4.integrador.entidades.Paciente;
 import com.grupo4.integrador.entidades.Turno;
@@ -55,7 +57,9 @@ public class TurnoService {
         o.ifPresent(turnoRepository::delete);
     }
 
-    public Turno modificar(CrearTurnoDto turno) throws Exception {
-        return registrar(turno);
+    public Turno modificar(TurnoDto turno) {
+        ObjectMapper mapper = new ObjectMapper();
+        Turno updateTurno = mapper.convertValue(turno, Turno.class);
+        return turnoRepository.save(updateTurno);
     }
 }

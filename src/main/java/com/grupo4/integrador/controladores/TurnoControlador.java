@@ -38,36 +38,54 @@ public class TurnoControlador {
         LOGGER.info("Se pudo crear el turno");
         return new ResponseEntity<>(mapper.convertValue(nuevoTurno, TurnoDto.class), HttpStatus.OK);
     }
+
     @GetMapping
-    public ResponseEntity<List<TurnoDto>> listarTurnos(){
+    public ResponseEntity<List<TurnoDto>> listarTurnos() {
         ObjectMapper mapper = new ObjectMapper();
         List<TurnoDto> turnoDtoList;
-        try{
-            turnoDtoList = mapper.convertValue(turnoService.listar(), new TypeReference<>() {});
-        }catch(Exception e){
+        try {
+            turnoDtoList = mapper.convertValue(turnoService.listar(), new TypeReference<>() {
+            });
+        } catch (Exception e) {
             LOGGER.error("error al listar los turnos", e);
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 
         }
         LOGGER.info("listando turnos" + turnoDtoList);
-        return new ResponseEntity<>(turnoDtoList,HttpStatus.OK);
+        return new ResponseEntity<>(turnoDtoList, HttpStatus.OK);
     }
+
+    @PutMapping("/modificar/{id}")
+    public ResponseEntity<TurnoDto> modificarTurno(@RequestBody TurnoDto turnoDTO) {
+        ObjectMapper mapper = new ObjectMapper();
+        Turno updateTurno;
+        try {
+            updateTurno = turnoService.modificar(turnoDTO);
+        } catch (Exception e) {
+            LOGGER.error("No se pudo actualizar el turno");
+            return ResponseEntity.badRequest().build();
+        }
+        LOGGER.info("Se pudo crear el turno");
+        return new ResponseEntity<>(mapper.convertValue(updateTurno, TurnoDto.class), HttpStatus.OK);
+    }
+
     @GetMapping("/buscar/{id}")
-    public ResponseEntity<TurnoDto> buscarTurno(@PathVariable Long id){
+    public ResponseEntity<TurnoDto> buscarTurno(@PathVariable Long id) {
         ObjectMapper mapper = new ObjectMapper();
         Turno turno = turnoService.buscar(id);
-        if(turno == null){
+        if (turno == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         LOGGER.info("se encontro el siguiente turno:" + turno);
-        return new ResponseEntity<>(mapper.convertValue(turno, TurnoDto.class),HttpStatus.OK);
+        return new ResponseEntity<>(mapper.convertValue(turno, TurnoDto.class), HttpStatus.OK);
     }
+
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity eliminarTurno(@PathVariable Long id){
+    public ResponseEntity eliminarTurno(@PathVariable Long id) {
         ResponseEntity res;
-        if(turnoService.buscar(id) == null){
+        if (turnoService.buscar(id) == null) {
             res = new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }else{
+        } else {
             turnoService.eliminar(id);
             res = new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
