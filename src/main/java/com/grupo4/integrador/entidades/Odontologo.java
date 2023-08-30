@@ -1,5 +1,6 @@
 package com.grupo4.integrador.entidades;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Table(name = "odontologos")
 @Data
 public class Odontologo {
     @Id
@@ -19,6 +21,7 @@ public class Odontologo {
     private String apellido;
     private String matricula;
     @OneToMany(mappedBy = "odontologo")
+    @JsonIgnore
     private List<Turno> turnos;
 
     public Odontologo() {

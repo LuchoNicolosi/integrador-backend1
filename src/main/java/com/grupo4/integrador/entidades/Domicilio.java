@@ -1,5 +1,6 @@
 package com.grupo4.integrador.entidades;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
@@ -7,6 +8,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
+@Table(name = "domicilios")
 @Data
 public class Domicilio {
     @Id
@@ -18,6 +20,7 @@ public class Domicilio {
     private String provincia;
 
     @OneToOne(mappedBy = "domicilio")
+    @JsonIgnore
     private Paciente paciente;
 
     public Domicilio() {

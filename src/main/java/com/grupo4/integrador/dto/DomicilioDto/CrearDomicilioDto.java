@@ -4,7 +4,6 @@ import lombok.Getter;
 
 @Getter
 public class CrearDomicilioDto {
-    private int paciente_id;
     private String calle;
     private String numero;
     private String localidad;

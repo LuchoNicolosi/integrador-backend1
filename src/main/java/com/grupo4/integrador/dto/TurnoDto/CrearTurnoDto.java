@@ -4,7 +4,7 @@ import lombok.Getter;
 
 @Getter
 public class CrearTurnoDto {
-    private int odontologoId;
-    private int pacienteId;
+    private Long odontologoId;
+    private Long pacienteId;
     private String fecha;
 }

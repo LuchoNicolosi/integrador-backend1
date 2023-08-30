@@ -1,9 +1,14 @@
 package com.grupo4.integrador.entidades;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.time.LocalDate;
 
 @Entity
+@Table(name = "pacientes")
 @Data
 public class Paciente {
     @Id
@@ -13,13 +18,12 @@ public class Paciente {
     private String apellido;
     private String dni;
     private String fechaAlta;
-
-    @OneToOne(mappedBy = "paciente")
-    private Turno turno;
-
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "domicilio_id")
     private Domicilio domicilio;
+    @OneToOne(mappedBy = "paciente")
+    @JsonIgnore
+    private Turno turno;
 
     public Paciente() {
     }

@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class DomicilioDto {
     private Integer id;
-    private PacienteDto paciente;
     private String calle;
     private String numero;
     private String localidad;

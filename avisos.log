@@ -2753,3 +2753,45 @@ Feature not supported: "converting to class com.grupo4.integrador.entidades.Odon
 [2023-08-28 15:02:53] [ INFO ] [DomicilioRepository:57] Lista de domicilios :[]
 [2023-08-28 15:02:57] [ INFO ] [db:23] Conexion exitosa a la db.
 [2023-08-28 15:02:57] [ INFO ] [PacienteRepository:48] []
+[2023-08-29 19:37:03] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-29 19:37:32] [ INFO ] [OdontologoControlador:55] Listado de odontologos
+[2023-08-29 19:37:36] [ INFO ] [OdontologoControlador:66] odontologo encontrado.
+[2023-08-29 19:38:33] [ INFO ] [OdontologoControlador:66] odontologo encontrado.
+[2023-08-29 19:38:43] [ INFO ] [OdontologoControlador:66] odontologo encontrado.
+[2023-08-29 19:38:54] [ INFO ] [OdontologoControlador:55] Listado de odontologos
+[2023-08-29 19:38:57] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-29 19:39:04] [ ERROR] [PacienteControlador:35] Error al crear al paciente
+[2023-08-29 19:39:54] [ ERROR] [PacienteControlador:35] Error al crear al paciente
+[2023-08-29 19:42:04] [ ERROR] [PacienteControlador:35] Error al crear al paciente
+[2023-08-29 19:48:43] [ ERROR] [PacienteControlador:35] Error al crear al paciente
+[2023-08-29 20:00:39] [ ERROR] [PacienteControlador:35] Error al crear al pacientejava.time.format.DateTimeParseException: Text '20-12-2023' could not be parsed at index 0
+[2023-08-29 20:12:43] [ ERROR] [PacienteControlador:35] Error al crear al pacientejava.time.format.DateTimeParseException: Text '20-12-2023' could not be parsed at index 0
+[2023-08-29 20:14:07] [ ERROR] [PacienteControlador:35] Error al crear al pacienteorg.springframework.dao.InvalidDataAccessApiUsageException: Entity must not be null
+[2023-08-29 20:15:02] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-29 20:34:11] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-29 20:34:14] [ ERROR] [PacienteControlador:35] Error al crear al paciente java.lang.NullPointerException: Cannot invoke "com.grupo4.integrador.dto.DomicilioDto.CrearDomicilioDto.getProvincia()" because the return value of "com.grupo4.integrador.dto.PacienteDto.CrearPacienteDto.getDomicilio()" is null
+[2023-08-29 20:34:57] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-29 20:52:02] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-29 20:52:52] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-29 20:53:25] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-29 20:53:30] [ INFO ] [OdontologoControlador:55] Listado de odontologos
+[2023-08-29 20:53:35] [ INFO ] [OdontologoControlador:66] odontologo encontrado.
+[2023-08-29 21:01:07] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-29 21:01:11] [ INFO ] [OdontologoControlador:55] Listado de odontologos
+[2023-08-29 21:01:23] [ INFO ] [OdontologoControlador:55] Listado de odontologos
+[2023-08-29 21:01:27] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-29 21:01:33] [ INFO ] [OdontologoControlador:66] odontologo encontrado.
+[2023-08-29 21:01:37] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-29 21:02:16] [ INFO ] [PacienteControlador:80] El paciente fue elimninado
+[2023-08-29 21:05:45] [ ERROR] [TurnoControlador:35] No se pudo crear el turno
+[2023-08-29 21:05:50] [ INFO ] [OdontologoControlador:55] Listado de odontologos
+[2023-08-29 21:05:56] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-29 21:06:04] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-29 21:09:03] [ INFO ] [OdontologoControlador:39] Odontologo creado.
+[2023-08-29 21:09:06] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-29 21:09:21] [ ERROR] [TurnoControlador:35] No se pudo crear el turno
+[2023-08-29 21:09:31] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-29 21:17:52] [ INFO ] [PacienteControlador:38] Paciente creado!
+[2023-08-29 21:18:01] [ INFO ] [TurnoControlador:38] Se pudo crear el turno
+[2023-08-29 21:18:04] [ ERROR] [TurnoControlador:35] No se pudo crear el turno
+[2023-08-29 21:18:20] [ ERROR] [TurnoControlador:35] No se pudo crear el turno

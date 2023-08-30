@@ -25,59 +25,59 @@ public class PacienteControlador {
         this.pacienteService = pacienteService;
     }
 
-//    @PostMapping("/registrar")
-//    public ResponseEntity<PacienteDto> registarPaciente(@RequestBody CrearPacienteDto pacienteDto) {
-//        ObjectMapper mapper = new ObjectMapper();
-//        Paciente paciente;
-//        try {
-//            paciente = pacienteService.registrar(pacienteDto);
-//        } catch (Exception e) {
-//            LOGGER.error("Error al crear al paciente");
-//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-//        }
-//        LOGGER.info("Paciente creado!");
-//
-//        return new ResponseEntity<>(mapper.convertValue(paciente, PacienteDto.class), HttpStatus.OK);
-//    }
-//
-//    @GetMapping
-//    public ResponseEntity<List<PacienteDto>> listarPaciente() {
-//        ObjectMapper mapper = new ObjectMapper();
-//        List<PacienteDto> listPacientes;
-//        try {
-//            listPacientes = mapper.convertValue(pacienteService.listar(), new TypeReference<>() {
-//            });
-//        } catch (Exception e) {
-//            LOGGER.error("Error listando pacientes. " + e);
-//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//        }
-//        return new ResponseEntity<>(listPacientes, HttpStatus.OK);
-//    }
-//
-//    @GetMapping("/buscar/{id}")
-//    public ResponseEntity<PacienteDto> obtenerPacientePorId(@PathVariable int id) {
-//        ObjectMapper mapper = new ObjectMapper();
-//        Paciente paciente = pacienteService.buscar(id);
-//        if (paciente == null) {
-//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//        }
-//
-//        return new ResponseEntity<>(mapper.convertValue(paciente, PacienteDto.class), HttpStatus.OK);
-//    }
-//
-//
-//    @DeleteMapping("/eliminar/{id}")
-//    public ResponseEntity eliminarPaciente(@PathVariable int id) {
-//        try {
-//            if (pacienteService.buscar(id) == null) {
-//                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//            }
-//            pacienteService.eliminar(id);
-//        } catch (Exception e) {
-//            LOGGER.error("Error al eliminar el paciente " + e);
-//            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-//        }
-//        LOGGER.info("El paciente fue elimninado");
-//        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//    }
+    @PostMapping("/registrar")
+    public ResponseEntity<PacienteDto> registarPaciente(@RequestBody CrearPacienteDto pacienteDto) {
+        ObjectMapper mapper = new ObjectMapper();
+        Paciente paciente;
+        try {
+            paciente = pacienteService.registrar(pacienteDto);
+        } catch (Exception e) {
+            LOGGER.error("Error al crear al paciente " + e);
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+        LOGGER.info("Paciente creado!");
+
+        return new ResponseEntity<>(mapper.convertValue(paciente, PacienteDto.class), HttpStatus.OK);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<PacienteDto>> listarPaciente() {
+        ObjectMapper mapper = new ObjectMapper();
+        List<PacienteDto> listPacientes;
+        try {
+            listPacientes = mapper.convertValue(pacienteService.listar(), new TypeReference<>() {
+            });
+        } catch (Exception e) {
+            LOGGER.error("Error listando pacientes. " + e);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(listPacientes, HttpStatus.OK);
+    }
+
+    @GetMapping("/buscar/{id}")
+    public ResponseEntity<PacienteDto> obtenerPacientePorId(@PathVariable Long id) {
+        ObjectMapper mapper = new ObjectMapper();
+        Paciente paciente = pacienteService.buscar(id);
+        if (paciente == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(mapper.convertValue(paciente, PacienteDto.class), HttpStatus.OK);
+    }
+
+
+    @DeleteMapping("/eliminar/{id}")
+    public ResponseEntity eliminarPaciente(@PathVariable Long id) {
+        try {
+            if (pacienteService.buscar(id) == null) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+            pacienteService.eliminar(id);
+        } catch (Exception e) {
+            LOGGER.error("Error al eliminar el paciente " + e);
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+        LOGGER.info("El paciente fue elimninado");
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 }

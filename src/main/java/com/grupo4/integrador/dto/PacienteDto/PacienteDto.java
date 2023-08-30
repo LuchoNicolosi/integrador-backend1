@@ -1,6 +1,8 @@
 package com.grupo4.integrador.dto.PacienteDto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.grupo4.integrador.dto.DomicilioDto.DomicilioDto;
+import com.grupo4.integrador.entidades.Domicilio;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,4 +15,5 @@ public class PacienteDto {
     private String apellido;
     // private String dni;
     private String fechaAlta;
+    private Domicilio domicilio;
 }
