@@ -19,16 +19,17 @@ import org.apache.log4j.Logger;
 @RequestMapping("/odontologo")
 public class OdontologoControlador {
     private final OdontologoService odontologoService;
+    private final ObjectMapper mapper;
     private final Logger LOGGER = Logger.getLogger(OdontologoControlador.class);
 
     @Autowired
-    public OdontologoControlador(OdontologoService odontologoService) {
+    public OdontologoControlador(OdontologoService odontologoService,ObjectMapper mapper) {
         this.odontologoService = odontologoService;
+        this.mapper = mapper;
     }
 
     @PostMapping("/registrar")
     public ResponseEntity<OdontologoDto> registrarOdontologo(@RequestBody CrearOdontologoDto odontologoDto) {
-        ObjectMapper map = new ObjectMapper();
         Odontologo nuevoOdontologo;
         try {
             nuevoOdontologo = odontologoService.registrar(odontologoDto);
@@ -38,12 +39,11 @@ public class OdontologoControlador {
         }
         LOGGER.info("Odontologo creado.");
 
-        return new ResponseEntity<OdontologoDto>(map.convertValue(nuevoOdontologo, OdontologoDto.class), HttpStatus.OK);
+        return new ResponseEntity<OdontologoDto>(mapper.convertValue(nuevoOdontologo, OdontologoDto.class), HttpStatus.OK);
     }
 
     @GetMapping
     public ResponseEntity<List<OdontologoDto>> listarOdontologos() {
-        ObjectMapper mapper = new ObjectMapper();
         List<OdontologoDto> listOdontologos;
         try {
             listOdontologos = mapper.convertValue(odontologoService.listar(), new TypeReference<List<OdontologoDto>>() {
@@ -58,7 +58,6 @@ public class OdontologoControlador {
 
     @GetMapping("/buscar/{id}")
     public ResponseEntity<OdontologoDto> obtenerOdontologoPorId(@PathVariable Long id) {
-        ObjectMapper mapper = new ObjectMapper();
         Odontologo odontologo = odontologoService.buscar(id);
         if (odontologo == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);

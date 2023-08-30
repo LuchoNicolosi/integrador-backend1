@@ -2815,3 +2815,17 @@ Feature not supported: "converting to class com.grupo4.integrador.entidades.Odon
 [2023-08-29 23:09:55] [ ERROR] [TurnoControlador:65] No se pudo actualizar el turno
 [2023-08-29 23:12:06] [ INFO ] [TurnoControlador:68] Se pudo crear el turno
 [2023-08-29 23:12:12] [ INFO ] [TurnoControlador:54] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(id=1, nombre=pedro, apellido=velazquez), paciente=PacienteDto(id=1, nombre=carlos, apellido=perez, fechaAlta=20-12-2023, domicilio=Domicilio(id=1, calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires, paciente=null)), fecha=10-010-2023/16:50)]
+[2023-08-30 11:13:53] [ INFO ] [OdontologoControlador:40] Odontologo creado.
+[2023-08-30 11:13:57] [ INFO ] [PacienteControlador:39] Paciente creado!
+[2023-08-30 11:14:05] [ INFO ] [TurnoControlador:40] Se pudo crear el turno
+[2023-08-30 11:14:15] [ INFO ] [TurnoControlador:55] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(id=1, nombre=pedro, apellido=velazquez), paciente=PacienteDto(id=1, nombre=carlos, apellido=perez, fechaAlta=20-12-2023, domicilio=Domicilio(id=1, calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires, paciente=null)), fecha=30-09-2023/16:50)]
+[2023-08-30 11:14:19] [ INFO ] [TurnoControlador:69] Se pudo crear el turno
+[2023-08-30 11:14:29] [ INFO ] [TurnoControlador:55] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(id=1, nombre=pedro, apellido=velazquez), paciente=PacienteDto(id=1, nombre=carlos, apellido=perez, fechaAlta=20-12-2023, domicilio=Domicilio(id=1, calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires, paciente=null)), fecha=10-010-2023/16:50)]
+[2023-08-30 11:14:39] [ INFO ] [PacienteControlador:39] Paciente creado!
+[2023-08-30 11:14:51] [ INFO ] [OdontologoControlador:40] Odontologo creado.
+[2023-08-30 11:14:59] [ INFO ] [TurnoControlador:40] Se pudo crear el turno
+[2023-08-30 11:15:02] [ INFO ] [TurnoControlador:55] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(id=1, nombre=pedro, apellido=velazquez), paciente=PacienteDto(id=1, nombre=carlos, apellido=perez, fechaAlta=20-12-2023, domicilio=Domicilio(id=1, calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires, paciente=null)), fecha=10-010-2023/16:50), TurnoDto(id=2, odontologo=OdontologoDto(id=1, nombre=pedro, apellido=velazquez), paciente=PacienteDto(id=2, nombre=carlos, apellido=perez, fechaAlta=20-12-2023, domicilio=Domicilio(id=2, calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires, paciente=null)), fecha=30-09-2023/16:50)]
+[2023-08-30 11:16:51] [ INFO ] [TurnoControlador:69] Se pudo crear el turno
+[2023-08-30 11:16:54] [ INFO ] [TurnoControlador:55] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(id=1, nombre=pedro, apellido=velazquez), paciente=PacienteDto(id=1, nombre=carlos, apellido=perez, fechaAlta=20-12-2023, domicilio=Domicilio(id=1, calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires, paciente=null)), fecha=10-010-2023/16:50), TurnoDto(id=2, odontologo=OdontologoDto(id=2, nombre=pedro, apellido=velazquez), paciente=PacienteDto(id=2, nombre=carlos, apellido=perez, fechaAlta=20-12-2023, domicilio=Domicilio(id=2, calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires, paciente=null)), fecha=10-010-2023/16:50)]
+[2023-08-30 11:17:18] [ ERROR] [TurnoControlador:66] No se pudo actualizar el turno
+[2023-08-30 11:17:27] [ ERROR] [TurnoControlador:66] No se pudo actualizar el turno

@@ -18,16 +18,17 @@ import java.util.List;
 @RequestMapping("paciente")
 public class PacienteControlador {
     private final PacienteService pacienteService;
+    private final ObjectMapper mapper;
     private final Logger LOGGER = Logger.getLogger(PacienteControlador.class);
 
     @Autowired
-    public PacienteControlador(PacienteService pacienteService) {
+    public PacienteControlador(PacienteService pacienteService, ObjectMapper mapper) {
         this.pacienteService = pacienteService;
+        this.mapper = mapper;
     }
 
     @PostMapping("/registrar")
     public ResponseEntity<PacienteDto> registarPaciente(@RequestBody CrearPacienteDto pacienteDto) {
-        ObjectMapper mapper = new ObjectMapper();
         Paciente paciente;
         try {
             paciente = pacienteService.registrar(pacienteDto);
@@ -42,7 +43,6 @@ public class PacienteControlador {
 
     @GetMapping
     public ResponseEntity<List<PacienteDto>> listarPaciente() {
-        ObjectMapper mapper = new ObjectMapper();
         List<PacienteDto> listPacientes;
         try {
             listPacientes = mapper.convertValue(pacienteService.listar(), new TypeReference<>() {
@@ -56,7 +56,6 @@ public class PacienteControlador {
 
     @GetMapping("/buscar/{id}")
     public ResponseEntity<PacienteDto> obtenerPacientePorId(@PathVariable Long id) {
-        ObjectMapper mapper = new ObjectMapper();
         Paciente paciente = pacienteService.buscar(id);
         if (paciente == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);

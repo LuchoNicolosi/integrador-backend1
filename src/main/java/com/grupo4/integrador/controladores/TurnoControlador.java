@@ -2,6 +2,7 @@ package com.grupo4.integrador.controladores;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.grupo4.integrador.dto.TurnoDto.ActualizarTurnoDto;
 import com.grupo4.integrador.dto.TurnoDto.CrearTurnoDto;
 import com.grupo4.integrador.dto.TurnoDto.TurnoDto;
 import com.grupo4.integrador.entidades.Turno;
@@ -18,16 +19,17 @@ import java.util.List;
 @RequestMapping("turno")
 public class TurnoControlador {
     private final TurnoService turnoService;
+    private final ObjectMapper mapper;
     private final Logger LOGGER = Logger.getLogger(TurnoControlador.class);
 
     @Autowired
-    public TurnoControlador(TurnoService turnoService) {
+    public TurnoControlador(TurnoService turnoService, ObjectMapper mapper) {
         this.turnoService = turnoService;
+        this.mapper = mapper;
     }
 
     @PostMapping
     public ResponseEntity<TurnoDto> crearTurno(@RequestBody CrearTurnoDto turnoDTO) {
-        ObjectMapper mapper = new ObjectMapper();
         Turno nuevoTurno;
         try {
             nuevoTurno = turnoService.registrar(turnoDTO);
@@ -41,7 +43,6 @@ public class TurnoControlador {
 
     @GetMapping
     public ResponseEntity<List<TurnoDto>> listarTurnos() {
-        ObjectMapper mapper = new ObjectMapper();
         List<TurnoDto> turnoDtoList;
         try {
             turnoDtoList = mapper.convertValue(turnoService.listar(), new TypeReference<>() {
@@ -56,10 +57,10 @@ public class TurnoControlador {
     }
 
     @PutMapping("/modificar/{id}")
-    public ResponseEntity<TurnoDto> modificarTurno(@RequestBody TurnoDto turnoDTO) {
-        ObjectMapper mapper = new ObjectMapper();
+    public ResponseEntity<TurnoDto> modificarTurno(@RequestBody ActualizarTurnoDto turnoDTO, @PathVariable Long id) {
         Turno updateTurno;
         try {
+            turnoDTO.setId(id);
             updateTurno = turnoService.modificar(turnoDTO);
         } catch (Exception e) {
             LOGGER.error("No se pudo actualizar el turno");
@@ -71,7 +72,6 @@ public class TurnoControlador {
 
     @GetMapping("/buscar/{id}")
     public ResponseEntity<TurnoDto> buscarTurno(@PathVariable Long id) {
-        ObjectMapper mapper = new ObjectMapper();
         Turno turno = turnoService.buscar(id);
         if (turno == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);

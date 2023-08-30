@@ -1,6 +1,7 @@
 package com.grupo4.integrador.servicios;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.grupo4.integrador.dto.TurnoDto.ActualizarTurnoDto;
 import com.grupo4.integrador.dto.TurnoDto.CrearTurnoDto;
 import com.grupo4.integrador.dto.TurnoDto.TurnoDto;
 import com.grupo4.integrador.entidades.Odontologo;
@@ -57,9 +58,18 @@ public class TurnoService {
         o.ifPresent(turnoRepository::delete);
     }
 
-    public Turno modificar(TurnoDto turno) {
-        ObjectMapper mapper = new ObjectMapper();
-        Turno updateTurno = mapper.convertValue(turno, Turno.class);
-        return turnoRepository.save(updateTurno);
+    public Turno modificar(ActualizarTurnoDto turno) throws Exception {
+        Optional<Odontologo> odontologo = odontologoIRepository.findById(turno.getOdontologoId());
+        Optional<Paciente> paciente = pacienteIRepository.findById(turno.getPacienteId());
+
+        if (paciente.isEmpty() || odontologo.isEmpty()) throw new Exception("Error a encontrar usuarios.");
+
+       Turno actualizarTurno = new Turno();
+       actualizarTurno.setId(turno.getId());
+       actualizarTurno.setOdontologo(odontologo.get());
+       actualizarTurno.setPaciente(paciente.get());
+       actualizarTurno.setFecha(turno.getFecha());
+
+       return turnoRepository.save(actualizarTurno);
     }
 }
