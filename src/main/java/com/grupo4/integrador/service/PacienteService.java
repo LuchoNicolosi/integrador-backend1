@@ -1,11 +1,11 @@
-package com.grupo4.integrador.servicios;
+package com.grupo4.integrador.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.grupo4.integrador.dto.PacienteDto.CrearPacienteDto;
-import com.grupo4.integrador.entidades.Domicilio;
-import com.grupo4.integrador.entidades.Odontologo;
-import com.grupo4.integrador.entidades.Paciente;
-import com.grupo4.integrador.repositorio.PacienteRepository;
+import com.grupo4.integrador.entity.Domicilio;
+import com.grupo4.integrador.entity.Paciente;
+import com.grupo4.integrador.exceptions.ResourceNotFoundException;
+import com.grupo4.integrador.repository.PacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +29,7 @@ public class PacienteService {
     public Paciente registrar(CrearPacienteDto p) throws Exception {
         Paciente paciente;
         Domicilio dom = mapper.convertValue(p.getDomicilio(), Domicilio.class);
-        paciente =  mapper.convertValue(p, Paciente.class);
+        paciente = mapper.convertValue(p, Paciente.class);
         paciente.setDomicilio(domicilioService.registrar(dom));
         return pacienteRepository.save(paciente);
     }
@@ -38,14 +38,17 @@ public class PacienteService {
         return pacienteRepository.findAll();
     }
 
-    public Paciente buscar(Long id) {
-        Optional<Paciente> o = pacienteRepository.findById(id);
-        return o.orElse(null);
+    public Paciente buscar(Long id) throws ResourceNotFoundException {
+        Optional<Paciente> p = pacienteRepository.findById(id);
+        if (p.isEmpty()) {
+            throw new ResourceNotFoundException("No existe un paciente con el id " + id);
+        }
+        return p.get();
     }
 
-    public void eliminar(Long id) {
-        Optional<Paciente> o = pacienteRepository.findById(id);
-        o.ifPresent(pacienteRepository::delete);
+    public void eliminar(Long id) throws ResourceNotFoundException {
+        Paciente p = buscar(id);
+        pacienteRepository.delete(p);
     }
 
 }

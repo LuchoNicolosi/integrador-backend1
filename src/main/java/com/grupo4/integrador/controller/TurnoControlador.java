@@ -1,12 +1,15 @@
-package com.grupo4.integrador.controladores;
+package com.grupo4.integrador.controller;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.grupo4.integrador.dto.TurnoDto.ActualizarTurnoDto;
 import com.grupo4.integrador.dto.TurnoDto.CrearTurnoDto;
 import com.grupo4.integrador.dto.TurnoDto.TurnoDto;
-import com.grupo4.integrador.entidades.Turno;
-import com.grupo4.integrador.servicios.TurnoService;
+import com.grupo4.integrador.entity.Turno;
+import com.grupo4.integrador.exceptions.BadRequestException;
+import com.grupo4.integrador.exceptions.ResourceNotFoundException;
+import com.grupo4.integrador.service.TurnoService;
+import jakarta.validation.Valid;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -29,13 +32,13 @@ public class TurnoControlador {
     }
 
     @PostMapping
-    public ResponseEntity<TurnoDto> crearTurno(@RequestBody CrearTurnoDto turnoDTO) {
+    public ResponseEntity<TurnoDto> crearTurno(@Valid @RequestBody CrearTurnoDto turnoDTO) throws BadRequestException {
         Turno nuevoTurno;
         try {
             nuevoTurno = turnoService.registrar(turnoDTO);
         } catch (Exception e) {
             LOGGER.error("No se pudo crear el turno");
-            return ResponseEntity.badRequest().build();
+            throw new BadRequestException(e.getMessage());
         }
         LOGGER.info("Se pudo crear el turno");
         return new ResponseEntity<>(mapper.convertValue(nuevoTurno, TurnoDto.class), HttpStatus.OK);
@@ -57,7 +60,7 @@ public class TurnoControlador {
     }
 
     @PutMapping("/modificar/{id}")
-    public ResponseEntity<TurnoDto> modificarTurno(@RequestBody ActualizarTurnoDto turnoDTO, @PathVariable Long id) {
+    public ResponseEntity<TurnoDto> modificarTurno(@Valid @RequestBody ActualizarTurnoDto turnoDTO, @PathVariable Long id) {
         Turno updateTurno;
         try {
             turnoDTO.setId(id);
@@ -71,25 +74,16 @@ public class TurnoControlador {
     }
 
     @GetMapping("/buscar/{id}")
-    public ResponseEntity<TurnoDto> buscarTurno(@PathVariable Long id) {
+    public ResponseEntity<TurnoDto> buscarTurno(@PathVariable Long id) throws ResourceNotFoundException {
         Turno turno = turnoService.buscar(id);
-        if (turno == null) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-        LOGGER.info("se encontro el siguiente turno:" + turno);
         return new ResponseEntity<>(mapper.convertValue(turno, TurnoDto.class), HttpStatus.OK);
     }
 
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity eliminarTurno(@PathVariable Long id) {
-        ResponseEntity res;
-        if (turnoService.buscar(id) == null) {
-            res = new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        } else {
-            turnoService.eliminar(id);
-            res = new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
-        return res;
+    public ResponseEntity<?> eliminarTurno(@PathVariable Long id) throws ResourceNotFoundException {
+        turnoService.eliminar(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+
     }
 
 }

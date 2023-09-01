@@ -2,3 +2,38 @@
 [2023-08-30 20:59:25] [ INFO ] [PacienteControlador:39] Paciente creado!
 [2023-08-30 20:59:36] [ INFO ] [OdontologoControlador:40] Odontologo creado.
 [2023-08-30 21:00:20] [ ERROR] [GlobalExceptionHandler:15] JSON parse error: Cannot deserialize value of type `int` from String "sada": not a valid `int` value
+[2023-09-01 16:56:05] [ ERROR] [GlobalExceptionHandler:16] No existe un odontologo con el id 2
+[2023-09-01 16:56:34] [ ERROR] [GlobalExceptionHandler:22] No existe un odontologo con el id 2
+[2023-09-01 16:56:48] [ ERROR] [GlobalExceptionHandler:22] No existe un odontologo con el id 2
+[2023-09-01 17:00:43] [ ERROR] [GlobalExceptionHandler:22] No existe un odontologo con el id 2
+[2023-09-01 17:02:13] [ ERROR] [GlobalExceptionHandler:16] No existe un odontologo con el id 2
+[2023-09-01 17:02:33] [ ERROR] [GlobalExceptionHandler:21] No existe un odontologo con el id 2
+[2023-09-01 17:02:34] [ ERROR] [GlobalExceptionHandler:21] No existe un odontologo con el id 2
+[2023-09-01 17:02:35] [ ERROR] [GlobalExceptionHandler:21] No existe un odontologo con el id 2
+[2023-09-01 17:02:36] [ ERROR] [GlobalExceptionHandler:21] No existe un odontologo con el id 2
+[2023-09-01 17:06:04] [ ERROR] [GlobalExceptionHandler:16] No existe un odontologo con el id 2
+[2023-09-01 17:06:32] [ INFO ] [OdontologoControlador:42] Odontologo creado.
+[2023-09-01 17:06:43] [ ERROR] [GlobalExceptionHandler:16] No existe un odontologo con el id 1
+[2023-09-01 17:13:38] [ ERROR] [GlobalExceptionHandler:21] No existe un odontologo con el id 1
+[2023-09-01 17:17:48] [ ERROR] [GlobalExceptionHandler:16] No existe un odontologo con el id 1
+[2023-09-01 17:32:02] [ INFO ] [OdontologoControlador:39] No se puedo crear el odontologo. org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.grupo4.integrador.entity.Odontologo.matricula
+[2023-09-01 18:05:20] [ ERROR] [GlobalExceptionHandler:16] No existe un odontologo con el id 1
+[2023-09-01 18:05:23] [ ERROR] [GlobalExceptionHandler:16] No existe un odontologo con el id 1
+[2023-09-01 18:30:09] [ INFO ] [OdontologoControlador:44] Odontologo creado.
+[2023-09-01 18:45:24] [ INFO ] [OdontologoControlador:44] Odontologo creado.
+[2023-09-01 18:54:15] [ INFO ] [OdontologoControlador:48] Odontologo creado.
+[2023-09-01 18:55:23] [ INFO ] [OdontologoControlador:48] Odontologo creado.
+[2023-09-01 18:59:14] [ INFO ] [OdontologoControlador:48] Odontologo creado.
+[2023-09-01 19:03:04] [ INFO ] [OdontologoControlador:50] Odontologo creado.
+[2023-09-01 19:04:48] [ INFO ] [OdontologoControlador:50] Odontologo creado.
+[2023-09-01 19:06:28] [ INFO ] [OdontologoControlador:50] Odontologo creado.
+[2023-09-01 19:07:02] [ INFO ] [OdontologoControlador:51] Odontologo creado.
+[2023-09-01 19:12:54] [ INFO ] [OdontologoControlador:53] Odontologo creado.
+[2023-09-01 19:48:24] [ INFO ] [OdontologoControlador:62] Listado de odontologos
+[2023-09-01 19:48:27] [ INFO ] [OdontologoControlador:69] odontologo encontrado.
+[2023-09-01 19:48:32] [ INFO ] [PacienteControlador:42] Paciente creado!
+[2023-09-01 19:48:45] [ INFO ] [PacienteControlador:42] Paciente creado!
+[2023-09-01 19:49:02] [ INFO ] [TurnoControlador:43] Se pudo crear el turno
+[2023-09-01 19:49:05] [ INFO ] [TurnoControlador:58] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(id=1, nombre=pedro, apellido=perez), paciente=PacienteDto(id=1, nombre=carlos, apellido=perez, fechaAlta=20-12-2023, domicilio=Domicilio(id=1, calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires, paciente=null)), fecha=30-09-2023/16:50)]
+[2023-09-01 19:49:13] [ INFO ] [TurnoControlador:72] Se pudo crear el turno
+[2023-09-01 19:49:18] [ INFO ] [TurnoControlador:58] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(id=1, nombre=pedro, apellido=perez), paciente=PacienteDto(id=1, nombre=carlos, apellido=perez, fechaAlta=20-12-2023, domicilio=Domicilio(id=1, calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires, paciente=null)), fecha=10-010-2023/16:50)]

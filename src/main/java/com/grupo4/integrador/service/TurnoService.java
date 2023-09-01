@@ -1,19 +1,17 @@
-package com.grupo4.integrador.servicios;
+package com.grupo4.integrador.service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.grupo4.integrador.dto.TurnoDto.ActualizarTurnoDto;
 import com.grupo4.integrador.dto.TurnoDto.CrearTurnoDto;
-import com.grupo4.integrador.dto.TurnoDto.TurnoDto;
-import com.grupo4.integrador.entidades.Odontologo;
-import com.grupo4.integrador.entidades.Paciente;
-import com.grupo4.integrador.entidades.Turno;
-import com.grupo4.integrador.repositorio.OdontologoRepository;
-import com.grupo4.integrador.repositorio.PacienteRepository;
-import com.grupo4.integrador.repositorio.TurnoRepository;
+import com.grupo4.integrador.entity.Odontologo;
+import com.grupo4.integrador.entity.Paciente;
+import com.grupo4.integrador.entity.Turno;
+import com.grupo4.integrador.exceptions.ResourceNotFoundException;
+import com.grupo4.integrador.repository.OdontologoRepository;
+import com.grupo4.integrador.repository.PacienteRepository;
+import com.grupo4.integrador.repository.TurnoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.PreparedStatement;
 import java.util.List;
 import java.util.Optional;
 
@@ -48,28 +46,31 @@ public class TurnoService {
         return turnoRepository.findAll();
     }
 
-    public Turno buscar(Long id) {
-        Optional<Turno> o = turnoRepository.findById(id);
-        return o.orElse(null);
+    public Turno buscar(Long id) throws ResourceNotFoundException {
+        Optional<Turno> t = turnoRepository.findById(id);
+        if (t.isEmpty()) {
+            throw new ResourceNotFoundException("No existe un turno con el id " + id);
+        }
+        return t.get();
     }
 
-    public void eliminar(Long id) {
-        Optional<Turno> o = turnoRepository.findById(id);
-        o.ifPresent(turnoRepository::delete);
+    public void eliminar(Long id) throws ResourceNotFoundException {
+        Turno t = buscar(id);
+        turnoRepository.delete(t);
     }
 
     public Turno modificar(ActualizarTurnoDto turno) throws Exception {
         Optional<Odontologo> odontologo = odontologoIRepository.findById(turno.getOdontologoId());
         Optional<Paciente> paciente = pacienteIRepository.findById(turno.getPacienteId());
 
-        if (paciente.isEmpty() || odontologo.isEmpty()) throw new Exception("Error a encontrar usuarios.");
+        if (paciente.isEmpty() || odontologo.isEmpty()) throw new ResourceNotFoundException("Error a encontrar usuarios.");
 
-       Turno actualizarTurno = new Turno();
-       actualizarTurno.setId(turno.getId());
-       actualizarTurno.setOdontologo(odontologo.get());
-       actualizarTurno.setPaciente(paciente.get());
-       actualizarTurno.setFecha(turno.getFecha());
+        Turno actualizarTurno = new Turno();
+        actualizarTurno.setId(turno.getId());
+        actualizarTurno.setOdontologo(odontologo.get());
+        actualizarTurno.setPaciente(paciente.get());
+        actualizarTurno.setFecha(turno.getFecha());
 
-       return turnoRepository.save(actualizarTurno);
+        return turnoRepository.save(actualizarTurno);
     }
 }

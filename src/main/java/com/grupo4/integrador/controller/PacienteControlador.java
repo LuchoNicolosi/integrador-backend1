@@ -1,11 +1,14 @@
-package com.grupo4.integrador.controladores;
+package com.grupo4.integrador.controller;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.grupo4.integrador.dto.PacienteDto.CrearPacienteDto;
 import com.grupo4.integrador.dto.PacienteDto.PacienteDto;
-import com.grupo4.integrador.entidades.Paciente;
-import com.grupo4.integrador.servicios.PacienteService;
+import com.grupo4.integrador.entity.Paciente;
+import com.grupo4.integrador.exceptions.BadRequestException;
+import com.grupo4.integrador.exceptions.ResourceNotFoundException;
+import com.grupo4.integrador.service.PacienteService;
+import jakarta.validation.Valid;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,16 +31,15 @@ public class PacienteControlador {
     }
 
     @PostMapping("/registrar")
-    public ResponseEntity<PacienteDto> registarPaciente(@RequestBody CrearPacienteDto pacienteDto) {
-        Paciente paciente;
+    public ResponseEntity<PacienteDto> registarPaciente(@Valid @RequestBody CrearPacienteDto pacienteDto) throws BadRequestException {
+        Paciente paciente = null;
         try {
             paciente = pacienteService.registrar(pacienteDto);
         } catch (Exception e) {
-            LOGGER.error("Error al crear al paciente " + e);
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            LOGGER.error("Error al crear al paciente");
+            throw new BadRequestException(e.getMessage());
         }
         LOGGER.info("Paciente creado!");
-
         return new ResponseEntity<>(mapper.convertValue(paciente, PacienteDto.class), HttpStatus.OK);
     }
 
@@ -55,28 +57,15 @@ public class PacienteControlador {
     }
 
     @GetMapping("/buscar/{id}")
-    public ResponseEntity<PacienteDto> obtenerPacientePorId(@PathVariable Long id) {
+    public ResponseEntity<PacienteDto> obtenerPacientePorId(@PathVariable Long id) throws ResourceNotFoundException {
         Paciente paciente = pacienteService.buscar(id);
-        if (paciente == null) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-
         return new ResponseEntity<>(mapper.convertValue(paciente, PacienteDto.class), HttpStatus.OK);
     }
 
 
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity eliminarPaciente(@PathVariable Long id) {
-        try {
-            if (pacienteService.buscar(id) == null) {
-                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-            }
-            pacienteService.eliminar(id);
-        } catch (Exception e) {
-            LOGGER.error("Error al eliminar el paciente " + e);
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-        LOGGER.info("El paciente fue elimninado");
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    public ResponseEntity eliminarPaciente(@PathVariable Long id) throws ResourceNotFoundException {
+        pacienteService.eliminar(id);
+        return ResponseEntity.ok("Registro eliminado");
     }
 }

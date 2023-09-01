@@ -1,8 +1,7 @@
 package com.grupo4.integrador.dto.PacienteDto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.grupo4.integrador.dto.DomicilioDto.DomicilioDto;
-import com.grupo4.integrador.entidades.Domicilio;
+import com.grupo4.integrador.entity.Domicilio;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

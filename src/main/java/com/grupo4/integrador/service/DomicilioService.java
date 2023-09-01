@@ -1,12 +1,9 @@
-package com.grupo4.integrador.servicios;
+package com.grupo4.integrador.service;
 
-import com.grupo4.integrador.dto.DomicilioDto.CrearDomicilioDto;
-import com.grupo4.integrador.entidades.Domicilio;
-import com.grupo4.integrador.repositorio.DomicilioRepository;
+import com.grupo4.integrador.entity.Domicilio;
+import com.grupo4.integrador.repository.DomicilioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class DomicilioService {

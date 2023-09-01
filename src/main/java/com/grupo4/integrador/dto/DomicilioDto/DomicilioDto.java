@@ -1,7 +1,5 @@
 package com.grupo4.integrador.dto.DomicilioDto;
 
-import com.grupo4.integrador.dto.PacienteDto.PacienteDto;
-import com.grupo4.integrador.entidades.Paciente;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

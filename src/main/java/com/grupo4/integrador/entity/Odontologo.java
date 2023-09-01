@@ -1,11 +1,8 @@
-package com.grupo4.integrador.entidades;
+package com.grupo4.integrador.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,8 +14,11 @@ public class Odontologo {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+    @Column(nullable = false)
     private String nombre;
+    @Column(nullable = false)
     private String apellido;
+//    @Column(nullable = false)
     private String matricula;
     @OneToMany(mappedBy = "odontologo")
     @JsonIgnore

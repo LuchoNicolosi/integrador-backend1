@@ -1,9 +1,12 @@
-package com.grupo4.integrador.servicios;
+package com.grupo4.integrador.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.grupo4.integrador.dto.OdontologoDto.CrearOdontologoDto;
-import com.grupo4.integrador.entidades.Odontologo;
-import com.grupo4.integrador.repositorio.OdontologoRepository;
+import com.grupo4.integrador.entity.Odontologo;
+import com.grupo4.integrador.exceptions.BadRequestException;
+import com.grupo4.integrador.exceptions.InternalServerException;
+import com.grupo4.integrador.exceptions.ResourceNotFoundException;
+import com.grupo4.integrador.repository.OdontologoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,8 +25,8 @@ public class OdontologoService {
     }
 
 
-    public Odontologo registrar(CrearOdontologoDto o) {
-        Odontologo odontologo= mapper.convertValue(o,Odontologo.class);
+    public Odontologo registrar(CrearOdontologoDto o) throws BadRequestException {
+        Odontologo odontologo = mapper.convertValue(o, Odontologo.class);
         return odontologoRepository.save(odontologo);
     }
 
@@ -31,14 +34,17 @@ public class OdontologoService {
         return odontologoRepository.findAll();
     }
 
-    public Odontologo buscar(Long id) {
+    public Odontologo buscar(Long id) throws ResourceNotFoundException {
         Optional<Odontologo> o = odontologoRepository.findById(id);
-        return o.orElse(null);
+        if (o.isEmpty()) {
+            throw new ResourceNotFoundException("No existe un odontologo con el id " + id);
+        }
+        return o.get();
     }
 
-    public void eliminar(Long id) {
-        Optional<Odontologo> o = odontologoRepository.findById(id);
-        o.ifPresent(odontologoRepository::delete);
+    public void eliminar(Long id) throws ResourceNotFoundException {
+        Odontologo o = buscar(id);
+        odontologoRepository.delete(o);
     }
 
 }

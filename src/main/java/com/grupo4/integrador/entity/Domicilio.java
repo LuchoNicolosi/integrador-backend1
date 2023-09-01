@@ -1,11 +1,8 @@
-package com.grupo4.integrador.entidades;
+package com.grupo4.integrador.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
 @Entity
 @Table(name = "domicilios")
