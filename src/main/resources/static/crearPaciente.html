@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clinica Odontologica</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>Crear paciente</h1>
+      </div>
+      <div>
+        <form id="crearPacienteForm">
+          <div class="formControl">
+            <label for="inputNombre">Nombre</label>
+            <input type="text" name="inputNombre" id="inputNombre" required />
+          </div>
+          <div class="formControl">
+            <label for="inputApellido">Apelido</label>
+            <input
+              type="text"
+              name="inputApellido"
+              id="inputApellido"
+              required
+            />
+          </div>
+          <div class="formControl">
+            <label for="inputDni">Dni</label>
+            <input type="text" name="inputDni" id="inputDni" required />
+          </div>
+          <div class="formControl">
+            <label for="inputFechaAlta">Fecha alta</label>
+            <input
+              type="text"
+              name="inputFechaAlta"
+              id="inputFechaAlta"
+              required
+            />
+          </div>
+          <div class="container-submit">
+            <button type="submit">Crear</button>
+            <button>
+              <a href="index.html">Volver</a>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="lista-contenedor">
+      <div id="datos-odontologo"></div>
+    </div>
+    <script src="js/paciente.js"></script>
+  </body>
+</html>

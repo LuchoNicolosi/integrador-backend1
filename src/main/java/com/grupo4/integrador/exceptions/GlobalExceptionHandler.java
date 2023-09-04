@@ -11,16 +11,21 @@ import org.springframework.web.context.request.WebRequest;
 public class GlobalExceptionHandler {
     private final static Logger logger = Logger.getLogger(GlobalExceptionHandler.class);
 
-//    @ExceptionHandler({Exception.class})
-//    public ResponseEntity<?> internalServerException(Exception ex, WebRequest req) {
-//        logger.error(ex.getMessage());
-//        return new ResponseEntity<>("Error: " + ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
-//    }
-//    @ExceptionHandler({ResourceNotFoundException.class})
-//    public ResponseEntity<?> resourceNotFoundException(ResourceNotFoundException ex, WebRequest req) {
-//        logger.error(ex.getMessage());
-//        return new ResponseEntity<>("Recurso no encontrado : " + ex.getMessage(), HttpStatus.NOT_FOUND);
-//    }
+    @ExceptionHandler({InternalServerException.class})
+    public ResponseEntity<?> internalServerException(InternalServerException ex, WebRequest req) {
+        logger.error(ex.getMessage());
+        return new ResponseEntity<>("Error: " + ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 
+    @ExceptionHandler({ResourceNotFoundException.class})
+    public ResponseEntity<?> resourceNotFoundException(ResourceNotFoundException ex, WebRequest req) {
+        logger.error(ex.getMessage());
+        return new ResponseEntity<>("Recurso no encontrado : " + ex.getMessage(), HttpStatus.NOT_FOUND);
+    }
 
+    @ExceptionHandler({BadRequestException.class})
+    public ResponseEntity<?> badRequestException(BadRequestException ex, WebRequest req) {
+        logger.error(ex.getMessage());
+        return new ResponseEntity<>("Error al crear el recurso : " + ex.getMessage(), HttpStatus.BAD_REQUEST);
+    }
 }

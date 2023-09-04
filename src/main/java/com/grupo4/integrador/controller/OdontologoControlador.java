@@ -24,6 +24,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
+@CrossOrigin(origins = "http://localhost:63342")
 @RestController
 @RequestMapping("/odontologo")
 public class OdontologoControlador {
@@ -36,6 +37,7 @@ public class OdontologoControlador {
         this.odontologoService = odontologoService;
         this.mapper = mapper;
     }
+
 
     @PostMapping("/registrar")
     public ResponseEntity<OdontologoDto> registrarOdontologo(@Valid @RequestBody CrearOdontologoDto odontologoDto) throws BadRequestException {
@@ -71,7 +73,7 @@ public class OdontologoControlador {
     }
 
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity eliminarOdontologo(@PathVariable Long id) throws ResourceNotFoundException, InternalServerException {
+    public ResponseEntity<?> eliminarOdontologo(@PathVariable Long id) throws ResourceNotFoundException {
         odontologoService.eliminar(id);
         return ResponseEntity.ok("Registro eliminado");
     }

@@ -16,7 +16,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin(origins = "http://localhost:63342")
 @RestController
 @RequestMapping("paciente")
 public class PacienteControlador {
@@ -32,7 +32,7 @@ public class PacienteControlador {
 
     @PostMapping("/registrar")
     public ResponseEntity<PacienteDto> registarPaciente(@Valid @RequestBody CrearPacienteDto pacienteDto) throws BadRequestException {
-        Paciente paciente = null;
+        Paciente paciente;
         try {
             paciente = pacienteService.registrar(pacienteDto);
         } catch (Exception e) {
@@ -64,7 +64,7 @@ public class PacienteControlador {
 
 
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity eliminarPaciente(@PathVariable Long id) throws ResourceNotFoundException {
+    public ResponseEntity<?> eliminarPaciente(@PathVariable Long id) throws ResourceNotFoundException {
         pacienteService.eliminar(id);
         return ResponseEntity.ok("Registro eliminado");
     }

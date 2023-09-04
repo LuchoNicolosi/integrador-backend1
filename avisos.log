@@ -37,3 +37,135 @@
 [2023-09-01 19:49:05] [ INFO ] [TurnoControlador:58] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(id=1, nombre=pedro, apellido=perez), paciente=PacienteDto(id=1, nombre=carlos, apellido=perez, fechaAlta=20-12-2023, domicilio=Domicilio(id=1, calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires, paciente=null)), fecha=30-09-2023/16:50)]
 [2023-09-01 19:49:13] [ INFO ] [TurnoControlador:72] Se pudo crear el turno
 [2023-09-01 19:49:18] [ INFO ] [TurnoControlador:58] listando turnos[TurnoDto(id=1, odontologo=OdontologoDto(id=1, nombre=pedro, apellido=perez), paciente=PacienteDto(id=1, nombre=carlos, apellido=perez, fechaAlta=20-12-2023, domicilio=Domicilio(id=1, calle=av san martin, numero=190, localidad=ramos mejia, provincia=buenos aires, paciente=null)), fecha=10-010-2023/16:50)]
+[2023-09-02 13:58:35] [ ERROR] [GlobalExceptionHandler:21] No existe un odontologo con el id 2
+[2023-09-02 14:01:08] [ ERROR] [GlobalExceptionHandler:21] No existe un odontologo con el id 2
+[2023-09-02 14:08:05] [ ERROR] [GlobalExceptionHandler:16] JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+[2023-09-02 14:08:10] [ ERROR] [GlobalExceptionHandler:16] Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.grupo4.integrador.dto.OdontologoDto.OdontologoDto> com.grupo4.integrador.controller.OdontologoControlador.registrarOdontologo(com.grupo4.integrador.dto.OdontologoDto.CrearOdontologoDto) throws com.grupo4.integrador.exceptions.BadRequestException: [Field error in object 'crearOdontologoDto' on field 'matricula': rejected value [null]; codes [NotNull.crearOdontologoDto.matricula,NotNull.matricula,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [crearOdontologoDto.matricula,matricula]; arguments []; default message [matricula]]; default message [no debe ser nulo]] 
+[2023-09-02 15:09:35] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:09:40] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:09:41] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:10:02] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:10:16] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:10:18] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:10:27] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:10:43] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:11:07] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:12:31] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:13:01] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:14:09] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:14:41] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:15:10] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:15:14] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:15:19] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:15:27] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:17:19] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:18:07] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:23:26] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:23:31] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:25:07] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:25:10] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:25:23] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:25:27] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-02 15:27:36] [ INFO ] [PacienteControlador:42] Paciente creado!
+[2023-09-04 02:38:14] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:40:09] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:40:38] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:41:04] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:41:38] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:43:22] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:44:25] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:44:45] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:45:16] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:45:30] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:46:07] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:47:22] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:51:38] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:54:01] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:54:22] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:54:47] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:55:05] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:55:15] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:55:43] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:56:05] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:56:45] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:57:03] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:57:24] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:58:28] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:59:18] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:59:27] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 02:59:36] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:00:25] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:00:38] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:00:46] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:01:24] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:01:49] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:01:49] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:02:18] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:02:25] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:02:50] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:03:08] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:03:19] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:03:28] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:03:40] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:04:01] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:04:32] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:04:44] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:04:51] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:05:10] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:05:12] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:05:12] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:05:49] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:06:15] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:07:52] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:09:46] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:09:51] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:09:57] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:10:17] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:10:21] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:10:59] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:11:16] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:11:25] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:13:22] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:13:31] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:13:51] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:14:06] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:14:20] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:14:32] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:14:47] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:15:00] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:16:40] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:18:04] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:18:46] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:19:10] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:19:22] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:19:23] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:19:31] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:19:31] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:19:40] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:19:44] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:20:05] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:21:07] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:21:37] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:21:44] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:23:08] [ INFO ] [PacienteControlador:42] Paciente creado!
+[2023-09-04 03:25:08] [ INFO ] [PacienteControlador:42] Paciente creado!
+[2023-09-04 03:25:10] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:25:25] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:26:54] [ INFO ] [PacienteControlador:42] Paciente creado!
+[2023-09-04 03:27:04] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:27:08] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:27:11] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:27:13] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:27:24] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:27:26] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:27:40] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:27:43] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:27:44] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:27:48] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:27:55] [ INFO ] [PacienteControlador:42] Paciente creado!
+[2023-09-04 03:27:59] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:28:46] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:28:56] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:29:53] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:30:37] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 03:30:45] [ INFO ] [PacienteControlador:42] Paciente creado!

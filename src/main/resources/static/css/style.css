@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  background-color: aquamarine;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  border: 1px solid #000;
+  padding: 2.5rem;
+  border-radius: 10px;
+  background-color: azure;
+}
+h1,
+h3 {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  gap: 4.5rem;
+  list-style: none;
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  background: none;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.formControl {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.container-submit {
+  margin: auto;
+  display: flex;
+  gap: 2.5em;
+}
+
+.lista {
+  margin-top: 2em;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+
+
