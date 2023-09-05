@@ -1,6 +1,7 @@
 package com.grupo4.integrador.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.grupo4.integrador.dto.OdontologoDto.ActualizarOdontologoDto;
 import com.grupo4.integrador.dto.OdontologoDto.CrearOdontologoDto;
 import com.grupo4.integrador.entity.Odontologo;
 import com.grupo4.integrador.exceptions.BadRequestException;
@@ -45,6 +46,10 @@ public class OdontologoService {
     public void eliminar(Long id) throws ResourceNotFoundException {
         Odontologo o = buscar(id);
         odontologoRepository.delete(o);
+    }
+    public Odontologo actualizarOdontologo(ActualizarOdontologoDto actualizarOdontologoDto){
+        Odontologo odontologo = mapper.convertValue(actualizarOdontologoDto, Odontologo.class);
+        return odontologoRepository.save(odontologo);
     }
 
 }

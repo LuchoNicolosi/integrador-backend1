@@ -2,6 +2,7 @@ package com.grupo4.integrador.controller;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.grupo4.integrador.dto.OdontologoDto.ActualizarOdontologoDto;
 import com.grupo4.integrador.dto.OdontologoDto.CrearOdontologoDto;
 import com.grupo4.integrador.dto.OdontologoDto.OdontologoDto;
 import com.grupo4.integrador.entity.Odontologo;
@@ -77,5 +78,21 @@ public class OdontologoControlador {
         odontologoService.eliminar(id);
         return ResponseEntity.ok("Registro eliminado");
     }
+    @PutMapping("/modificar/{id}")
+    public ResponseEntity<OdontologoDto> actualizarOdontologo(@RequestBody ActualizarOdontologoDto actualizarOdontologoDto, @PathVariable Long id)throws ResourceNotFoundException{
+        Odontologo odontologo = odontologoService.buscar(id);
+        ResponseEntity<OdontologoDto> response;
+        OdontologoDto odontologoDto = null;
+
+        if(odontologo != null){
+            actualizarOdontologoDto.setId(id);
+            odontologoDto = mapper.convertValue(odontologoService.actualizarOdontologo(actualizarOdontologoDto), OdontologoDto.class);
+            response = new ResponseEntity<>(odontologoDto, HttpStatus.OK);
+        }else{
+            response = new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+        return response;
+    }
+
 
 }
