@@ -169,3 +169,30 @@
 [2023-09-04 03:29:53] [ INFO ] [OdontologoControlador:64] Listado de odontologos
 [2023-09-04 03:30:37] [ INFO ] [OdontologoControlador:64] Listado de odontologos
 [2023-09-04 03:30:45] [ INFO ] [PacienteControlador:42] Paciente creado!
+[2023-09-04 20:09:15] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 20:09:27] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 20:09:37] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 20:09:52] [ INFO ] [PacienteControlador:42] Paciente creado!
+[2023-09-04 20:10:32] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 20:10:35] [ INFO ] [OdontologoControlador:64] Listado de odontologos
+[2023-09-04 20:43:31] [ INFO ] [PacienteControlador:42] Paciente creado!
+[2023-09-04 20:47:02] [ ERROR] [PacienteControlador:39] Error al crear al paciente
+[2023-09-04 20:47:02] [ ERROR] [GlobalExceptionHandler:28] Cannot deserialize value of type `java.util.Date` from String "0026-06-15": not a valid representation (error: Failed to parse Date value '0026-06-15': Unparseable date: "0026-06-15")
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.grupo4.integrador.entity.Paciente["fechaAlta"])
+[2023-09-04 20:47:22] [ ERROR] [PacienteControlador:39] Error al crear al paciente
+[2023-09-04 20:47:22] [ ERROR] [GlobalExceptionHandler:28] Cannot deserialize value of type `java.util.Date` from String "2023-12-30": not a valid representation (error: Failed to parse Date value '2023-12-30': Unparseable date: "2023-12-30")
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.grupo4.integrador.entity.Paciente["fechaAlta"])
+[2023-09-04 20:47:41] [ ERROR] [PacienteControlador:39] Error al crear al paciente
+[2023-09-04 20:47:41] [ ERROR] [GlobalExceptionHandler:28] Cannot deserialize value of type `java.util.Date` from String "2023-12-30": not a valid representation (error: Failed to parse Date value '2023-12-30': Unparseable date: "2023-12-30")
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.grupo4.integrador.entity.Paciente["fechaAlta"])
+[2023-09-04 20:47:46] [ ERROR] [PacienteControlador:39] Error al crear al paciente
+[2023-09-04 20:47:46] [ ERROR] [GlobalExceptionHandler:28] Cannot deserialize value of type `java.util.Date` from String "0026-06-15": not a valid representation (error: Failed to parse Date value '0026-06-15': Unparseable date: "0026-06-15")
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.grupo4.integrador.entity.Paciente["fechaAlta"])
+[2023-09-04 20:48:51] [ ERROR] [PacienteControlador:39] Error al crear al paciente
+[2023-09-04 20:48:51] [ ERROR] [GlobalExceptionHandler:28] Cannot deserialize value of type `java.util.Date` from String "2023-09-23": not a valid representation (error: Failed to parse Date value '2023-09-23': Unparseable date: "2023-09-23")
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.grupo4.integrador.entity.Paciente["fechaAlta"])
+[2023-09-04 20:51:57] [ INFO ] [PacienteControlador:42] Paciente creado!
+[2023-09-04 20:53:54] [ ERROR] [PacienteControlador:39] Error al crear al paciente
+[2023-09-04 20:53:54] [ ERROR] [GlobalExceptionHandler:28] Cannot deserialize value of type `java.time.LocalDate` from String "23-09-2023": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '23-09-2023' could not be parsed at index 0
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.grupo4.integrador.entity.Paciente["fechaAlta"])
+[2023-09-04 20:56:44] [ INFO ] [PacienteControlador:42] Paciente creado!

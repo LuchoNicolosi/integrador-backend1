@@ -7,7 +7,6 @@ import lombok.Data;
 
 @Data
 public class CrearOdontologoDto {
-    private int id;
     @NotNull
     private String nombre;
     @NotNull

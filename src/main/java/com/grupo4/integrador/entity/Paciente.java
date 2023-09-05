@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
+import java.util.Date;
+
 @Entity
 @Table(name = "pacientes")
 @Data
@@ -18,7 +21,7 @@ public class Paciente {
     @Column(nullable = false)
     private String dni;
     @Column(nullable = false)
-    private String fechaAlta;
+    private LocalDate fechaAlta;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "domicilio_id")
@@ -30,7 +33,7 @@ public class Paciente {
     public Paciente() {
     }
 
-    public Paciente(String nombre, String apellido, String dni, String fechaAlta) {
+    public Paciente(String nombre, String apellido, String dni, LocalDate fechaAlta) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
