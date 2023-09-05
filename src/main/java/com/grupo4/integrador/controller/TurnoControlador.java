@@ -60,8 +60,8 @@ public class TurnoControlador {
         return new ResponseEntity<>(turnoDtoList, HttpStatus.OK);
     }
 
-    @PutMapping("/modificar/{id}")
-    public ResponseEntity<TurnoDto> modificarTurno(@Valid @RequestBody ActualizarTurnoDto turnoDTO, @PathVariable Long id) {
+    @PutMapping("/modificar")
+    public ResponseEntity<TurnoDto> modificarTurno(@Valid @RequestBody ActualizarTurnoDto turnoDTO, @RequestParam(name = "id") Long id) {
         Turno updateTurno;
         try {
             turnoDTO.setId(id);

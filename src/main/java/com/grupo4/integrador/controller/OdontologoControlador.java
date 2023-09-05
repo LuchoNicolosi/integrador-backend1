@@ -65,15 +65,15 @@ public class OdontologoControlador {
         return new ResponseEntity<>(listOdontologos, HttpStatus.OK);
     }
 
-    @GetMapping("/buscar/{id}")
-    public ResponseEntity<OdontologoDto> obtenerOdontologoPorId(@PathVariable Long id) throws ResourceNotFoundException {
+    @GetMapping("/buscar")
+    public ResponseEntity<OdontologoDto> obtenerOdontologoPorId(@RequestParam(name = "id") Long id) throws ResourceNotFoundException {
         Odontologo odontologo = odontologoService.buscar(id);
         LOGGER.info("odontologo encontrado.");
         return new ResponseEntity<>(mapper.convertValue(odontologo, OdontologoDto.class), HttpStatus.OK);
     }
 
-    @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<?> eliminarOdontologo(@PathVariable Long id) throws ResourceNotFoundException {
+    @DeleteMapping("/eliminar")
+    public ResponseEntity<?> eliminarOdontologo(@RequestParam(name = "id") Long id) throws ResourceNotFoundException {
         odontologoService.eliminar(id);
         return ResponseEntity.ok("Registro eliminado");
     }

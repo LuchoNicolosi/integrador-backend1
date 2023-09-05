@@ -16,6 +16,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 @CrossOrigin(origins = "http://localhost:63342")
 @RestController
 @RequestMapping("paciente")
@@ -56,15 +57,15 @@ public class PacienteControlador {
         return new ResponseEntity<>(listPacientes, HttpStatus.OK);
     }
 
-    @GetMapping("/buscar/{id}")
-    public ResponseEntity<PacienteDto> obtenerPacientePorId(@PathVariable Long id) throws ResourceNotFoundException {
+    @GetMapping("/buscar")
+    public ResponseEntity<PacienteDto> obtenerPacientePorId(@RequestParam(name = "id") Long id) throws ResourceNotFoundException {
         Paciente paciente = pacienteService.buscar(id);
         return new ResponseEntity<>(mapper.convertValue(paciente, PacienteDto.class), HttpStatus.OK);
     }
 
 
-    @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<?> eliminarPaciente(@PathVariable Long id) throws ResourceNotFoundException {
+    @DeleteMapping("/eliminar")
+    public ResponseEntity<?> eliminarPaciente(@RequestParam(name = "id") Long id) throws ResourceNotFoundException {
         pacienteService.eliminar(id);
         return ResponseEntity.ok("Registro eliminado");
     }
