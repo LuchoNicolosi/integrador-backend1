@@ -2,8 +2,11 @@ package com.grupo4.integrador.controller;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.grupo4.integrador.dto.OdontologoDto.OdontologoDto;
+import com.grupo4.integrador.dto.PacienteDto.ActualizarPacientoDto;
 import com.grupo4.integrador.dto.PacienteDto.CrearPacienteDto;
 import com.grupo4.integrador.dto.PacienteDto.PacienteDto;
+import com.grupo4.integrador.entity.Odontologo;
 import com.grupo4.integrador.entity.Paciente;
 import com.grupo4.integrador.exceptions.BadRequestException;
 import com.grupo4.integrador.exceptions.ResourceNotFoundException;
@@ -68,5 +71,20 @@ public class PacienteControlador {
     public ResponseEntity<?> eliminarPaciente(@RequestParam(name = "id") Long id) throws ResourceNotFoundException {
         pacienteService.eliminar(id);
         return ResponseEntity.ok("Registro eliminado");
+    }
+    @PutMapping("/modificar/{id}")
+    public ResponseEntity<PacienteDto> actualizarPaciente(@RequestBody ActualizarPacientoDto actualizarPacientoDto, @PathVariable Long id) throws ResourceNotFoundException {
+        Paciente paciente = pacienteService.buscar(id);
+        ResponseEntity<PacienteDto> response;
+        PacienteDto pacienteDto = null;
+
+        if(paciente != null){
+            actualizarPacientoDto.setId(id);
+            pacienteDto = mapper.convertValue(pacienteService.actualizarPaciente(actualizarPacientoDto), PacienteDto.class);
+            response = new ResponseEntity<>(pacienteDto, HttpStatus.OK);
+        }else{
+            response = new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+        return response;
     }
 }

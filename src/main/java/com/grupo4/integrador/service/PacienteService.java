@@ -1,8 +1,11 @@
 package com.grupo4.integrador.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.grupo4.integrador.dto.OdontologoDto.ActualizarOdontologoDto;
+import com.grupo4.integrador.dto.PacienteDto.ActualizarPacientoDto;
 import com.grupo4.integrador.dto.PacienteDto.CrearPacienteDto;
 import com.grupo4.integrador.entity.Domicilio;
+import com.grupo4.integrador.entity.Odontologo;
 import com.grupo4.integrador.entity.Paciente;
 import com.grupo4.integrador.exceptions.ResourceNotFoundException;
 import com.grupo4.integrador.repository.PacienteRepository;
@@ -49,6 +52,10 @@ public class PacienteService {
     public void eliminar(Long id) throws ResourceNotFoundException {
         Paciente p = buscar(id);
         pacienteRepository.delete(p);
+    }
+    public Paciente actualizarPaciente(ActualizarPacientoDto actualizarPacientoDto){
+        Paciente paciente = mapper.convertValue(actualizarPacientoDto, Paciente.class);
+        return pacienteRepository.save(paciente);
     }
 
 }

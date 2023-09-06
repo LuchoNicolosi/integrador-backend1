@@ -1,18 +1,22 @@
 package com.grupo4.integrador.dto.PacienteDto;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.grupo4.integrador.entity.Domicilio;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @NoArgsConstructor
-@JsonIgnoreProperties(ignoreUnknown = true)
-public class PacienteDto {
+@Data
+public class ActualizarPacientoDto {
     private Long id;
+    @NotNull
     private String nombre;
+    @NotNull
     private String apellido;
-    // private String dni;
+    @NotNull
+    private String dni;
+    @NotNull
     private String fechaAlta;
+    @NotNull
     private Domicilio domicilio;
 }
