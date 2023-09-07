@@ -5,7 +5,6 @@ import com.grupo4.integrador.dto.OdontologoDto.ActualizarOdontologoDto;
 import com.grupo4.integrador.dto.OdontologoDto.CrearOdontologoDto;
 import com.grupo4.integrador.entity.Odontologo;
 import com.grupo4.integrador.exceptions.BadRequestException;
-import com.grupo4.integrador.exceptions.InternalServerException;
 import com.grupo4.integrador.exceptions.ResourceNotFoundException;
 import com.grupo4.integrador.repository.OdontologoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +37,7 @@ public class OdontologoService {
     public Odontologo buscar(Long id) throws ResourceNotFoundException {
         Optional<Odontologo> o = odontologoRepository.findById(id);
         if (o.isEmpty()) {
-            throw new ResourceNotFoundException("No existe un odontologo con el id " + id);
+            throw new ResourceNotFoundException(id.toString(),"Odontologo no encontrado");
         }
         return o.get();
     }

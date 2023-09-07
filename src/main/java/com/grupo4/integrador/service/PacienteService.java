@@ -1,11 +1,10 @@
 package com.grupo4.integrador.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.grupo4.integrador.dto.OdontologoDto.ActualizarOdontologoDto;
+import com.grupo4.integrador.dto.DomicilioDto.DomicilioDto;
 import com.grupo4.integrador.dto.PacienteDto.ActualizarPacientoDto;
 import com.grupo4.integrador.dto.PacienteDto.CrearPacienteDto;
 import com.grupo4.integrador.entity.Domicilio;
-import com.grupo4.integrador.entity.Odontologo;
 import com.grupo4.integrador.entity.Paciente;
 import com.grupo4.integrador.exceptions.ResourceNotFoundException;
 import com.grupo4.integrador.repository.PacienteRepository;
@@ -31,7 +30,7 @@ public class PacienteService {
 
     public Paciente registrar(CrearPacienteDto p) throws Exception {
         Paciente paciente;
-        Domicilio dom = mapper.convertValue(p.getDomicilio(), Domicilio.class);
+        DomicilioDto dom = mapper.convertValue(p.getDomicilio(), DomicilioDto.class);
         paciente = mapper.convertValue(p, Paciente.class);
         paciente.setDomicilio(domicilioService.registrar(dom));
         return pacienteRepository.save(paciente);
@@ -44,7 +43,7 @@ public class PacienteService {
     public Paciente buscar(Long id) throws ResourceNotFoundException {
         Optional<Paciente> p = pacienteRepository.findById(id);
         if (p.isEmpty()) {
-            throw new ResourceNotFoundException("No existe un paciente con el id " + id);
+            throw new ResourceNotFoundException(id.toString(), "No existe un paciente con el id -");
         }
         return p.get();
     }
@@ -53,8 +52,10 @@ public class PacienteService {
         Paciente p = buscar(id);
         pacienteRepository.delete(p);
     }
-    public Paciente actualizarPaciente(ActualizarPacientoDto actualizarPacientoDto){
+
+    public Paciente actualizarPaciente(ActualizarPacientoDto actualizarPacientoDto) throws Exception {
         Paciente paciente = mapper.convertValue(actualizarPacientoDto, Paciente.class);
+        domicilioService.registrar(actualizarPacientoDto.getDomicilio());
         return pacienteRepository.save(paciente);
     }
 

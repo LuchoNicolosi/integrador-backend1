@@ -42,6 +42,7 @@ public class TurnoControlador {
             throw new BadRequestException(e.getMessage());
         }
         LOGGER.info("Se pudo crear el turno");
+        System.out.println(nuevoTurno.getFecha());
         return new ResponseEntity<>(mapper.convertValue(nuevoTurno, TurnoDto.class), HttpStatus.OK);
     }
 

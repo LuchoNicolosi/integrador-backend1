@@ -1,5 +1,7 @@
 package com.grupo4.integrador.service;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.grupo4.integrador.dto.DomicilioDto.DomicilioDto;
 import com.grupo4.integrador.entity.Domicilio;
 import com.grupo4.integrador.repository.DomicilioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +16,9 @@ public class DomicilioService {
         this.domicilioRepository = domicilioRepository;
     }
 
-    public Domicilio registrar(Domicilio dom) throws Exception {
-        return domicilioRepository.save(dom);
+    public Domicilio registrar(DomicilioDto dom) throws Exception {
+        ObjectMapper mapper = new ObjectMapper();
+        return domicilioRepository.save(mapper.convertValue(dom, Domicilio.class));
     }
 
 //    public List<Domicilio> listar() {

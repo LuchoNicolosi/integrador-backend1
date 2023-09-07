@@ -1,9 +1,12 @@
 package com.grupo4.integrador.entity;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -14,7 +17,9 @@ public class Turno {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     @Column(nullable = false)
-    private LocalDate fecha;
+    @JsonAlias({"date"})
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm")
+    private LocalDateTime fecha;
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "odontologo_id", nullable = false)
     private Odontologo odontologo;
@@ -26,7 +31,7 @@ public class Turno {
 
     }
 
-    public Turno(Odontologo odontologo, Paciente paciente, LocalDate fecha) {
+    public Turno(Odontologo odontologo, Paciente paciente, LocalDateTime fecha) {
         this.odontologo = odontologo;
         this.paciente = paciente;
         this.fecha = fecha;

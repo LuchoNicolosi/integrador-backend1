@@ -72,17 +72,19 @@ public class PacienteControlador {
         pacienteService.eliminar(id);
         return ResponseEntity.ok("Registro eliminado");
     }
-    @PutMapping("/modificar/{id}")
-    public ResponseEntity<PacienteDto> actualizarPaciente(@RequestBody ActualizarPacientoDto actualizarPacientoDto, @PathVariable Long id) throws ResourceNotFoundException {
-        Paciente paciente = pacienteService.buscar(id);
+
+    @PutMapping("/modificar")
+    public ResponseEntity<PacienteDto> actualizarPaciente(@RequestBody ActualizarPacientoDto actualizarPacientoDto, @RequestParam(name = "pacId") Long pacienteId, @RequestParam("domId") int domicilioId) throws Exception {
+        Paciente paciente = pacienteService.buscar(pacienteId);
         ResponseEntity<PacienteDto> response;
         PacienteDto pacienteDto = null;
 
-        if(paciente != null){
-            actualizarPacientoDto.setId(id);
+        if (paciente != null) {
+            actualizarPacientoDto.setId(pacienteId);
+            actualizarPacientoDto.getDomicilio().setId(domicilioId);
             pacienteDto = mapper.convertValue(pacienteService.actualizarPaciente(actualizarPacientoDto), PacienteDto.class);
             response = new ResponseEntity<>(pacienteDto, HttpStatus.OK);
-        }else{
+        } else {
             response = new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
         return response;

@@ -49,7 +49,7 @@ public class TurnoService {
     public Turno buscar(Long id) throws ResourceNotFoundException {
         Optional<Turno> t = turnoRepository.findById(id);
         if (t.isEmpty()) {
-            throw new ResourceNotFoundException("No existe un turno con el id " + id);
+            throw new ResourceNotFoundException(id.toString(), "No existe un turno con el id ");
         }
         return t.get();
     }
@@ -63,7 +63,11 @@ public class TurnoService {
         Optional<Odontologo> odontologo = odontologoIRepository.findById(turno.getOdontologoId());
         Optional<Paciente> paciente = pacienteIRepository.findById(turno.getPacienteId());
 
-        if (paciente.isEmpty() || odontologo.isEmpty()) throw new ResourceNotFoundException("Error a encontrar usuarios.");
+        if (paciente.isEmpty())
+            throw new ResourceNotFoundException(paciente.get().getId().toString(), "Error a encontrar al paciente.");
+        if (odontologo.isEmpty())
+            throw new ResourceNotFoundException(odontologo.get().getId().toString(), "Error a encontrar al odontologo.");
+
 
         Turno actualizarTurno = new Turno();
         actualizarTurno.setId(turno.getId());

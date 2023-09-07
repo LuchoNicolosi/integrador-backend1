@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
@@ -16,7 +17,7 @@ public class ActualizarTurnoDto {
     @NotNull
     private Long pacienteId;
     @JsonAlias({"date"})
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm")
     @NotNull
-    private LocalDate fecha;
+    private LocalDateTime fecha;
 }

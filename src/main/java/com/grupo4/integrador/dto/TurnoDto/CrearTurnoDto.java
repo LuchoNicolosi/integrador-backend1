@@ -2,10 +2,12 @@ package com.grupo4.integrador.dto.TurnoDto;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Getter
@@ -15,7 +17,7 @@ public class CrearTurnoDto {
     @NotNull
     private Long pacienteId;
     @JsonAlias({"date"})
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm")
     @NotNull
-    private LocalDate fecha;
+    private LocalDateTime fecha;
 }
