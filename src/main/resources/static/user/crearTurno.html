@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <h1>Registrar nuevo turno</h1>
+
+    <div id="datosPaciente"></div>
+
+    <form id="crearTurnoForm">
+      <div class="formControl">
+        <label for="odontologo-list">Seleccione un odontologo</label>
+        <select name="odontologos" id="odontologo-list">
+        </select>
+      </div>
+      <div class="formControl">
+        <label for="fecha">Fecha y hora del turno</label>
+        <input
+          type="datetime-local"
+          name="inputFechaAlta"
+          id="fecha"
+          required
+        />
+      </div>
+      <div>
+        <button type="submit">solicitar turno</button>
+      </div>
+    </form>
+    <script src="../js/user/crearTurno.js"></script>
+  </body>
+</html>

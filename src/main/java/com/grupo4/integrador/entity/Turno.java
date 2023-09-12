@@ -14,7 +14,7 @@ import java.util.Date;
 @Data
 public class Turno {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(nullable = false)
     @JsonAlias({"date"})
