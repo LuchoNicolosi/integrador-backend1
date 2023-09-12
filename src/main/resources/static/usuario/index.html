@@ -9,32 +9,76 @@
 <div class="container">
     <div>
         <h1>Bienvenido a Clinica Odontologica</h1>
-        <h3>¡Reserva tu turno!</h3>
+        <h3>¡Registre sus datos!</h3>
+        <p>Una vez completado el registro podra solicitar un turno con uno de nuestros odontologos</p>
     </div>
     <div>
-        <form id="crearPacienteForm">
-            <div class="formControl">
-                <label>Odontologos</label>
-                <select name="odontologos">
-                    <option>x</option>
-                    <option>pepe el odontologo</option>
-                </select>
-            </div>
-            <div class="formControl">
-                <label for="inputFechaAlta">Fecha</label>
-                <input
-                        type="datetime-local"
-                        name="inputFechaAlta"
-                        id="inputFechaAlta"
-                        required
-                />
-            </div>
+        <form id="registrarPaciente">
+            <fieldset>
+                <legend>DATOS DEL PACIENTE</legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido">
+                </div>
+                <div>
+                    <label for="dni">dni</label>
+                    <input type="text" id="dni">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>DOMICILIO</legend>
+                <div>
+                    <label for="calle">calle</label>
+                    <input type="text"  id="calle">
+                </div>
+                <div>
+                    <label for="numero">numero</label>
+                    <input type="text"  id="numero">
+                </div>
+                <div>
+                    <label for="localidad">localidad</label>
+                    <input type="text"  id="localidad">
+                </div>
+                <div>
+                    <label for="provincia">provinca</label>
+                    <input type="text"  id="provincia">
+                </div>
+            </fieldset>
             <div class="container-submit">
-                <button type="submit">Crear</button>
+                <button type="submit">Registrarse</button>
             </div>
         </form>
+
+        <!-- <div class="formControl">
+            <label for="odontologo-list">Seleccione un odontologo</label>
+            <select name="odontologos" id="odontologo-list">
+                <optgroup label="odontologos">
+                    <option>pepito</option>
+                    <option>carlitos</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="formControl">
+            <label for="inputFechaAlta">Fecha</label>
+            <input
+                    type="datetime-local"
+                    name="inputFechaAlta"
+                    id="fecha"
+                    required
+            />
+        </div> -->
+
     </div>
 </div>
-<!--<script src="../js/odontologo.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script src="../js/turnos.js"></script>
+</body>
+</html>
 </body>
 </html>

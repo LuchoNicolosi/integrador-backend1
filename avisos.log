@@ -272,3 +272,6 @@ insert into turnos (fecha,odontologo_id,paciente_id,id) values (?,?,?,?) [23505-
 [2023-09-12 15:26:23] [ INFO ] [OdontologoControlador:59] Listado de odontologos
 [2023-09-12 15:26:25] [ INFO ] [OdontologoControlador:59] Listado de odontologos
 [2023-09-12 15:26:36] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 18:38:44] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-12 18:48:13] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-12 18:54:42] [ INFO ] [PacienteControlador:44] Paciente creado!
