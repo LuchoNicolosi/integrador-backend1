@@ -1,6 +1,6 @@
 package com.grupo4.integrador.dto.DomicilioDto;
 
-import jakarta.validation.constraints.NotNull;
+import javax.validation.constraints.NotNull;
 import lombok.Getter;
 
 @Getter

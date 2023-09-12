@@ -2,16 +2,14 @@ package com.grupo4.integrador.controller;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.grupo4.integrador.dto.OdontologoDto.OdontologoDto;
 import com.grupo4.integrador.dto.PacienteDto.ActualizarPacientoDto;
 import com.grupo4.integrador.dto.PacienteDto.CrearPacienteDto;
 import com.grupo4.integrador.dto.PacienteDto.PacienteDto;
-import com.grupo4.integrador.entity.Odontologo;
 import com.grupo4.integrador.entity.Paciente;
 import com.grupo4.integrador.exceptions.BadRequestException;
 import com.grupo4.integrador.exceptions.ResourceNotFoundException;
 import com.grupo4.integrador.service.PacienteService;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

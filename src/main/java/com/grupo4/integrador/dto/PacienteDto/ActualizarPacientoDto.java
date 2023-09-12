@@ -2,7 +2,7 @@ package com.grupo4.integrador.dto.PacienteDto;
 
 import com.grupo4.integrador.dto.DomicilioDto.DomicilioDto;
 import com.grupo4.integrador.entity.Domicilio;
-import jakarta.validation.constraints.NotNull;
+import javax.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

@@ -9,7 +9,7 @@ import com.grupo4.integrador.entity.Turno;
 import com.grupo4.integrador.exceptions.BadRequestException;
 import com.grupo4.integrador.exceptions.ResourceNotFoundException;
 import com.grupo4.integrador.service.TurnoService;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

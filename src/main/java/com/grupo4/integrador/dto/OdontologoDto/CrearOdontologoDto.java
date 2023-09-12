@@ -1,7 +1,7 @@
 package com.grupo4.integrador.dto.OdontologoDto;
 
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.NotNull;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.NotNull;
 import lombok.Data;
 
 
