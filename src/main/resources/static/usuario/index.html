@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Clinica Odontologica</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="container">
+    <div>
+        <h1>Bienvenido a Clinica Odontologica</h1>
+        <h3>¡Reserva tu turno!</h3>
+    </div>
+    <div>
+        <form id="crearPacienteForm">
+            <div class="formControl">
+                <label>Odontologos</label>
+                <select name="odontologos">
+                    <option>x</option>
+                    <option>pepe el odontologo</option>
+                </select>
+            </div>
+            <div class="formControl">
+                <label for="inputFechaAlta">Fecha</label>
+                <input
+                        type="datetime-local"
+                        name="inputFechaAlta"
+                        id="inputFechaAlta"
+                        required
+                />
+            </div>
+            <div class="container-submit">
+                <button type="submit">Crear</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--<script src="../js/odontologo.js"></script>-->
+</body>
+</html>

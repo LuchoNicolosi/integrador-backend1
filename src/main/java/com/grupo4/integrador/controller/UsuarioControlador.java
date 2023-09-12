@@ -1,22 +1,18 @@
 package com.grupo4.integrador.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class UsuarioControlador {
-    @GetMapping("/")
-    public String home() {
-        return "<h1>Welcome Home</h1>";
-    }
-
     @GetMapping("/user")
     public String user() {
-        return "<h1>Welcome User</h1>";
+        return "./usuario/index.html";
     }
 
     @GetMapping("/admin")
     public String admin() {
-        return "<h1>Welcome Admin</h1>";
+        return "./admin/index.html";
     }
 }

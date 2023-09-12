@@ -22,10 +22,12 @@ public class DataLoader implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder(12);
-        String password = passwordEncoder.encode("password");
-        String password2 = passwordEncoder.encode("password2");
+        //Credenciales harcodeadas
+        //TODO: Signup
+        String password = passwordEncoder.encode("user");
+        String password2 = passwordEncoder.encode("admin");
 
-        usuarioRepository.save(new Usuario("usuario","usuario@gmail.com",password, UsuarioRoles.ROLE_USER));
-        usuarioRepository.save(new Usuario("admin","admin@gmail.com",password2, UsuarioRoles.ROLE_ADMIN));
+        usuarioRepository.save(new Usuario("usuario", "usuario@gmail.com", password, UsuarioRoles.ROLE_USER));
+        usuarioRepository.save(new Usuario("admin", "admin@gmail.com", password2, UsuarioRoles.ROLE_ADMIN));
     }
 }
