@@ -27,13 +27,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
+                .antMatchers("/signup").permitAll().and().authorizeRequests()
                 .antMatchers("/user/**").hasRole("USER")
-                .antMatchers("/odontologo").hasAnyRole("USER","ADMIN")
+                .antMatchers("/odontologo").hasAnyRole("USER", "ADMIN")
                 .antMatchers("/paciente/registrar").hasRole("USER")
                 .antMatchers("/paciente/buscar").hasRole("USER")
+                .antMatchers("/odontologo/buscar").hasRole("USER")
                 .antMatchers("/admin/**").hasRole("ADMIN")
-                .antMatchers("/odontologo/**").hasRole("ADMIN")
-                .antMatchers("/paciente/**").hasRole("ADMIN")
                 .anyRequest().authenticated().and().formLogin().successHandler(loginSuccessHandler).and()
                 .logout().deleteCookies("JSESSIONID");
     }
