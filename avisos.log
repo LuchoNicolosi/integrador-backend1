@@ -310,5 +310,27 @@ insert into turnos (fecha,odontologo_id,paciente_id,id) values (?,?,?,?) [23505-
 [2023-09-12 20:45:01] [ INFO ] [OdontologoControlador:59] Listado de odontologos
 [2023-09-12 20:52:12] [ INFO ] [PacienteControlador:44] Paciente creado!
 [2023-09-12 20:52:15] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+<<<<<<< HEAD
 [2023-09-12 20:55:58] [ INFO ] [PacienteControlador:44] Paciente creado!
 [2023-09-12 20:56:01] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+=======
+[2023-09-12 21:09:34] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-12 21:09:37] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:10:09] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:10:16] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:10:27] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:10:33] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:15:49] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:15:56] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:16:06] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:16:34] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-12 21:16:37] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:18:04] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-12 21:18:07] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:18:21] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:18:31] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:18:37] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:18:43] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:18:47] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-12 21:19:06] [ INFO ] [TurnoControlador:44] Se pudo crear el turno
+>>>>>>> 2e5f52c635ee397d558eb97216b5880b644e8226
