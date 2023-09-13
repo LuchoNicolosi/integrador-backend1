@@ -13,4 +13,11 @@ public class CrearDomicilioDto {
     private String localidad;
     @NotNull
     private String provincia;
+
+    public CrearDomicilioDto(String calle, String numero, String localidad, String provincia) {
+        this.calle = calle;
+        this.numero = numero;
+        this.localidad = localidad;
+        this.provincia = provincia;
+    }
 }

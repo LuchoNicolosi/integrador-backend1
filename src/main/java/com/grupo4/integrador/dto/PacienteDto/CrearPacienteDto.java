@@ -24,4 +24,12 @@ public class CrearPacienteDto {
     private LocalDate fechaAlta;
     @NotNull
     private CrearDomicilioDto domicilio;
+
+    public CrearPacienteDto(String nombre, String apellido, String dni, LocalDate fechaAlta, CrearDomicilioDto domicilio) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+        this.fechaAlta = fechaAlta;
+        this.domicilio = domicilio;
+    }
 }
