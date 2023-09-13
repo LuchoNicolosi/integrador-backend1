@@ -334,3 +334,38 @@ insert into turnos (fecha,odontologo_id,paciente_id,id) values (?,?,?,?) [23505-
 [2023-09-12 21:18:47] [ INFO ] [OdontologoControlador:59] Listado de odontologos
 [2023-09-12 21:19:06] [ INFO ] [TurnoControlador:44] Se pudo crear el turno
 >>>>>>> 2e5f52c635ee397d558eb97216b5880b644e8226
+[2023-09-13 16:57:00] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 16:57:09] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 16:57:18] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 16:57:28] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 16:57:52] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-13 16:57:54] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 16:58:03] [ INFO ] [TurnoControlador:44] Se pudo crear el turno
+[2023-09-13 17:00:14] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:00:25] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:00:33] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:00:54] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-13 17:00:56] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:01:04] [ INFO ] [TurnoControlador:44] Se pudo crear el turno
+[2023-09-13 17:03:01] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:03:10] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:03:18] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:03:27] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:03:57] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-13 17:03:59] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:04:10] [ INFO ] [TurnoControlador:44] Se pudo crear el turno
+[2023-09-13 17:10:10] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:10:18] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:10:28] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:10:55] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-13 17:10:57] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:26:56] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:27:03] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:27:54] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-13 17:27:56] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:28:11] [ INFO ] [OdontologoControlador:66] odontologo encontrado.
+[2023-09-13 17:29:23] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:29:34] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:30:22] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-13 17:30:24] [ INFO ] [OdontologoControlador:59] Listado de odontologos
+[2023-09-13 17:30:34] [ INFO ] [OdontologoControlador:66] odontologo encontrado.
