@@ -3,13 +3,16 @@ package com.grupo4.integrador.dto.PacienteDto;
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.grupo4.integrador.dto.DomicilioDto.CrearDomicilioDto;
+
 import javax.validation.constraints.NotNull;
+
+import lombok.Data;
 import lombok.Getter;
 
 import java.time.LocalDate;
 import java.util.Date;
 
-@Getter
+@Data
 public class CrearPacienteDto {
     @NotNull
     private String nombre;
@@ -25,11 +28,4 @@ public class CrearPacienteDto {
     @NotNull
     private CrearDomicilioDto domicilio;
 
-    public CrearPacienteDto(String nombre, String apellido, String dni, LocalDate fechaAlta, CrearDomicilioDto domicilio) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.dni = dni;
-        this.fechaAlta = fechaAlta;
-        this.domicilio = domicilio;
-    }
 }

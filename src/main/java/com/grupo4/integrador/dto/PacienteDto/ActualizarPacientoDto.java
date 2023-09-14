@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @NoArgsConstructor
 @Data
 public class ActualizarPacientoDto {
@@ -17,7 +19,7 @@ public class ActualizarPacientoDto {
     @NotNull
     private String dni;
     @NotNull
-    private String fechaAlta;
+    private LocalDate fechaAlta;
     @NotNull
     private DomicilioDto domicilio;
 }

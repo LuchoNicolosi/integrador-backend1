@@ -72,7 +72,7 @@ public class PacienteControlador {
     }
 
     @PutMapping("/modificar")
-    public ResponseEntity<PacienteDto> actualizarPaciente(@RequestBody ActualizarPacientoDto actualizarPacientoDto, @RequestParam(name = "pacId") Long pacienteId, @RequestParam("domId") int domicilioId) throws Exception {
+    public ResponseEntity<PacienteDto> actualizarPaciente(@RequestBody ActualizarPacientoDto actualizarPacientoDto, @RequestParam(name = "pacId") Long pacienteId, @RequestParam("domId") Long domicilioId) throws Exception {
         Paciente paciente = pacienteService.buscar(pacienteId);
         ResponseEntity<PacienteDto> response;
         PacienteDto pacienteDto = null;

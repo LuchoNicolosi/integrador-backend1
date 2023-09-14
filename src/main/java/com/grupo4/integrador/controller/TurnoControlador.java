@@ -75,14 +75,14 @@ public class TurnoControlador {
         return new ResponseEntity<>(mapper.convertValue(updateTurno, TurnoDto.class), HttpStatus.OK);
     }
 
-    @GetMapping("/buscar/{id}")
-    public ResponseEntity<TurnoDto> buscarTurno(@PathVariable Long id) throws ResourceNotFoundException {
+    @GetMapping("/buscar")
+    public ResponseEntity<TurnoDto> buscarTurno(@RequestParam(name = "id") Long id) throws ResourceNotFoundException {
         Turno turno = turnoService.buscar(id);
         return new ResponseEntity<>(mapper.convertValue(turno, TurnoDto.class), HttpStatus.OK);
     }
 
-    @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<?> eliminarTurno(@PathVariable Long id) throws ResourceNotFoundException {
+    @DeleteMapping("/eliminar")
+    public ResponseEntity<?> eliminarTurno(@RequestParam(name = "id") Long id) throws ResourceNotFoundException {
         turnoService.eliminar(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 

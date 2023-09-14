@@ -9,7 +9,9 @@ import com.grupo4.integrador.entity.Odontologo;
 import com.grupo4.integrador.exceptions.BadRequestException;
 import com.grupo4.integrador.exceptions.ResourceNotFoundException;
 import com.grupo4.integrador.service.OdontologoService;
+
 import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -72,17 +74,18 @@ public class OdontologoControlador {
         odontologoService.eliminar(id);
         return ResponseEntity.ok("Registro eliminado");
     }
+
     @PutMapping("/modificar")
-    public ResponseEntity<OdontologoDto> actualizarOdontologo(@RequestBody ActualizarOdontologoDto actualizarOdontologoDto, @RequestParam Long id)throws ResourceNotFoundException{
+    public ResponseEntity<OdontologoDto> actualizarOdontologo(@RequestBody ActualizarOdontologoDto actualizarOdontologoDto, @RequestParam(name = "id") Long id) throws ResourceNotFoundException {
         Odontologo odontologo = odontologoService.buscar(id);
         ResponseEntity<OdontologoDto> response;
         OdontologoDto odontologoDto = null;
 
-        if(odontologo != null){
+        if (odontologo != null) {
             actualizarOdontologoDto.setId(id);
             odontologoDto = mapper.convertValue(odontologoService.actualizarOdontologo(actualizarOdontologoDto), OdontologoDto.class);
             response = new ResponseEntity<>(odontologoDto, HttpStatus.OK);
-        }else{
+        } else {
             response = new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
         return response;

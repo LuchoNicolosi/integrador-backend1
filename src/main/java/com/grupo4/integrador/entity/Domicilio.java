@@ -1,7 +1,9 @@
 package com.grupo4.integrador.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+
 import lombok.Data;
 
 @Entity

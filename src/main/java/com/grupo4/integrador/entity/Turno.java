@@ -20,10 +20,11 @@ public class Turno {
     @JsonAlias({"date"})
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm")
     private LocalDateTime fecha;
-    @ManyToOne(cascade = CascadeType.ALL)
+
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "odontologo_id", nullable = false)
     private Odontologo odontologo;
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "paciente_id", nullable = false)
     private Paciente paciente;
 

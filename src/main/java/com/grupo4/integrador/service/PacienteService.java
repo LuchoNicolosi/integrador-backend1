@@ -7,6 +7,7 @@ import com.grupo4.integrador.dto.PacienteDto.CrearPacienteDto;
 import com.grupo4.integrador.entity.Domicilio;
 import com.grupo4.integrador.entity.Paciente;
 import com.grupo4.integrador.exceptions.ResourceNotFoundException;
+import com.grupo4.integrador.repository.DomicilioRepository;
 import com.grupo4.integrador.repository.PacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,21 +19,20 @@ import java.util.Optional;
 
 public class PacienteService {
     private final PacienteRepository pacienteRepository;
-    private final DomicilioService domicilioService;
+    private final DomicilioRepository domicilioRepository;
     private final ObjectMapper mapper;
 
     @Autowired
-    public PacienteService(PacienteRepository pacienteRepository, DomicilioService domicilioService, ObjectMapper mapper) {
+    public PacienteService(PacienteRepository pacienteRepository, DomicilioRepository domicilioRepository, ObjectMapper mapper) {
         this.pacienteRepository = pacienteRepository;
-        this.domicilioService = domicilioService;
+        this.domicilioRepository = domicilioRepository;
         this.mapper = mapper;
     }
 
     public Paciente registrar(CrearPacienteDto p) throws Exception {
-        Paciente paciente;
-        DomicilioDto dom = mapper.convertValue(p.getDomicilio(), DomicilioDto.class);
-        paciente = mapper.convertValue(p, Paciente.class);
-        paciente.setDomicilio(domicilioService.registrar(dom));
+        Paciente paciente = mapper.convertValue(p, Paciente.class);
+        Domicilio dom = mapper.convertValue(p.getDomicilio(), Domicilio.class);
+        paciente.setDomicilio(domicilioRepository.save(dom));
         return pacienteRepository.save(paciente);
     }
 
@@ -55,7 +55,8 @@ public class PacienteService {
 
     public Paciente actualizarPaciente(ActualizarPacientoDto actualizarPacientoDto) throws Exception {
         Paciente paciente = mapper.convertValue(actualizarPacientoDto, Paciente.class);
-        domicilioService.registrar(actualizarPacientoDto.getDomicilio());
+        Domicilio dom = mapper.convertValue(actualizarPacientoDto.getDomicilio(), Domicilio.class);
+        domicilioRepository.save(dom);
         return pacienteRepository.save(paciente);
     }
 
