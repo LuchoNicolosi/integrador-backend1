@@ -414,3 +414,24 @@ insert into turnos (fecha,odontologo_id,paciente_id,id) values (?,?,?,?) [23505-
 [2023-09-13 17:30:24] [ INFO ] [OdontologoControlador:59] Listado de odontologos
 [2023-09-13 17:30:34] [ INFO ] [OdontologoControlador:66] odontologo encontrado.
 >>>>>>> c6e23b98d7657aed979cd027a04e87c78ea40046
+[2023-09-13 22:55:29] [ INFO ] [OdontologoControlador:61] Listado de odontologos
+[2023-09-13 22:55:37] [ INFO ] [OdontologoControlador:61] Listado de odontologos
+[2023-09-13 22:56:06] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-13 22:56:09] [ INFO ] [OdontologoControlador:61] Listado de odontologos
+[2023-09-13 22:56:19] [ INFO ] [TurnoControlador:44] Se pudo crear el turno
+[2023-09-13 22:56:22] [ INFO ] [OdontologoControlador:68] odontologo encontrado.
+[2023-09-13 22:56:45] [ INFO ] [OdontologoControlador:68] odontologo encontrado.
+[2023-09-13 22:59:04] [ INFO ] [OdontologoControlador:61] Listado de odontologos
+[2023-09-13 23:02:19] [ INFO ] [OdontologoControlador:61] Listado de odontologos
+[2023-09-13 23:02:25] [ INFO ] [OdontologoControlador:61] Listado de odontologos
+[2023-09-13 23:03:10] [ INFO ] [PacienteControlador:44] Paciente creado!
+[2023-09-13 23:03:11] [ INFO ] [OdontologoControlador:61] Listado de odontologos
+[2023-09-13 23:03:54] [ INFO ] [OdontologoControlador:61] Listado de odontologos
+[2023-09-13 23:04:00] [ INFO ] [TurnoControlador:44] Se pudo crear el turno
+[2023-09-13 23:04:02] [ INFO ] [OdontologoControlador:68] odontologo encontrado.
+[2023-09-13 23:04:06] [ INFO ] [OdontologoControlador:68] odontologo encontrado.
+[2023-09-13 23:04:07] [ INFO ] [OdontologoControlador:68] odontologo encontrado.
+[2023-09-13 23:04:08] [ INFO ] [OdontologoControlador:68] odontologo encontrado.
+[2023-09-13 23:04:09] [ INFO ] [OdontologoControlador:68] odontologo encontrado.
+[2023-09-13 23:04:11] [ INFO ] [OdontologoControlador:68] odontologo encontrado.
+[2023-09-13 23:04:12] [ INFO ] [OdontologoControlador:68] odontologo encontrado.

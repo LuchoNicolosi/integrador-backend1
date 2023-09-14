@@ -18,3 +18,7 @@ fetch(url)
     </ul>
     `
 })
+
+setTimeout(()=>{
+    sessionStorage.clear();
+},5000)
