@@ -24,7 +24,9 @@ crearTurnoForm.addEventListener("submit", (e) => {
 e.preventDefault()
 
 const fechaForm = document.querySelector("#fecha").value.replace("T", " ")
+sessionStorage.setItem("fechaTurno", fechaForm)
 const selectOdontologo = document.querySelector("#odontologo-list").value
+sessionStorage.setItem("odontologoId", selectOdontologo)
 
 
 const payload = {
@@ -45,7 +47,8 @@ fetch("http://localhost:8080/turno",settings)
 .then(data => {
 if(data){
 alert("turno realizado con exito")
-console.log(data)
+window.location.replace('http://localhost:8080/user/turnoExitoso.html');
+
 }
 })
 

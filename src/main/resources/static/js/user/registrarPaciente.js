@@ -31,7 +31,9 @@ formPaciente.addEventListener('submit', (event) => {
     .then((data) => {
       if (data) {
         alert('paciente registrado con exito: ' + data.nombre);
-        localStorage.setItem('userId', data.id);
+        sessionStorage.setItem('userId', data.id);
+        sessionStorage.setItem('userName', data.nombre);
+        sessionStorage.setItem('userLastName', data.apellido);
         window.location.replace('http://localhost:8080/user/crearTurno.html');
       }
     });
